@@ -1,0 +1,225 @@
+@CHARSET "ISO-8859-1";
+body
+{
+	background-color: #c0c0c0;
+	padding-top:30px; 
+}
+.headder
+{
+	background: #2874f0;
+	padding-bottom: 15px;
+}
+.menu
+{
+	text-align: right;
+	margin-top: 5px;
+	width: 100%;
+	
+}
+.menu ul
+{
+	padding: 15px;
+}
+.menu ul a
+{
+	text-decoration: none;
+	color: white;
+	
+}
+.menu ul li
+{
+	display: inline-block;
+	text-decoration: none;
+	width: 7%;
+}
+.textBox
+{
+	border: 1px solid #999;
+	outline: 0;
+	/* padding-left: 25px; */
+	height: 40px;
+	width: 900px;
+	margin-left: 20%;
+	background-image: url("../images/ic_action_action_search.png");
+	background-repeat: no-repeat; 
+	text-align: center;
+	font-size: 15px;
+	
+}
+.mainMenu
+{
+	margin-left:5%;
+	margin-right:5%;
+	display: inline-block;
+	margin-top: 5px;
+	width: 95%;
+}
+.mainMenu ul {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 0px;
+	padding: 0;
+	z-index: 500;
+}
+.mainMenu ul li {
+	/* background-color: #03A9F4; */
+	/* border-bottom: 1px solid #c0c0c0; */
+	width: 15%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+.sub-menu li {
+	width: 100% !important;
+}
+.mainMenu ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.mainMenu ul li a:hover {
+	background-color: #ffffff;
+	color: #1F729A;
+}
+
+.mainMenu ul ul {
+	position: absolute;
+	display: none;
+}
+
+.mainMenu ul li:hover>ul {
+	display: block;
+}
+.sub-menu ul li a
+{
+	color: black;
+}
+
+.app-header {
+	padding: 0px;
+	border-bottom: 1px solid #c0c0c0;
+	color: white;
+	font-weight: bold;
+	background-color: #2874f0;
+}
+
+.app-header h1
+{
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+#footer
+{
+	background-color: #e4e4e4;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	
+}
+#footer ul li 
+{
+	display:inline-block;
+	width: 11.11%;
+}
+#footer ul li a
+{
+	color: black;
+}
+ .loginForm
+{
+	margin-left:10%;
+	
+} 
+
+/* form {
+    border: 3px solid #f1f1f1;
+} */
+input[type=text], input[type=password]
+ {
+     width: 400px;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+ }
+ 
+  button {
+	background-color: #2874f0;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	
+} 
+/* .buttons
+{
+	 margin-top:5px;
+	display: inline-block;
+	margin-left: 5%;
+	color: white;
+	
+}  */
+
+.buttons
+{
+	margin-left: 5%;
+	color: white;
+	
+}
+.button1 {
+	margin-top: 5px;
+	width: 168px;
+	margin-left: 5%;
+	color: white;
+}
+.main-image-box {
+	width:800px;
+	height:300px;
+	margin-bottom: 5px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center top;
+	background-attachment: fixed;
+	margin-left: 3%;
+}	
+
+.loading { 
+	border:1px solid #ddd;
+	 padding:20px; 
+	 margin:40px 5px;
+	  width:80px;
+	  }
+.contact_us_label {
+	width: 19%;
+	text-align: right;
+}
+.contact_us_text {
+	width: 40%;
+	text-align: left;
+}
+.container {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.contact_us_mandatory_text {
+	width: 3%;
+	text-align: left;
+}
+.contact_us_text input, textarea {
+	border: 1px solid grey;
+}
+.contact_us_error {
+	width: 40%;
+}	  
+#sub-content {
+    padding: 5% 10%;
+    background: white;
+}
