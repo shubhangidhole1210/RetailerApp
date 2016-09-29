@@ -38,7 +38,7 @@ body
 	outline: 0;
 	/* padding-left: 25px; */
 	height: 40px;
-	width: 900px;
+	width: 500px;
 	margin-left: 20%;
 	background-image: url("../images/ic_action_action_search.png");
 	background-repeat: no-repeat; 
@@ -140,7 +140,7 @@ body
 /* form {
     border: 3px solid #f1f1f1;
 } */
-input[type=text], input[type=password]
+/* input[type=text], input[type=password]
  {
      width: 400px;
      padding: 12px 20px;
@@ -148,7 +148,7 @@ input[type=text], input[type=password]
      display: inline-block;
      border: 1px solid #ccc;
      box-sizing: border-box;
- }
+ } */
  
   button {
 	background-color: #2874f0;
@@ -176,7 +176,7 @@ input[type=text], input[type=password]
 }
 .button1 {
 	margin-top: 5px;
-	width: 168px;
+	width: 162px;
 	margin-left: 5%;
 	color: white;
 }
@@ -222,4 +222,31 @@ input[type=text], input[type=password]
 #sub-content {
     padding: 5% 10%;
     background: white;
+}
+
+.heading h4
+{
+	color: blue;
+	/* font-size: 17px; */
+	font: italic;
+	text-align: center;
+}
+.container
+{
+	
+    background: hsla(183, 100%, 42%, 0.26);
+}
+
+.text
+{
+	width: 700px;
+}
+
+.mobile p
+{
+	font-size: 12px;
+}
+.footwear p
+{
+	font-size: 12px;
 }

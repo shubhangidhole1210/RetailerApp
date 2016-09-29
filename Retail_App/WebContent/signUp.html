@@ -3,17 +3,21 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<script type="text/javascript" src="js/angular-route.min.js"></script>
 <script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script> 
 <script type="text/javascript" src="js/app.js"></script>
-
-<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 
 <div ng-controller="signCtrl">
+<div class="heading">
+<h4>create your account here</h4>
+</div>
+<br />
 <div class="container">
 <div class="row">  
    
@@ -25,14 +29,15 @@
         <!-- NAME -->
         <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <label>Name</label>
-            <input type="text" name="name" class="form-control" ng-model="user.name" required>
+            <br>
+            <input type="text" name="name" class="form-control" ng-model="user.name" class="text" required>
             <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
         </div>
       
         <!-- USERNAME -->
         <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
             <label>Username</label>
-            <input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="3" ng-maxlength="8">
+            <input type="text" name="username" class="form-control" ng-model="user.username" class="text" ng-minlength="3" ng-maxlength="8">
             <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
             <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
         </div>
@@ -41,7 +46,7 @@
        
        <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
             <label>Password</label>
-            <input type="password" name="password" class="form-control" ng-model="user.password" ng-minlength="5" ng-maxlength="9">
+            <input type="password" name="password" class="form-control" ng-model="user.password" class="text" ng-minlength="5" ng-maxlength="9">
             <p ng-show="userForm.password.$error.minlength" class="help-block">Username is too short.</p>
             <p ng-show="userForm.password.$error.maxlength" class="help-block">Username is too long.</p>
         </div>
@@ -49,7 +54,7 @@
         <!-- EMAIL -->
         <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
             <label>Email</label>
-            <input type="email" name="email" class="form-control" ng-model="user.email">
+            <input type="email" name="email" class="form-control" ng-model="user.email" class="text">
             <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
         </div>
         
@@ -59,7 +64,11 @@
   </div>
 </div>
 </div>
-
+<div >
+<img
+				class="main-image-box" src="image/signup.jpg"
+				alt="Trolltunga Norway" style="width: 90%" >
+</div>
 </div>
 </body>
 </html>

@@ -1,3 +1,14 @@
+<style>
+input[type=text], input[type=password]
+ {
+     width: 400px;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+ } 
+</style>
 <div id="header-wrapper">
 		<div class="app-header">
 			<h1>Retailer</h1>
@@ -6,28 +17,27 @@
 	</div>
 <div ng-controller="loginCtrl">
 
-<div class="loginForm">
-<form action="/" id="myLogin">
+<form  name="myForm" novalidate>
 <fieldset>
-User Name:<input type="text" id="username" placeholder="Enetr User name here" class="box" ng-model="username"><br>
+<div class="loginForm">
+User Name:<input type="text" id="username" placeholder="Enetr User name here" class="box" ng-model="username" required><br>
+ <span class="text-error" data-ng-show="myForm.submitted && myForm.username.$error.required"> user name is required</span>
 <br>
- Password:-<input type="password" id="password" placeholder="Enter Password here" class="box" ng-model="password">
-<br><br>
+ Password:-<input type="password" id="password" placeholder="Enter Password here" class="box" ng-model="password" required>
+<br>
+ <span class="text-error" data-ng-show="myForm.submitted && myForm.password.$error.required"> password is required</span>
+<br>
 <label style="color: red;">{{errorMsg}}</label>
 <br>
 <div class="buttons">
-<button type="button" ng-click="login()">Login</button>
-<button type="button">Cancel</button>
+<button type="button" ng-click="login()" ng-disabled="myForm.$invalid" class="btn btn-primary">Login</button>
+<button type="button" class="btn btn-primary" ng-disabled="myForm.$invalid">Cancel</button>
+</div>
+<a href="signUp.html"><button type="button" class="button1"  ng-click="signUp()">Sign-Up</button></a>
 </div>
 </fieldset>
 </form>
-<button type="button" class="button1"  ng-click="signUp()">Sign-Up</button>
 </div>
-
-  
-</div>
-
-
 <!-- <div ng-controller="loginCtrl">
 
 <div class="loginForm">

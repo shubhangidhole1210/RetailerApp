@@ -4,7 +4,16 @@ retailApp.config(function($routeProvider) {
 		templateUrl : 'login.html'
 	}).when('/home', {
 		templateUrl : "home.html"
-	}).otherwise({
+	}).when('/signUp', {
+		templateUrl : "signUp.html"
+	}).when('/Electronics', {
+		templateUrl : "Electronics.html"
+			
+	}).when('/Men', {
+		templateUrl : "Men.html"
+			
+	})	
+	.otherwise({
 		redirectTo : '/'
 	});
 });
@@ -34,7 +43,7 @@ retailApp.controller('loginCtrl', function($scope, $location,$http) {
 		var password = $scope.password;
 		$scope.errorMsg = '';
 		if ($scope.username == 'admin' && $scope.password == 'admin') {
-			$http.get("loginError.json").then(function(response)
+			$http.get("login.json").then(function(response)
 					{
 						
 						/*$scope.loading = false;*/
@@ -57,6 +66,10 @@ retailApp.controller('loginCtrl', function($scope, $location,$http) {
 		/* $scope.loading = true;*/
 		
 	};
+	$scope.signUp=function()
+	{
+		$location.path('/SignUp')
+	}
 });
 
 retailApp.controller('signCtrl', function($scope) {
@@ -72,41 +85,6 @@ retailApp.controller('signCtrl', function($scope) {
 
 });
 
-
-
-/*var retailApp = angular.module('retailApp',['ngRoute']);
-
-retailApp.config([ '$routeProvider', '$locationProvider',
-    function($routeProvider, $locationProvider) {
-        $routeProvider.when('/home', {
-            templateUrl : 'home.html',
-            
-        })
-        $routeProvider.when('/', {
-            templateUrl : 'login.html',
-            controller: 'loginCtrl'
-        }).otherwise({
-            redirectTo : 'index.html'
-        });
-        //$locationProvider.html5Mode(true); //Remove the '#' from URL.
-    }
-]);
-
-retailApp.controller("loginCtrl", function($scope, $location) {
-    $scope.submit = function() {
-        var username = $scope.username;
-        var password = $scope.password;
-        if (username == "admin" && password == "admin") {
-            $location.path("/home" );
-        } else {
-            alert('invalid username and password');
-        }
-    };
-});
-
-
-
-*/
 retailApp.controller('searchCtrl',function($scope,$http)
 		{
 			$http.get("products.json").then(function(response)
