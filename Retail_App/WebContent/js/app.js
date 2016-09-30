@@ -37,8 +37,11 @@ retailApp.config(function($routeProvider) {
     }
 })
 */
-retailApp.controller('loginCtrl', function($scope, $location,$http) {
+retailApp.controller('loginCtrl', function($scope, $location,$http,$timeout) {
+	$scope.test = 'test';
+	  $scope.showSpinner = false;
 	$scope.login = function() {
+		 $scope.showSpinner = true;
 		var username = $scope.username;
 		var password = $scope.password;
 		$scope.errorMsg = '';
@@ -58,8 +61,20 @@ retailApp.controller('loginCtrl', function($scope, $location,$http) {
 							
 						}
 					});
-			
-
+			 $http.get('/data.json').
+			 success(function(data, status, headers, config)
+					 {
+				 $timeout(function(){
+			            $scope.showSpinner = false;
+			          }, 3000);
+			        
+			        }).
+					 
+			        error(function(data, status, headers, config) {
+			            $timeout(function(){
+			              $scope.showSpinner = false;
+			            }, 3000);
+			          });
 		} else {
 			alert("invalid user name and password");
 		}

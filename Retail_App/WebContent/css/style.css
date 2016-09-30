@@ -99,8 +99,14 @@ body
 }
 
 .app-header {
-	padding: 0px;
+	padding: 3%;
 	border-bottom: 1px solid #c0c0c0;
+	/* background-image: url("../images/oil.jpg"); */
+	/* background-repeat: no-repeat; */
+	background-size: 100% auto;
+	background-position: center top;
+	background-attachment: fixed;
+	font-size: 17px;
 	color: white;
 	font-weight: bold;
 	background-color: #2874f0;
@@ -111,6 +117,7 @@ body
 	text-align: center;
 	color: white;
 	font-size: 40px;
+	
 }
 
 #footer
@@ -131,11 +138,11 @@ body
 {
 	color: black;
 }
- .loginForm
+/*  .loginForm
 {
 	margin-left:10%;
 	
-} 
+}  */
 
 /* form {
     border: 3px solid #f1f1f1;
@@ -144,7 +151,6 @@ body
  {
      width: 400px;
      padding: 12px 20px;
-     margin: 8px 0;
      display: inline-block;
      border: 1px solid #ccc;
      box-sizing: border-box;

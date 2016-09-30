@@ -9,16 +9,17 @@ input[type=text], input[type=password]
      box-sizing: border-box;
  } 
 </style>
-<div id="header-wrapper">
+<!-- <div id="header-wrapper">
 		<div class="app-header">
 			<h1>Retailer</h1>
 		</div>
 		
-	</div>
+	</div> -->
 <div ng-controller="loginCtrl">
 
 <form  name="myForm" novalidate>
 <fieldset>
+<div align="center">
 <div class="loginForm">
 User Name:<input type="text" id="username" placeholder="Enetr User name here" class="box" ng-model="username" required><br>
  <span class="text-error" data-ng-show="myForm.submitted && myForm.username.$error.required"> user name is required</span>
@@ -30,10 +31,12 @@ User Name:<input type="text" id="username" placeholder="Enetr User name here" cl
 <label style="color: red;">{{errorMsg}}</label>
 <br>
 <div class="buttons">
-<button type="button" ng-click="login()" ng-disabled="myForm.$invalid" class="btn btn-primary">Login</button>
-<button type="button" class="btn btn-primary" ng-disabled="myForm.$invalid">Cancel</button>
+<button type="button" ng-click="login()" ng-disabled="myForm.$invalid" >Login</button>
+<button type="button"  ng-disabled="myForm.$invalid">Cancel</button>
+<circle-spinner ng-show="showSpinner"></circle-spinner>
 </div>
 <a href="signUp.html"><button type="button" class="button1"  ng-click="signUp()">Sign-Up</button></a>
+</div>
 </div>
 </fieldset>
 </form>
@@ -58,7 +61,7 @@ user Name:<input type="text" id="username" placeholder="enetr username here" ng-
 				alt="Trolltunga Norway" >
 			
 </div>
-<div id="footer">
+<!-- <div id="footer">
 <ul>
     <li><a href="#">sign up</a></li>
     <li><a href="#">log in</a></li>
@@ -74,5 +77,5 @@ user Name:<input type="text" id="username" placeholder="enetr username here" ng-
     <li><a href="#">Discount</a></li>
     <li><a href="#">offer</a></li>
 </ul>
-</div>
+</div> -->
 
