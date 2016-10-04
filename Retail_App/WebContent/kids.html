@@ -1,5 +1,10 @@
-
-<div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
 <div class="headder">
 <div id="menu" class="menu">
 <ul>
@@ -31,7 +36,7 @@
 					<li><a href="#">Camera</a></li>
 					<li><a href="About.html#how-we-work">wearables</a></li>
 				</ul></li>
-			<li class=""><a href="Men.html">MEN</a>
+			<li class=""><a href="#">MEN</a>
 				<ul class="sub-menu">
 					<li><a href="#">FootWear</a></li>
 					<li><a href="#">Clothing</a></li>
@@ -39,7 +44,7 @@
 					<li><a href="#">Accessories</a></li>
 					<li><a href="#">Men's grooming</a></li>
 				</ul></li>
-			<li class=""><a href="women.html">Women</a>
+			<li class=""><a href="#">Women</a>
 				<ul class="sub-menu">
 					<li><a href="#">clothing</a></li>
 					<li><a href="#">Ethnic wear</a></li>
@@ -77,39 +82,21 @@
 	</div>
  
 </div>
-<div ng-controller="searchCtrl">
+<!-- <div ng-controller="searchCtrl">
 
 <ul>
     <li ng-repeat="data in searchInfo.products | filter:searchBox">
    <h3>{{data.title}}</h3>
    {{data.image}}
-    <!-- <h3>{{data.value}}</h3> -->
+    <h3>{{data.value}}</h3>
     </li>
 </ul>
 <p ng-hide="searchInfo"></p>
-</div>
-</div>
-<div ng-controller="cartCtrl">
-<ul>
-    <li ng-repeat="product in products">
-    <figure>
-       <img alt="{{product.image}}" ng-src="{{product.title}}">
-        <figcaption>
-        <h3>{{product.title}}, {{product.price}}$</h3>
-        <button ng-click="addToCart(product);">Add to cart</button>
-        </figcaption>
-    </figure>
-    </li>
-</ul>
-<div ng-if="cart.length" class="shopping-cart">
-<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
-<span class="cart-item th radius" ng-repeat="product in cart">
-<img alt="" ng-src="{{product.image}}" title="{{product.title}}">
-<span class="badge" ng-show="product.quantity  >1">
-   x{{product.quantity}}
-</span>
-</span>
-<button ng-clcik="checkout();">checkout</button>
-</div>
-</div>
+</div> -->
 
+<h2>Intrend Women</h2>
+<div class="kids">
+	<p>Bid goodbye to those dull-looking layers of clothing and get all summer ready with our collection of in-trend summer style. Whether you’re looking for summery footwear or clothes that keep you comfortable, we have everything to keep you in trend this summer.</p>
+</div>
+</body>
+</html>

@@ -3,9 +3,10 @@ retailApp.config(function($routeProvider) {
 	$routeProvider.when('/', {
 		templateUrl : 'login.html'
 	}).when('/home', {
-		templateUrl : "home.html"
+		templateUrl : 'home.html'
 	}).when('/signUp', {
-		templateUrl : "signUp.html"
+		templateUrl : 'signUp.html',
+		controller: 'signCtrl'
 	}).when('/Electronics', {
 		templateUrl : "Electronics.html"
 			
@@ -17,6 +18,7 @@ retailApp.config(function($routeProvider) {
 		redirectTo : '/'
 	});
 });
+
 /*retailApp.directive('loading', function () {
     return {
       restrict: 'E',
@@ -81,10 +83,10 @@ retailApp.controller('loginCtrl', function($scope, $location,$http,$timeout) {
 		/* $scope.loading = true;*/
 		
 	};
-	$scope.signUp=function()
+	/*$scope.signUp=function()
 	{
 		$location.path('/SignUp')
-	}
+	}*/
 });
 
 retailApp.controller('signCtrl', function($scope) {
@@ -95,7 +97,10 @@ retailApp.controller('signCtrl', function($scope) {
         if ($scope.userForm.$valid) {
             alert('user registraion sucessfully');
         }
-
+        else
+        	{
+        	   console.log("error occured");
+        	}
     };
 
 });
