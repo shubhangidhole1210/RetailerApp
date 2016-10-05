@@ -1,4 +1,15 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login here</title>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 <div>
 <div class="headder">
 <div id="menu" class="menu">
@@ -31,7 +42,7 @@
 					<li><a href="#">Camera</a></li>
 					<li><a href="About.html#how-we-work">wearables</a></li>
 				</ul></li>
-			<li class=""><a href="Men.html">MEN</a>
+			<li class=""><a href="#">MEN</a>
 				<ul class="sub-menu">
 					<li><a href="#">FootWear</a></li>
 					<li><a href="#">Clothing</a></li>
@@ -77,39 +88,28 @@
 	</div>
  
 </div>
-<div ng-controller="searchCtrl">
+<!-- <div ng-controller="searchCtrl">
 
 <ul>
     <li ng-repeat="data in searchInfo.products | filter:searchBox">
    <h3>{{data.title}}</h3>
    {{data.image}}
-    <!-- <h3>{{data.value}}</h3> -->
+    <h3>{{data.value}}</h3>
     </li>
 </ul>
 <p ng-hide="searchInfo"></p>
+</div> -->
 </div>
+<h2>Mobile</h2>
+<div class="mobile">
+	<p>Loaded with features like dual SIM, 4G, wi-fi, touchscreen and
+		more, Mobiles have brought the world to our fingertips. Besides voice
+		calling, a mobile phone doubles up as a media player, music player,
+		gaming device, camera, and alarm clock! From budget smartphones to
+		high-end models, from feature phones to multimedia phones, Flipkart
+		offers a range of mobile phones as per your budget and preference.
+		Android, Windows or iOS; Motorola, Apple or Samsung, the choice is
+		yours.</p>
 </div>
-<div ng-controller="cartCtrl">
-<ul>
-    <li ng-repeat="product in products">
-    <figure>
-       <img alt="{{product.image}}" ng-src="{{product.title}}">
-        <figcaption>
-        <h3>{{product.title}}, {{product.price}}$</h3>
-        <button ng-click="addToCart(product);">Add to cart</button>
-        </figcaption>
-    </figure>
-    </li>
-</ul>
-<div ng-if="cart.length" class="shopping-cart">
-<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
-<span class="cart-item th radius" ng-repeat="product in cart">
-<img alt="" ng-src="{{product.image}}" title="{{product.title}}">
-<span class="badge" ng-show="product.quantity  >1">
-   x{{product.quantity}}
-</span>
-</span>
-<button ng-clcik="checkout();">checkout</button>
-</div>
-</div>
-
+</body>
+</html>
