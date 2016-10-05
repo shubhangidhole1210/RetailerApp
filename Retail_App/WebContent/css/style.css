@@ -4,10 +4,9 @@
 	background-color: #c0c0c0;
 	padding-top:30px; 
 } */
-.headder
+.header
 {
 	background: #2874f0;
-	padding-bottom: 15px;
 }
 .menu
 {
@@ -18,7 +17,8 @@
 }
 .menu ul
 {
-	padding: 15px;
+	padding: 0px;
+	margin: 0px;
 }
 .menu ul a
 {
@@ -30,21 +30,21 @@
 {
 	display: inline-block;
 	text-decoration: none;
-	width: 7%;
+	width: 8%;
+    text-align: center;
+    padding: 5px 0px;
 }
 .textBox
 {
 	border: 1px solid #999;
 	outline: 0;
-	/* padding-left: 25px; */
-	height: 40px;
-	width: 500px;
-	margin-left: 20%;
-	background-image: url("../images/ic_action_action_search.png");
+	height: 50px;
 	background-repeat: no-repeat; 
-	text-align: center;
 	font-size: 15px;
-	
+	margin-top: 7px;
+	padding: 0px 15px;
+    width: 100%;
+    color: black;
 }
 .mainMenu
 {
@@ -71,6 +71,10 @@
 	float: left;
 	position: relative;
 }
+
+.sub-menu{
+	background: white;
+}
 .sub-menu li {
 	width: 100% !important;
 }
@@ -78,6 +82,13 @@
 	text-decoration: none;
 	color: white;
 	display: block;
+}
+
+.mainMenu ul.sub-menu li a {
+	text-decoration: none;
+    color: #cccccc;
+    display: block;
+    text-align: center;
 }
 
 .mainMenu ul li a:hover {
@@ -99,17 +110,18 @@
 }
 
 .app-header {
-	padding:5px;
+	padding:10px;
 	border-bottom: 1px solid #c0c0c0;
-	/* background-image: url("../images/oil.jpg"); */
-	/* background-repeat: no-repeat; */
 	background-size: 100% auto;
 	background-position: center top;
 	background-attachment: fixed;
 	font-size: 17px;
 	color: white;
 	font-weight: bold;
-	background-color: #31708f;;
+	background-color: #2874f0;
+	display: table;
+    width: 100%;
+    height: 60px;
 }
 
 .app-header h1
@@ -117,8 +129,22 @@
 	text-align: center;
 	color: white;
 	font-size: 40px;
-	
+	margin: 0px;
+	padding: 0px;
+	display: table-cell;
+    vertical-align: middle;
+    width: 15%;
 }
+
+.app-icon{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: white;
+	display: table-cell;
+    vertical-align: middle;
+}
+
 #footer
 {
 	background-color: #e4e4e4;
