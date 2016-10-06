@@ -1,8 +1,8 @@
 var retailApp = angular.module('retailApp', [ 'ngRoute'])
 retailApp.config(function($routeProvider) {
-	$routeProvider.when('/', {
+	$routeProvider/*.when('/', {
 		templateUrl : 'login.html'
-	}).when('/home', {
+	})*/.when('/home', {
 		templateUrl : 'home.html'
 	}).when('/signUp', {
 		templateUrl : 'signUp.html',
@@ -56,6 +56,7 @@ retailApp.controller('loginCtrl', function($scope, $location,$http,$timeout) {
 						if(response.data.data.errorcode!='0000'){
 							console.log("Error occurred!!!");
 							$scope.errorMsg = response.data.data.message;
+							document
 							
 						}else{
 							console.log("Login successful!!!");
