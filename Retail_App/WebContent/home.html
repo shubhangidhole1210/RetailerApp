@@ -1,39 +1,36 @@
 
 <div>
 
-<div ng-controller="searchCtrl">
+	<div ng-controller="searchCtrl">
 
-<ul>
-    <li ng-repeat="data in searchInfo.products | filter:searchBox">
-   <h3>{{data.title}}</h3>
-   {{data.image}}
-    <!-- <h3>{{data.value}}</h3> -->
-    </li>
-</ul>
-<p ng-hide="searchInfo"></p>
-</div>
+		<ul>
+			<li ng-repeat="data in searchInfo.products | filter:searchBox">
+				<h3>{{data.title}}</h3> {{data.image}} <!-- <h3>{{data.value}}</h3> -->
+			</li>
+		</ul>
+		<p ng-hide="searchInfo"></p>
+	</div>
 </div>
 <div ng-controller="cartCtrl">
-<ul>
-    <li ng-repeat="product in products">
-    <figure>
-       <img alt="{{product.image}}" ng-src="{{product.title}}">
-        <figcaption>
-        <h3>{{product.title}}, {{product.price}}$</h3>
-        <button ng-click="addToCart(product);">Add to cart</button>
-        </figcaption>
-    </figure>
-    </li>
-</ul>
-<div ng-if="cart.length" class="shopping-cart">
-<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
-<span class="cart-item th radius" ng-repeat="product in cart">
-<img alt="" ng-src="{{product.image}}" title="{{product.title}}">
-<span class="badge" ng-show="product.quantity  >1">
-   x{{product.quantity}}
-</span>
-</span>
-<button ng-click="checkout();">checkout</button>
-</div>
+	<ul>
+		<li ng-repeat="product in products">
+			<figure>
+				<img alt="{{product.title}}" ng-src="{{product.image}}">
+				<figcaption>
+					<h3>{{product.title}}, {{product.price}}$</h3>
+					<button ng-click="addToCart(product);">Add to cart</button>
+				</figcaption>
+			</figure>
+		</li>
+	</ul>
+	<div ng-if="cart.length" class="shopping-cart">
+		<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
+		<span class="cart-item th radius" ng-repeat="product in cart">
+			<img alt="" ng-src="{{product.image}}" title="{{product.title}}">
+			<span class="badge" ng-show="product.quantity  >1">
+				x{{product.quantity}} </span>
+		</span>
+		<button ng-click="checkout();">checkout</button>
+	</div>
 </div>
 
