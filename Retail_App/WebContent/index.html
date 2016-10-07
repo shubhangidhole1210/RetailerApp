@@ -105,34 +105,48 @@
 <div ng-controller="loginCtrl">
 
 <div id="pop" ng-show="isLoginVisible">
-<form  name="myForm"  novalidate>
+<div class="login-container"><div class="sideDiv">
+
+</div><!--  
+ --><form class="login-form" name="myForm"  novalidate>
 <fieldset>
 <div align="center">
 <div class="loginForm">
  <div class="form-group" ng-class="{ 'has-error' : myForm.userName.$invalid && !myForm.userName.$pristine }">
 
-<input type="text" id="userName" name="userName" placeholder="Enetr User name here"  ng-model="username"  required><br>
+<input type="text" id="userName" name="userName" placeholder="Enetr Email/User Name"  ng-model="username" class="text"  required><br>
 </div>
  <!-- <span class="text-error" data-ng-show="myForm.submitted && myForm.userName.$invalid">username required</span><br/> -->
-  <div class="form-group" ng-class="{ 'has-error' : myForm.password.$invalid && !myForm.password.$pristine }">
- <input type="password" id="Password" name="Password" placeholder="Enter Password here"  ng-model="password"  required>
-<br>
+
+<div class="password-container">
+<input type="password" id="Password" name="Password" placeholder="Enter Password"  ng-model="password" class="text" required>
+<span class="forgot"><a href="" class="forgotLink">Forgot?</a></span>
 </div>
  <!-- <span class="text-error" data-ng-show="myForm.submitted && myForm.Password.$invalid">First Name is required</span><br/> -->
 
 <label style="color: red;">{{errorMsg}}</label>
 
-<div class="buttons">
-<button type="button" ng-click="login()" ng-disabled="myForm.$invalid" class="btn btn-primary btn-lg btn-block">Login</button>
+<!-- <div class="buttons"> -->
+<button type="button" ng-click="login()"  class="btn btn-primary btn-lg btn-block">Login</button>
 <!-- <button type="button"  ng-disabled="myForm.$invalid" class="btn btn-primary">Cancel</button> -->
 <circle-spinner ng-show="showSpinner"></circle-spinner>
 <!-- <a href="signUp.html"><button type="button" class="button1"  ng-click="signUp()" ng-disabled="myForm.$invalid" class="btn btn-primary">Sign-Up</button></a> -->
+<!-- </div> -->
+<!-- <a href="signUp.html"  ng-click="signUp()">New User? Sign-Up</a> -->
+<button class="signBtn">
+<span>New user? Sign in</span>
+</button>
+<div class="accountRecover">
+<span>
+ "We no longer support login via Social accounts. To recover your old accounts please "
+</span>
 </div>
-<a href="signUp.html"  ng-click="signUp()">New User? Sign-Up</a>
 </div>
 </div>
+
 </fieldset>
 </form>
+</div>
 </div>
 </div>
 
