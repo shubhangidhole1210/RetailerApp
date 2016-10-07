@@ -94,7 +94,9 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 				}, 3000);
 			});
 		} else {
-			alert("invalid user name and password");
+			$scope.errorMsg= 'User Name Or Password may be wrong'
+				document.getElementById("userName").className += " input-error";
+			document.getElementById("Password").className += " input-error";
 		}
 		/* $scope.loading = true;*/
 

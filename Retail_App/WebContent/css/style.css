@@ -271,10 +271,10 @@
 	
     background: hsla(183, 100%, 42%, 0.26);
 } */
-.text
+./* text
 {
 	width: 700px;
-}
+} */
 
 .mobile p
 {
@@ -454,4 +454,7 @@
 .retailApp
 {
 	margin-top: 60%;
+}
+.input-error{
+	border: 1px solid red;
 }
