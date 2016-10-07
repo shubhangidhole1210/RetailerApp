@@ -372,7 +372,7 @@
 	background-color: #eee;
 	margin-top: 16px;
 	width: 300px;
-	font: bold;
+	font-weight: bold;
 	
 }
 .text
@@ -415,6 +415,8 @@
 	height: 100%;
 	width: 250px;
 	display: inline-block;
+	vertical-align: top;
+	padding: 40px 35px;
 }
 /* .loginName
 {
@@ -425,8 +427,31 @@
 {
 	display: inline-block;
 	color: white;
-	position: absolute;
+	vertical-align: top;
 	background: transparent;
 	font-size: 30px;
 	
+}
+.subdiv
+{
+	position: absolute;
+}
+
+.loginName
+{
+	font-size: 29px;
+	font-weight:bold;
+    color: white;
+   
+}
+.info
+{
+	font-size: 18px;
+	color: white;
+	display: inline-block;
+	margin-top: 16px;
+}
+.retailApp
+{
+	margin-top: 60%;
 }
