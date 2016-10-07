@@ -105,8 +105,11 @@
 <div ng-controller="loginCtrl">
 
 <div id="pop" ng-show="isLoginVisible">
-<div class="login-container"><div class="sideDiv">
 
+<div class="login-container">
+<div class="sideDiv">
+<!--  <span class=""></span> -->
+ 
 </div><!--  
  --><form class="login-form" name="myForm"  novalidate>
 <fieldset>
@@ -145,7 +148,8 @@
 </div>
 
 </fieldset>
-</form>
+</form><!-- 
+ --><button class="cancel" ng-click="cancelLogin()">&#10006;</button>
 </div>
 </div>
 </div>

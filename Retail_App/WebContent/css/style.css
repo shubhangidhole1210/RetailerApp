@@ -416,3 +416,17 @@
 	width: 250px;
 	display: inline-block;
 }
+/* .loginName
+{
+	font-size: 29px;
+} */
+
+.cancel
+{
+	display: inline-block;
+	color: white;
+	position: absolute;
+	background: transparent;
+	font-size: 30px;
+	
+}
