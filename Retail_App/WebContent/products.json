@@ -2,13 +2,13 @@
 	{
 		"id": 1,
 		"title": "Android",
-		"image": "images/1076085000_f2c39ddd24_z.jpg",
+		"image": "image/androidImg.png",
 		"price": 25
 	},
 	{
 		"id": 2,
 		"title": "Java",
-		"image": "images/283182167_5a1b5b13c1_z.jpg",
+		"image": "image/"
 		"price": 50
 	},
 	{

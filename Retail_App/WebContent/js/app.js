@@ -12,7 +12,7 @@ retailApp.config(function($routeProvider) {
 		templateUrl : "Men.html"
 
 	}).otherwise({
-		redirectTo : '/'
+		redirectTo : '/home'
 	});
 });
 
@@ -65,7 +65,17 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 		var username = $scope.username;
 		var password = $scope.password;
 		$scope.errorMsg = '';
-		if ($scope.username == 'admin' && $scope.password == 'admin') {
+		if(!$scope.username && !$scope.password)
+			{
+			     $scope.errorMsg='Please Enter Usename and Password'
+			     document.getElementById("userName").focus();
+			}
+		else if(!$scope.password)
+		{
+			$scope.errorMsg='Please Enter Password'
+				 document.getElementById("Password").focus();
+		}
+		else if ($scope.username == 'admin' && $scope.password == 'admin') {
 			$http.get("login.json").then(function(response) {
 
 				/*$scope.loading = false;*/
@@ -93,7 +103,7 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 					$scope.showSpinner = false;
 				}, 3000);
 			});
-		} else {
+		} else  {
 			$scope.errorMsg= 'User Name Or Password may be wrong'
 				document.getElementById("userName").className += " input-error";
 			document.getElementById("Password").className += " input-error";
@@ -108,6 +118,13 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 
 	$scope.hideMe = function() {
 		$scope.show = true;
+	}
+	$scope.resetLoginData=function()
+	{
+		$scope.username=null;
+		$scope.password=null;
+		$scope.errorMsg=null;
+		document.getElementById("Password").className = document.getElementById("Password").className.replace(" input-error","");
 	}
 });
 

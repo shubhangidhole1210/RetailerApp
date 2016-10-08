@@ -121,9 +121,11 @@
 <fieldset>
 <div align="center">
 <div class="loginForm">
- <div class="form-group" ng-class="{ 'has-error' : myForm.userName.$invalid && !myForm.userName.$pristine }">
-
-<input type="text" id="userName" name="userName" placeholder="Enetr Email/User Name"  ng-model="username"  class="text" required><br>
+ <!-- <div class="form-group" ng-class="{ 'has-error' : myForm.userName.$invalid && !myForm.userName.$pristine }"> -->
+<div>
+<input type="text" id="userName" name="userName" placeholder="Enter Email/User Name"  ng-model="username"  class="text" required><br>
+<span class="error"ng-show="myForm.$submitted && myForm.username.$error.required">userName required</span>
+<!-- </div> -->
 </div>
  <!-- <span class="text-error" data-ng-show="myForm.submitted && myForm.userName.$invalid">username required</span><br/> -->
 
@@ -136,7 +138,7 @@
 <label style="color: red;">{{errorMsg}}</label>
 
 <!-- <div class="buttons"> -->
-<button type="button" ng-click="login()"  class="btn btn-primary btn-lg btn-block">Login</button>
+<button type="submit" ng-click="login()"  class="btn btn-primary btn-lg btn-block">Login</button>
 <!-- <button type="button"  ng-disabled="myForm.$invalid" class="btn btn-primary">Cancel</button> -->
 <circle-spinner ng-show="showSpinner"></circle-spinner>
 <!-- <a href="signUp.html"><button type="button" class="button1"  ng-click="signUp()" ng-disabled="myForm.$invalid" class="btn btn-primary">Sign-Up</button></a> -->
@@ -155,7 +157,7 @@
 
 </fieldset>
 </form><!-- 
- --><button class="cancel" ng-click="cancelLogin()">&#10006;</button>
+ --><button class="cancel" ng-click="cancelLogin();resetLoginData()">&#10006;</button>
 </div>
 </div>
 </div>
