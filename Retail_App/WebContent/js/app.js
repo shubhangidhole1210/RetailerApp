@@ -12,7 +12,7 @@ retailApp.config(function($routeProvider) {
 		templateUrl : "Men.html"
 
 	}).otherwise({
-		redirectTo : '/home'
+		redirectTo : '/'
 	});
 });
 
@@ -78,19 +78,20 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 		else if ($scope.username == 'admin' && $scope.password == 'admin') {
 			$http.get("login.json").then(function(response) {
 
-				/*$scope.loading = false;*/
-				console.log((response.data.data.errorcode != '0000'));
+				/*console.log((response.data.data.errorcode != '0000'));*/
 				if (response.data.data.errorcode != '0000') {
 					console.log("Error occurred!!!");
 					$scope.errorMsg = response.data.data.message;
 
 				} else {
 					console.log("Login successful!!!");
+					$scope.cancelLogin();
 					$location.path('/home');
+					
 
 				}
 			});
-			$http.get('/data.json').success(
+		/*	$http.get('/data.json').success(
 					function(data, status, headers, config) {
 						$timeout(function() {
 							$scope.showSpinner = false;
@@ -102,7 +103,7 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 				$timeout(function() {
 					$scope.showSpinner = false;
 				}, 3000);
-			});
+			});*/
 		} else  {
 			$scope.errorMsg= 'User Name Or Password may be wrong'
 				document.getElementById("userName").className += " input-error";
