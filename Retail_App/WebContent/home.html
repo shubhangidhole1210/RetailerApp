@@ -13,7 +13,7 @@
 	</div>
 </div>
 <div ng-controller="cartCtrl">
-<!-- <div class="images"> -->
+<div class="display-scroll">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in products">
@@ -22,13 +22,13 @@
 				<!-- <figcaption> -->
 					<h4 class="product-title">{{product.title}}</h4>
 					<h4 class="offer-price">Offer:{{product.offer}}$</h4>
-					<h4 class="original-price">Price:{{product.price}}$</h4>
+					<h4 class="original-price" style="text-decoration: none;">Price:{{product.price}}$</h4>
 					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
 				<!-- </figcaption> -->
 			    </div>
 		    </li>
 	</ul>
-	<!-- </div> -->
+	</div>
 	<div ng-if="cart.length" class="shopping-cart">
 		<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
 		<span class="cart-item th radius" ng-repeat="product in cart">
