@@ -52,7 +52,7 @@
 	margin-right:5%;
 	display: inline-block;
 	margin-top: 5px;
-	width: 95%;
+	width: 90%;
 }
 .mainMenu ul {
 	list-style: none;
@@ -457,4 +457,43 @@
 }
 .input-error{
 	border: 1px solid red;
+}
+.img-box
+{
+	width: 180px;
+	height: 120px;
+}
+.display-product-info
+{
+	/* width:16.66%;
+	height: 250px; */
+	display: inline-block;
+	
+}
+.original-price
+{
+	text-decoration: line-through;
+	font-weight: bold;
+	margin-left: 2%;
+}
+.offer-price
+{
+	color: #16be48;
+	margin-left: 2%;
+}
+.product-title
+{
+	font-weight: bold;
+	margin-left: 2%;
+}
+.Hurru-up
+{
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+}
+.display-information
+{
+	width: 100%;
+	display: inline-flex;
 }

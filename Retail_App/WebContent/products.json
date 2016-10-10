@@ -3,37 +3,43 @@
 		"id": 1,
 		"title": "Android",
 		"image": "image/androidImg.png",
-		"price": 25
+		"price": 25,
+		"offer": 20
 	},
 	{
 		"id": 2,
 		"title": "Java",
-		"image": "image/",
-		"price": 50
+		"image": "image/javaImg.png",
+		"price": 50,
+		"offer": 30
 	},
 	{
 		"id": 3,
 		"title": "Angular JS",
-		"image": "images/QuickCollarNeck_wb.jpg",
-		"price": 8
+		"image": "image/angularjsimg.png",
+		"price": 8,
+		"offer": 5
 	},
 	{
 		"id": 4,
 		"title": "PHP",
-		"image": "images/11947278725_979391b9a2_z.jpg",
-		"price": 8
+		"image": "image/phpImg.png",
+		"price": 8,
+		"offer": 5
 	},
 	{
 		"id": 5,
 		"title": "HTML5",
-		"image": "images/2705207852_2758109a1b_z.jpg",
-		"price": 10
+		"image": "image/htmlimg.png",
+		"price": 10,
+		"offer": 7
 	},
 	{
 		"id": 6,
 		"title": "CSS",
-		"image": "images/12099351973_062cdcd1ee_z.jpg",
-		"price": 2
+		"image": "image/cssImg.png",
+		"price": 2,
+		"offer": 1
 	}
 
 ]}
