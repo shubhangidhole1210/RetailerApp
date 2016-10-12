@@ -485,11 +485,11 @@
 	display: inline-block;
 	 /* width:530px;
     height:210px */;
-   
 }
 .display-scroll
 {
-	 border: 13px solid #bed5cd;
+	 /* border: 1px solid gray; */
+	 border:none;
     overflow-x: scroll;
     overflow-y: hidden;
     width: 1200px;
@@ -513,7 +513,7 @@
 }
 .Hurru-up
 {
-	color: blue;
+	color: rgba(76, 70, 70, 0.86);
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -521,4 +521,34 @@
 {
 	width: 100%;
 	display: inline-flex;
+}
+#slides_control > div
+{
+	 height: 200px;
+}
+.img
+{
+	 margin:auto;
+     width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+.display-selling-information
+{
+	/* padding-top:2%; */
+	width: 100%;
+	display: inline-flex;
+}
+
+.display-selling-scroll
+{
+	margin-top: 2%;
+	 overflow-x: scroll;
+    overflow-y: hidden;
+    width: 1200px;
 }

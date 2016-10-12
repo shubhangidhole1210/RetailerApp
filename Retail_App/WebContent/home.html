@@ -1,5 +1,17 @@
 
 <marquee class="Hurru-up">Hurry Up!!!!!!! Just Two days are remaining </marquee>
+<!-- <div ng-controller="carouselCtrl" id="slides_control">
+    <div>
+      <carousel interval="myInterval">
+          <slide ng-repeat="slide in slides" slide="slide.active">
+            <img ng-src="{{slide.image}}">
+            <div class="carousel-caption">
+                <h4>Slide {{$index+1}}</h4>
+            </div>
+          </slide>
+      </carousel>
+    </div>
+</div> -->
 <div>
 
 	<div ng-controller="searchCtrl">
@@ -29,6 +41,23 @@
 		    </li>
 	</ul>
 	</div>
+	
+	<div class="display-selling-scroll">
+	<ul class="display-selling-information">
+	
+		<li ng-repeat="product in sellingProducts">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
+				<!-- <figcaption> -->
+					<h4 class="product-title">{{product.title}}</h4>
+					<h4 class="original-price" style="text-decoration: none;">Price:{{product.price}}$</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				<!-- </figcaption> -->
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	
 	<div ng-if="cart.length" class="shopping-cart">
 		<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
 		<span class="cart-item th radius" ng-repeat="product in cart">

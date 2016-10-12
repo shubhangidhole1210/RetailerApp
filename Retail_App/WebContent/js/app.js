@@ -139,6 +139,22 @@ retailApp.controller('displayLoginCtrl', function($scope, displayLoginService,$r
 
 });
 
+/*retailApp.controller(carouselCtrl, function($scope)
+		{
+	      $scope.myInterval = 3000;
+	      $scope.slides=
+	    	  [
+
+                    {
+                    	image: 'image/Galaxy S5-latest-samsung-phones.jpg/400/200'
+	                 },
+	                 {
+	                	 image: 'image/galaxy-alpha-unbox_1.jpg/400/200'
+	                 }
+	    	   ];
+	
+		});
+*/
 retailApp.controller('signCtrl', function($scope) {
 
 	$scope.submitForm = function() {
@@ -163,6 +179,10 @@ retailApp.controller('cartCtrl', function($scope, $http) {
 	$scope.cart = [];
 	$http.get('products.json').success(function(response) {
 		$scope.products = response.products
+	});
+	
+	$http.get('sellingProducts.json').success(function(response) {
+		$scope.sellingProducts = response.sellingProducts
 	});
 	$scope.addCart = function(product) {
 		var found = false;
