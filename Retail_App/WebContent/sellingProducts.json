@@ -2,16 +2,15 @@
 	{
 		"id": 1,
 		"title": "I-phone7",
-		"image": "image/iphone.png",
+		"image": "image/iphone.jpg",
 		"price": 60
 		
 	},
 	{
 		"id": 2,
 		"title": "Samsung On7 Pro",
-		"image": "image/samsungOn.png",
+		"image": "image/htc123.png",
 		"price": 20
-		
 	},
 	{
 		"id": 3,
@@ -22,13 +21,13 @@
 	{
 		"id": 4,
 		"title": "HTC Desire 10 ",
-		"image": "image/htc.png",
+		"image": "image/lyf_water.png",
 		"price": 22
 	},
 	{
 		"id": 5,
 		"title": "Xiaomi Redmi Note 3",
-		"image": "image/redmiNote.png",
+		"image": "image/mobile1.png",
 		"price": 15
 	},
 	{
