@@ -168,6 +168,12 @@ retailApp.controller('signCtrl', function($scope) {
 
 });
 
+retailApp.controller('carouselCtrl',function($scope)
+		{
+		
+});
+
+
 retailApp.controller('searchCtrl', function($scope, $http) {
 	$http.get("products.json").then(function(response) {
 		$scope.searchInfo = response.data;
