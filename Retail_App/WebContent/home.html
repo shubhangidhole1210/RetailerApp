@@ -25,21 +25,26 @@
 	</div>
 </div>
 <div ng-controller="cartCtrl">
+<div class="product-container-main">
+<div class="product-header"><h3>Fashion & Lifestyle</h3></div>
+<div class="arrow left">&#10094;</div>
 <div class="display-scroll">
 	<ul class="display-information">
 	
-		<li ng-repeat="product in products">
+		<li ng-repeat="product in products" class="product-item">
 			    <div class="display-product-info">
 				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
 				<!-- <figcaption> -->
 					<h4 class="product-title">{{product.title}}</h4>
-					<h4 class="offer-price">Offer:{{product.offer}}$</h4>
-					<h4 class="original-price" style="text-decoration: none;">Price:{{product.price}}$</h4>
+					<h4 class="offer-price medium">Offer:{{product.offer}} % Off</h4>
+					<h4 class="original-price" style="text-decoration: none;">Price : &#8377;{{product.price}}</h4>
 					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
 				<!-- </figcaption> -->
 			    </div>
 		    </li>
 	</ul>
+	</div>
+	<div class="arrow right">&#10095;</div>
 	</div>
 	
 	<div class="display-selling-scroll">
