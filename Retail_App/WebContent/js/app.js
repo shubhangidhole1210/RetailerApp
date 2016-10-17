@@ -182,6 +182,7 @@ retailApp.controller('searchCtrl', function($scope, $http) {
 });
 
 retailApp.controller('cartCtrl', function($scope, $http) {
+	
 	$scope.cart = [];
 	$http.get('products.json').success(function(response) {
 		$scope.products = response.products
@@ -190,6 +191,25 @@ retailApp.controller('cartCtrl', function($scope, $http) {
 	$http.get('sellingProducts.json').success(function(response) {
 		$scope.sellingProducts = response.sellingProducts
 	});
+	
+	$http.get('bestProduct.json').success(function(response) {
+		$scope.bestProduct = response.bestProduct
+	});
+	
+	$http.get('electronicProduct.json').success(function(response) {
+		$scope.electronicProduct = response.electronicProduct
+	});
+	
+	$http.get('discountProduct.json').success(function(response) {
+		$scope.discountProduct = response.discountProduct
+	});
+	
+	$http.get('offerProduct.json').success(function(response) {
+		$scope.offerProduct = response.offerProduct
+	});
+	
+	
+	
 	$scope.addCart = function(product) {
 		var found = false;
 		$scope.cart.forEach(function(item) {
@@ -221,7 +241,15 @@ retailApp.controller('cartCtrl', function($scope, $http) {
 			}
 		});
 	};
+	
 });
+var timer1;
+function scrollDiv(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 10);
+}
 retailApp.controller('CheckoutCtrl', function($scope, $totalAmount) {
 	$scope.totalAmount = totalAmount;
 	$scope.onSubmit = function() {

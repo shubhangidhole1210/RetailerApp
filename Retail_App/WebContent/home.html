@@ -27,15 +27,15 @@
 <div ng-controller="cartCtrl">
 <div class="product-container-main">
 <div class="product-header"><h3>Fashion & Lifestyle</h3></div>
-<div class="arrow left">&#10094;</div>
-<div class="display-scroll">
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="MyDiv">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in products" class="product-item">
 			    <div class="display-product-info">
 				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
 				<!-- <figcaption> -->
-					<h4 class="product-title">{{product.title}}</h4>
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
 					<h4 class="offer-price medium">Offer:{{product.offer}} % Off</h4>
 					<h4 class="original-price" style="text-decoration: none;">Price : &#8377;{{product.price}}</h4>
 					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
@@ -44,26 +44,138 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right">&#10095;</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	
-	<div class="display-selling-scroll">
+	<div class="product-container-main">
+<div class="product-header"><h3>Best Selling Products</h3></div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="MyDiv">
+	<ul class="display-information">
+	
+		<li ng-repeat="product in sellingProducts" class="product-item">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
+				<figcaption>
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
+					<h4 class="offer-price medium">Offer:{{product.offer}} % Off</h4>
+					<h4 class="original-price" style="text-decoration: none;">Price : &#8377;{{product.price}}</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				</figcaption>
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	</div>
+	
+	
+	
+	<div class="product-container-main">
+<div class="product-header"><h3>Best Of Home & Furniture</h3></div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="MyDiv">
+	<ul class="display-information">
+	
+		<li ng-repeat="product in bestProduct" class="product-item">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
+				<figcaption>
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
+					<h4 class="offer-price medium">{{product.price}}</h4>
+					<h4 class="original-price" style="text-decoration: none;">{{product.info}}</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				</figcaption>
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	</div>
+	
+	<div class="product-container-main">
+<div class="product-header"><h3>Best of Electronics</h3></div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll">
+	<ul class="display-information">
+	
+		<li ng-repeat="product in electronicProduct" class="product-item">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
+				<figcaption>
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
+					<h4 class="offer-price medium">{{product.price}}</h4>
+					<h4 class="original-price" style="text-decoration: none;">{{product.info}}</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				</figcaption>
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	</div>
+	
+	
+	<div class="product-container-main">
+<div class="product-header"><h3>Discount For You</h3></div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll">
+	<ul class="display-information">
+	
+		<li ng-repeat="product in discountProduct" class="product-item">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
+				<figcaption>
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
+					<h4 class="offer-price medium">Offer:{{product.offer}} % Off</h4>
+					<h4 class="original-price" style="text-decoration: none;">{{product.info}}</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				</figcaption>
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	</div>
+	<div class="product-container-main">
+<div class="product-header"><h3>Offers For You</h3></div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll">
+	<ul class="display-information">
+	
+		<li ng-repeat="product in offerProduct" class="product-item">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
+				<figcaption>
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
+					<h4 class="offer-price medium">{{product.price}}</h4>
+					<h4 class="original-price" style="text-decoration: none;">{{product.info}}</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				</figcaption>
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	</div>
+	
+	<!-- <div class="display-selling-scroll">
 	<ul class="display-selling-information">
 	
 		<li ng-repeat="product in sellingProducts">
 			    <div class="display-product-info">
 				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}">
-				<!-- <figcaption> -->
+				<figcaption>
 					<h4 class="product-title">{{product.title}}</h4>
 					<h4 class="original-price" style="text-decoration: none;">Price:{{product.price}}$</h4>
-					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
-				<!-- </figcaption> -->
+					<button ng-click="addToCart(product);">Add to cart</button>
+				</figcaption>
 			    </div>
 		    </li>
 	</ul>
-	</div>
+	</div> -->
 	
-	<div ng-if="cart.length" class="shopping-cart">
+	<!-- <div ng-if="cart.length" class="shopping-cart">
 		<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
 		<span class="cart-item th radius" ng-repeat="product in cart">
 			<img alt="" ng-src="{{product.image}}" title="{{product.title}}">
@@ -71,7 +183,7 @@
 				x{{product.quantity}} </span>
 		</span>
 		<button ng-click="checkout();">checkout</button>
-	</div>
+	</div> -->
 </div>
 
       
