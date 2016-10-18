@@ -44,12 +44,12 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -4)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	
 	<div class="product-container-main">
 <div class="product-header"><h3>Best Selling Products</h3></div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 1)" onmouseup="clearTimeout(timer1)" /></div>
 <div class="display-scroll" id="MyDiv">
 	<ul class="display-information">
 	
@@ -175,7 +175,7 @@
 	</ul>
 	</div> -->
 	
-	<!-- <div ng-if="cart.length" class="shopping-cart">
+	<div ng-if="cart.length" class="shopping-cart">
 		<h3>{{cart.length}} items in cart, {{getCartPrice()}},$</h3>
 		<span class="cart-item th radius" ng-repeat="product in cart">
 			<img alt="" ng-src="{{product.image}}" title="{{product.title}}">
@@ -183,7 +183,7 @@
 				x{{product.quantity}} </span>
 		</span>
 		<button ng-click="checkout();">checkout</button>
-	</div> -->
+	</div>
 </div>
 
       

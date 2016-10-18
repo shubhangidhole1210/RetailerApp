@@ -248,7 +248,7 @@ function scrollDiv(divId, depl)
 {
 	  var scroll_container = document.getElementById(divId);
 	  scroll_container.scrollLeft -= depl;
-	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 10);
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 0);
 }
 retailApp.controller('CheckoutCtrl', function($scope, $totalAmount) {
 	$scope.totalAmount = totalAmount;

@@ -43,7 +43,7 @@
 	font-size: 15px;
 	margin-top: 7px;
 	padding: 0px 15px;
-    width: 100%;
+    width: 750px;
     color: black;
 }
 .mainMenu
@@ -502,7 +502,7 @@
 .display-scroll
 {
 	border: none;
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
     display: inline-block;
@@ -524,8 +524,9 @@
     top: 40%;
     padding: 10px;
     background: #2874f0;
-    color: white;
+    color: black;
     z-index: 10;
+   
 }
 .left{
 	left: 0;
@@ -599,4 +600,45 @@
 }
 .main-view{
 	background: #eeeeee;
+}
+.searchBox-button
+{
+	width:5%;
+	background-color: #ffe11b;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+.cart 
+{
+	background-color: #2469d9;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    padding: 10px 0;
+    text-align: center;
+    height: 41px;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-top: 5px;
+    width: 150px;
+    color: white;
+    font-size:15px;
+    font-weight:bold;
+    margin-left: 2%;
+   
+   
+}
+
+.cart-show
+{
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+	padding: 2px 4px;
+}
+.cart-show-icon
+{
+	background-color: rgba(0,0,0,.1);
+	    padding: 3px 6px;
+	    height: 160px;
+	    padding-right: 5px;
 }

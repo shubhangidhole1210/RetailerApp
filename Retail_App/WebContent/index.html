@@ -10,7 +10,7 @@
  <script src="js/angular-spinkit.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!-- TODO Add angular-spinkit.min.css to git repository and uncomment link tag below-->
- <!-- <link rel="stylesheet" href="angular-spinkit.min.css"> -->
+  <!-- <link rel="stylesheet" href="angular-spinkit.min.css"> -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 </head>
@@ -32,15 +32,21 @@
 		<div class="app-header">
 			<div class="app-icon"></div>
 			<h1>Retailer</h1>
-			<input type="text" ng-model="searchBox" placeholder="Search for Product" class="textBox">
+			<input type="text" ng-model="searchBox" placeholder="Search for Products,Brands and More" class="textBox">
+			<button class="searchBox-button" type="submit"> &#9740;</button>
+			<a href="" class="cart">
+			<span class="cart-show">&#10095</span>
+			CART
+			<span class="cart-show-icon">0</span>
+			</a>
 		</div>
 
 
-<div align="right">
+<!-- <div align="right">
 <div class="cart">
 
 </div>
-</div>
+</div> -->
 
 
  <div id="menu" class="mainMenu">
