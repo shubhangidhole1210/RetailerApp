@@ -1,5 +1,6 @@
 
 <marquee class="Hurru-up">Hurry Up!!!!!!! Just Two days are remaining </marquee>
+
 <!-- <div ng-controller="carouselCtrl" id="slides_control">
     <div>
       <carousel interval="myInterval">
@@ -49,8 +50,8 @@
 	
 	<div class="product-container-main">
 <div class="product-header"><h3>Best Selling Products</h3></div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 1)" onmouseup="clearTimeout(timer1)" /></div>
-<div class="display-scroll" id="MyDiv">
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollBestProduct('MyDivBestProduct', 1)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="MyDivBestProduct">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in sellingProducts" class="product-item">
@@ -66,15 +67,15 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollBestProduct('MyDivBestProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	
 	
 	
 	<div class="product-container-main">
 <div class="product-header"><h3>Best Of Home & Furniture</h3></div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
-<div class="display-scroll" id="MyDiv">
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollHomeProduct('homeProduct', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="homeProduct">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in bestProduct" class="product-item">
@@ -90,13 +91,13 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollHomeProduct('homeProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	
 	<div class="product-container-main">
 <div class="product-header"><h3>Best of Electronics</h3></div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
-<div class="display-scroll">
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollElecronicProduct('electronicProduct', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="electronicProduct">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in electronicProduct" class="product-item">
@@ -112,14 +113,14 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollElecronicProduct('electronicProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	
 	
 	<div class="product-container-main">
 <div class="product-header"><h3>Discount For You</h3></div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
-<div class="display-scroll">
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiscountProduct('discountProduct', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="discountProduct">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in discountProduct" class="product-item">
@@ -135,12 +136,12 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiscountProduct('discountProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	<div class="product-container-main">
 <div class="product-header"><h3>Offers For You</h3></div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollDiv('MyDiv', 3)" onmouseup="clearTimeout(timer1)" /></div>
-<div class="display-scroll">
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollOfferProduct('offerProduct', 3)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="offerProduct">
 	<ul class="display-information">
 	
 		<li ng-repeat="product in offerProduct" class="product-item">
@@ -156,7 +157,7 @@
 		    </li>
 	</ul>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollDiv('MyDiv', -3)" onmouseup="clearTimeout(timer1)"></div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollOfferProduct('offerProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
 	</div>
 	
 	<!-- <div class="display-selling-scroll">

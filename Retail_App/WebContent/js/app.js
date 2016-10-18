@@ -248,8 +248,51 @@ function scrollDiv(divId, depl)
 {
 	  var scroll_container = document.getElementById(divId);
 	  scroll_container.scrollLeft -= depl;
-	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 0);
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 2);
 }
+
+var timer1;
+function scrollBestProduct(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 4);
+}
+
+var timer1;
+function scrollHomeProduct(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 6);
+}
+
+var timer1;
+function scrollElecronicProduct(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 8);
+}
+
+var timer1;
+function scrollDiscountProduct(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 8);
+}
+
+var timer1;
+function scrollOfferProduct(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 9);
+}
+
+
+
 retailApp.controller('CheckoutCtrl', function($scope, $totalAmount) {
 	$scope.totalAmount = totalAmount;
 	$scope.onSubmit = function() {
