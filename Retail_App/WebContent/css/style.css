@@ -38,7 +38,7 @@
 {
 	border: 1px solid #999;
 	outline: 0;
-	height: 50px;
+	height: 52px;
 	background-repeat: no-repeat; 
 	font-size: 15px;
 	margin-top: 7px;
@@ -184,7 +184,7 @@
   button {
 	background-color: #2874f0;
 	color: white;
-	padding: 14px 20px;
+	padding: 14px 19px;
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
@@ -606,8 +606,7 @@
 	/* width:5%; */
 	background-color: #ffe11b;
 	color: black;
-	font-size: 18px;
-	font-weight: bold;
+	font-weight: 500;
 }
 .cart 
 {
