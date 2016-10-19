@@ -1,0 +1,166 @@
+{
+	"productDetail": {
+		"productName": "Samsung Refrigerator 370L",
+		"brandName": "Samsung",
+		"category": "Electronics",
+		"subCategory": "Refrigerator",
+		"salePrice": "",
+		"offerPrice": "",
+		"offerDescription": "",
+		"rating": "",
+		"reviewCount": "",
+		"productId": "",
+		"productCode": "",
+		"isRetailerAssured": "",
+		"imageUrls": [
+			{
+				"imageUrl": ""
+			},
+			{
+				"imageUrl": ""
+			},
+			{
+				"imageUrl": ""
+			},
+			{
+				"imageUrl": ""
+			},
+			{
+				"imageUrl": ""
+			}
+		],
+		"EMIOptions": {
+			"minimumEMIOffer": "",
+			"emiOffers": [
+				{
+					"emiOffer": {
+						"bankName": "",
+						"emiPlans": [
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							},
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							},
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							}
+						],
+						"description": ""
+					}
+				},
+				{
+					"emiOffer": {
+						"bankName": "",
+						"emiPlans": [
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							},
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							},
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							}
+						],
+						"description": ""
+					}
+				},
+				{
+					"emiOffer": {
+						"bankName": "",
+						"emiPlans": [
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							},
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							},
+							{
+								"emiPlan": {
+									"emiHeader": "",
+									"emi": "",
+									"price": "",
+									"interest": "",
+									"totalAmountPayable": ""
+								}
+							}
+						],
+						"description": ""
+					}
+				}
+			]
+		},
+		"otherOffers": [
+			{
+				"offer": {
+					"title": "",
+					"description": ""
+				}
+			},
+			{
+				"offer": {
+					"title": "",
+					"description": ""
+				}
+			},
+			{
+				"offer": {
+					"title": "",
+					"description": ""
+				}
+			}
+		],
+		"productDescription":{},
+		"productSpecifications":{},
+		"productFeatures":{}
+	}
+}
