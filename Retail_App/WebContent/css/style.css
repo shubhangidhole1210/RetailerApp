@@ -515,6 +515,7 @@
 }
 .product-header{
 	padding: 10px;
+	display: inline-block;
 }
 .arrow{
 	font-size: 30px;
@@ -567,6 +568,7 @@
 	width: 100%;
 	display: inline-flex;
 	padding: 0px;
+	
 }
 #slides_control > div
 {
@@ -698,4 +700,157 @@ margin-left: 10%;
 .mySlides 
 {
 	display:none;
+}
+
+.sign-container{
+	width: 100%;
+    height: 80%;
+    text-align: center;
+    max-height: 500px;
+}
+.pop-window
+{
+	
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   z-index: 700;
+   bottom: 0;
+   padding: 10px;
+   background: rgba(16, 12, 12, 0.49);
+   
+}
+.sign-form{
+	background: white;
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.container
+{
+	width: 100% !important;
+	height: 450px !important;
+	background-color: white important;
+}
+.view-all
+{
+	background: #2874f0;
+	color: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	border: none;
+}
+
+.Retailermenu
+{
+	position: absolute;
+	width: 100%;
+	top: 85px;
+	z-index: 6;
+	display: block;
+}
+.
+.menu-bar
+{
+	width: 978px;
+}
+
+.display-menu
+{
+	display: inline-block;
+}
+
+nav {
+    background-color: #2874f0;
+    border: 1px solid #333;
+    color: #fff;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    transition: all 0.2s;
+}
+
+nav > ul > li > a {
+    color: #f5f5f5;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav li > ul{
+    display : none;
+    margin-top:1px;
+    background-color: #bbb;
+   
+
+}
+
+nav li > ul li{
+    display: block;
+}
+
+nav  li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    
+}
+
+nav li:hover {
+    /* background-color: #666; */
+    color: #ffe11b;
+}
+nav li:hover > ul{
+    position:absolute;
+    display : block;
+}
+nav li > ul > li ul  {
+    display: none;
+   color: #ffe11b;
+   color: #ffe11b;
+}
+nav li > ul > li:hover > ul  {
+    position:absolute;
+    display : block;
+    margin-left:100%;
+    margin-top:-3em;
+    color: #ffe11b;
+}
+
+.retailer-menu
+{
+	margin-left: 5%;
+}
+.slider-info
+{
+	text-align: center;
+}
+.slider-info h3
+{
+	color: red;
+	font-weight: bold;
 }

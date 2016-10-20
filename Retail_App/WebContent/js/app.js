@@ -32,26 +32,6 @@ retailApp.factory('displayLoginService', function() {
 	};
 });
 
-/*retailApp.directive('loading', function () {
- return {
- restrict: 'E',
- replace:true,
- template: '<div class="loading"><img src="../image/spinner.jpg" width="20" height="20" />LOADING...</div>',
- link: function ($scope, $element, $attr) {
- $scope.$watch('loading', function (val) {
- if (val)
- {
- $(element).show();
- }
- else
- {
- $(element).hide();
- }
- });
- }
- }
- })
- */
 retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 		displayLoginService,$rootScope) {
 	$scope.test = 'test';
@@ -91,31 +71,15 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 
 				}
 			});
-		/*	$http.get('/data.json').success(
-					function(data, status, headers, config) {
-						$timeout(function() {
-							$scope.showSpinner = false;
-						}, 3000);
-
-					}).
-
-			error(function(data, status, headers, config) {
-				$timeout(function() {
-					$scope.showSpinner = false;
-				}, 3000);
-			});*/
 		} else  {
 			$scope.errorMsg= 'User Name Or Password may be wrong'
 				document.getElementById("userName").className += " input-error";
 			document.getElementById("Password").className += " input-error";
 		}
-		/* $scope.loading = true;*/
+		
 
 	};
-	/*$scope.signUp=function()
-	{
-		$location.path('/SignUp')
-	}*/
+	
 
 	$scope.hideMe = function() {
 		$scope.show = true;
@@ -138,6 +102,8 @@ retailApp.controller('displayLoginCtrl', function($scope, displayLoginService,$r
 	}
 
 });
+
+
 
 /*retailApp.controller(carouselCtrl, function($scope)
 		{
@@ -314,15 +280,29 @@ retailApp.controller('CheckoutCtrl', function($scope, $totalAmount) {
 
 });
 
-/* retailApp.controller('signCtrl', function($scope) {
-   
-        $scope.submitForm = function() {
+/*retailApp.controller('signCtrl' ,function($scope,displayLoginService,$rootScope)
+		{
+	$scope.cancelSign = function(){
+		$rootScope.isLoginVisible = false;
+	};
+		$scope.sign = function()
+		{
+			var mobileNumber = $scope.mobileNumber;
+			$scope.errorMsg = '';
+			if(!$scope.mobileNumber)
+				{
+				$scope.errorMsg='Please Enter valid Number'
+				     document.getElementById("mobileNumber").focus(); 
+				}
+			else
+				{
+				document.getElementById("mobileNumber").className += " input-error";
+				}
+		}
+			});
 
-            
-            if ($scope.userForm.$valid) {
-                alert('user registraion sucessfully');
-            }
 
-        };
 
-    });*/
+retailApp.controller('signCtrl',function($scope)
+{
+	})*/

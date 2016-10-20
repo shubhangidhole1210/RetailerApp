@@ -6,14 +6,19 @@
 
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/angular-route.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.glide.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
  <script src="js/angular-spinkit.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/slider.css" rel="stylesheet" type="text/css"> -->
 <!-- TODO Add angular-spinkit.min.css to git repository and uncomment link tag below-->
   <!-- <link rel="stylesheet" href="angular-spinkit.min.css"> -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body ng-app="retailApp">
 
@@ -26,6 +31,7 @@
 <li><a href="#">Customer Care</a></li>
 <li><a href="#">Track order</a></li>
 <li><a href="#">Sign Up</a></li>
+<!-- <li ng-controller="displaySignCtrl"><a href="" ng-click="displaySign()">Sign Up</a></li> -->
 <li ng-controller="displayLoginCtrl"><a href="" ng-click="displayLogin()">Sign In</a></li>
 </ul>
 </div>
@@ -33,11 +39,10 @@
 		<div class="app-header">
 			<div class="app-icon"></div>
 			<h1>Retailer</h1>
-			
 			<input type="text" ng-model="searchBox" placeholder="Search for Products,Brands and More" class="textBox">
 			<button class="searchBox-button" type="submit"> &#9740;</button>
-			
-			<button type="button" class="cart">
+			<button>
+
 			<span class="cart-show">&#10095</span>
 			CART
 			<span class="cart-show-icon">0</span>
@@ -52,7 +57,7 @@
 </div> -->
 
 
- <div id="menu" class="mainMenu">
+ <!-- <div id="menu" class="mainMenu">
 		<ul>
 			<li class=""><a href="Electronics.html">ELECTRONICS</a>
 				<ul class="sub-menu">
@@ -106,10 +111,641 @@
 				</ul></li>
 		</ul>
 		
-	</div>
+	</div> -->
+	<nav class="retailer-menu">
+    <ul>
+        <li class="sub">
+            <a href="home.html">ELECTRONICS</a>
+            <ul>
+                <li class="sub">
+                    <a href="#">Mobiles</a>
+                    <ul>
+                       <li><a href="#">Svmsung</a></li>  
+                       <li><a href="#">Lenovo</a></li>
+                       <li><a href="#">MI</a></li>
+                       <li><a href="#">Apple</a></li>
+                       <li><a href="#">Asus</a></li>
+                       <li><a href="#">Micromax</a></li>
+                       <li><a href="#">Nokia</a></li>
+                    </ul>
+                    </li>
+                <li class="sub">
+                    <a href="#">Mobile Accesories</a>
+                    <ul>
+                        <li><a href="#">Headphone & Headset</a></li>
+                        <li><a href="#">Mobile Cases</a></li>
+                        <li><a href="#">Screenguards</a></li>
+                        <li><a href="#">Memory Cards</a></li>
+                        <li><a href="#">Cabel</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Laptops</a>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Computer Accesories</a>
+                    <ul>
+                        <li><a href="#">External Hard Disk</a></li>
+                        <li><a href="#">Pendrive</a></li>
+                        <li><a href="#">Laptop Bag</a></li>
+                        <li><a href="#">Mouse</a></li>
+                        <li><a href="#">Keyboards</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">TV's</a>
+                    <ul>
+                        <li><a href="#">HD Ready</a></li>
+                        <li><a href="#">Full HD</a></li>
+                        <li><a href="#">Ultra HD</a></li>
+                       
+                    </ul>
+                </li>
+                
+                 <li class="sub">
+                    <a href="#">Camera</a>
+                    <ul>
+                        <li><a href="#">DSLR</a></li>
+                        <li><a href="#">Point & Shoot</a></li>
+                        <li><a href="#">Sports Cameras</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Featured</a>
+                    <ul>
+                        <li><a href="#">iphone7</a></li>
+                        <li><a href="#">Mobile Exchange Offer</a></li>
+                        <li><a href="#">Laptop Exchange Offer</a></li>
+                        <li><a href="#">Nikon</a></li>
+                        <li><a href="#">Svmsung Galaxey J max</a></li>
+                        <li><a href="#">Retailer Exclusive Offer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+       
+       <li class="sub">
+            <a href="home.html">MEN</a>
+            <ul>
+                <li class="sub">
+                    <a href="#">Footwear</a>
+                    <ul>
+                       <li><a href="#">sports Shoes</a></li>  
+                       <li><a href="#">Casual Shoes</a></li>
+                       <li><a href="#">Formal Shoes </a></li>
+                       <li><a href="#">Sandals</a></li>
+                       <li><a href="#">Boots</a></li>
+                       <li><a href="#">Running Shoes</a></li>
+                       <li><a href="#">Sneakers</a></li>
+                    </ul>
+                    </li>
+                <li class="sub">
+                    <a href="#">Clothing</a>
+                    <ul>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Trousers</a></li>
+                        <li><a href="#">Winter Wear</a></li>
+                        <li><a href="#">Ethenic wear</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Accesories</a>
+                    <ul>
+                        <li><a href="#">Wallets</a></li>
+                        <li><a href="#">Belts</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Watches</a>
+                    <ul>
+                        <li><a href="#">Fastrack</a></li>
+                        <li><a href="#">Casio</a></li>
+                        <li><a href="#">Titan</a></li>
+                        <li><a href="#">Sonata</a></li>
+                        <li><a href="#">Fossile</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Men's Grooming</a>
+                    <ul>
+                        <li><a href="#">Perfumes</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="sub">
+                    <a href="#">Personal Care</a>
+                    <ul>
+                        <li><a href="#">Trimmers</a></li>
+                        <li><a href="#">Shavers</a></li>
+                        <li><a href="#">Grooming Kits</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Featured</a>
+                    <ul>
+                        <li><a href="#">Jack & Jones</a></li>
+                        <li><a href="#">Lee</a></li>
+                        <li><a href="#">UCB</a></li>
+                        <li><a href="#">PUma</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Wildcraft</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+       
+       
+       
+       
+       
+        <li class="sub">
+            <a href="home.html">WOMEAN</a>
+            <ul>
+                <li class="sub">
+                    <a href="#">clothing</a>
+                    <ul>
+                       <li><a href="#">Sareers </a></li>  
+                       <li><a href="#">Kurtas</a></li>
+                       <li><a href="#">Dresses</a></li>
+                       <li><a href="#">Jeans</a></li>
+                       <li><a href="#">Skirts</a></li>
+                       <li><a href="#">Dress Material</a></li>
+                       <li><a href="#">Lenga & choli</a></li>
+                    </ul>
+                    </li>
+                <li class="sub">
+                    <a href="#">Footewar</a>
+                    <ul>
+                        <li><a href="#">Flats</a></li>
+                        <li><a href="#">Heels</a></li>
+                        <li><a href="#">Sports Shoes</a></li>
+                        <li><a href="#">Wedges</a></li>
+                        <li><a href="#">Boots</a></li>
+                        <li><a href="#">Slipper</a></li>
+                        <li><a href="#">Casual Shoes</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Accesories</a>
+                    <ul>
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Wallet & Belts</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Luggae & Travel</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Watches</a>
+                    <ul>
+                        <li><a href="#">Fastrack</a></li>
+                        <li><a href="#">Casio</a></li>
+                        <li><a href="#">Titan</a></li>
+                        <li><a href="#">Sonata</a></li>
+                        <li><a href="#">Fossile</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Beauty & Grooming</a>
+                    <ul>
+                        <li><a href="#">Make Up</a></li>
+                        <li><a href="#">Skin care</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="sub">
+                    <a href="#">JeWellery</a>
+                    <ul>
+                        <li><a href="#">Silver jewellery</a></li>
+                        <li><a href="#">Artificail jewellery</a></li>
+                        <li><a href="#">Gold Coins</a></li>
+                        <li><a href="#">Precious Jwellery</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Featured</a>
+                    <ul>
+                        <li><a href="#">Jack & Jones</a></li>
+                        <li><a href="#">Lee</a></li>
+                        <li><a href="#">UCB</a></li>
+                        <li><a href="#">PUma</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Wildcraft</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+         <li class="sub">
+            <a href="home.html">BABY & KIDS</a>
+            <ul>
+                <li class="sub">
+                    <a href="#">Kids Clothing</a>
+                    <ul>
+                       <li><a href="#">Polos & Tshirts </a></li>  
+                       <li><a href="#">Ehnic wear</a></li>
+                       <li><a href="#">Winter Wear</a></li>
+                       <li><a href="#">Dresses & skirts</a></li>
+                       <li><a href="#">Body Suits</a></li>
+                       <li><a href="#">Dress Material</a></li>
+                       <li><a href="#">Dresses</a></li>
+                    </ul>
+                    </li>
+                <li class="sub">
+                    <a href="#">Footewar</a>
+                    <ul>
+                        <li><a href="#">Sandals</a></li>
+                        <li><a href="#">Sports Shoes</a></li>
+                        <li><a href="#">School Shoes</a></li>
+                        <li><a href="#">Flats % Bellies</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Slipper</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">School Suppliers</a>
+                    <ul>
+                        <li><a href="#">School bags</a></li>
+                        <li><a href="#">School combo sets</a></li>
+                        <li><a href="#">Lunch Box</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Watches</a>
+                    <ul>
+                        <li><a href="#">Fastrack</a></li>
+                        <li><a href="#">Casio</a></li>
+                        <li><a href="#">Titan</a></li>
+                        <li><a href="#">Sonata</a></li>
+                        <li><a href="#">Fossile</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Toys</a>
+                    <ul>
+                        <li><a href="#">Remote control toys</a></li>
+                        <li><a href="#">Educational Toys</a></li>
+                        <li><a href="#">Outdoor Toys</a></li>
+                         <li><a href="#">Soft Toys</a></li>
+                          <li><a href="#">Musical Toys</a></li>
+                           <li><a href="#">Soft Toys</a></li>
+                           <li><a href="#">Puzzles</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="sub">
+                    <a href="#">Baby Care</a>
+                    <ul>
+                        <li><a href="#">Baby bedding</a></li>
+                        <li><a href="#">Baby grooming</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Baby Toy</a></li>
+                        <li><a href="#">Baby bath</a></li>
+                        <li><a href="#">Baby skin care</a></li>
+                        <li><a href="#">feeding & Nursing</a></li>
+                        <li><a href="#">Baby health</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Featured brands</a>
+                    <ul>
+                        <li><a href="#">Disney</a></li>
+                        <li><a href="#">Barbie</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Crcocs </a></li>
+                        <li><a href="#">Lego</a></li>
+                        <li><a href="#">Mother Caret</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        
+          <li class="sub">
+            <a href="home.html">Home & Furniture</a>
+            <ul>
+                <li class="sub">
+                    <a href="#">kitchen</a>
+                    <ul>
+                       <li><a href="#">Poats & pans</a></li>  
+                       <li><a href="#">Pressure cooker</a></li>
+                       <li><a href="#">cofee mug</a></li>
+                       <li><a href="#">Kitchen Tools</a></li>
+                       <li><a href="#">Containers & Bottles</a></li>
+                       <li><a href="#">Gas Stoves</a></li>
+                       <li><a href="#">crockery</a></li>
+                    </ul>
+                    </li>
+                <li class="sub">
+                    <a href="#">Furniture</a>
+                    <ul>
+                        <li><a href="#">Bed</a></li>
+                        <li><a href="#">Sofas</a></li>
+                        <li><a href="#">TV Cavinets</a></li>
+                        <li><a href="#">Bean Bags</a></li>
+                        <li><a href="#">Storage</a></li>
+                        <li><a href="#">Dinning Tables</a></li>
+                        <li><a href="#">Mattresses</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Accesories</a>
+                    <ul>
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Wallet & Belts</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Luggae & Travel</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Furnishing</a>
+                    <ul>
+                        <li><a href="#">Bedsheets</a></li>
+                        <li><a href="#">Curtains</a></li>
+                        <li><a href="#">Blanket</a></li>
+                        <li><a href="#">Towels</a></li>
+                        <li><a href="#">Hand Tools</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Hand Tools</a></li>
+                        <li><a href="#">Gardening Tools</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Home Decore</a>
+                    <ul>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Clocks</a></li>
+                        <li><a href="#">Wall Decals</a></li>
+                        <li><a href="#">showpieces</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="sub">
+                    <a href="#">Lighting</a>
+                    <ul>
+                        <li><a href="#">LED & CFL</a></li>
+                        <li><a href="#">Lamps</a></li>
+                        <li><a href="#">Decorative lighting</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Featured</a>
+                    <ul>
+                        <li><a href="#">Jack & Jones</a></li>
+                        <li><a href="#">Lee</a></li>
+                        <li><a href="#">UCB</a></li>
+                        <li><a href="#">PUma</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Wildcraft</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        
+        
+        
+          <li class="sub">
+            <a href="home.html">Books & More</a>
+            <ul>
+                <li class="sub">
+                    <a href="#">Books</a>
+                    <ul>
+                       <li><a href="#">Comic</a></li>  
+                       <li><a href="#">Self Help</a></li>
+                       <li><a href="#">History</a></li>
+                       <li><a href="#">Business</a></li>
+                       <li><a href="#">Containers & Bottles</a></li>
+                       <li><a href="#">Gas Stoves</a></li>
+                       <li><a href="#">crockery</a></li>
+                    </ul>
+                    </li>
+                <li class="sub">
+                    <a href="#">Furniture</a>
+                    <ul>
+                        <li><a href="#">Bed</a></li>
+                        <li><a href="#">Sofas</a></li>
+                        <li><a href="#">TV Cavinets</a></li>
+                        <li><a href="#">Bean Bags</a></li>
+                        <li><a href="#">Storage</a></li>
+                        <li><a href="#">Dinning Tables</a></li>
+                        <li><a href="#">Mattresses</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Accesories</a>
+                    <ul>
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Wallet & Belts</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Luggae & Travel</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Furnishing</a>
+                    <ul>
+                        <li><a href="#">Bedsheets</a></li>
+                        <li><a href="#">Curtains</a></li>
+                        <li><a href="#">Blanket</a></li>
+                        <li><a href="#">Towels</a></li>
+                        <li><a href="#">Hand Tools</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Hand Tools</a></li>
+                        <li><a href="#">Gardening Tools</a></li>
+                    </ul>
+                </li>
+                
+                <li class="sub">
+                    <a href="#">Home Decore</a>
+                    <ul>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Clocks</a></li>
+                        <li><a href="#">Wall Decals</a></li>
+                        <li><a href="#">showpieces</a></li>
+                    </ul>
+                </li>
+                
+                 <li class="sub">
+                    <a href="#">Lighting</a>
+                    <ul>
+                        <li><a href="#">LED & CFL</a></li>
+                        <li><a href="#">Lamps</a></li>
+                        <li><a href="#">Decorative lighting</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">Featured</a>
+                    <ul>
+                        <li><a href="#">Jack & Jones</a></li>
+                        <li><a href="#">Lee</a></li>
+                        <li><a href="#">UCB</a></li>
+                        <li><a href="#">PUma</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Wildcraft</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
  
 </div>
 	</div>
+	<!-- <div class="slider">
+			<ul class="slides">
+				<li class="slide" style="width: 808px">
+					<figure>
+						<figcaption>
+							<a href="#">WORK AS A TEAM</a>
+						</figcaption>
+						<img src="image/laptop.png" alt="dribbble witches">
+					</figure>
+				</li>
+				<li class="slide" style="width: 808px">
+					<figure>
+						<figcaption>
+							<a href="#">BUILD PARTNERSHIP WITH TRUST</a>
+						</figcaption>
+						<img src="image/door-curtain.png"
+							alt="searing mountain illustration">
+					</figure>
+				</li>
+				<li class="slide" style="width: 808px">
+					<figure>
+						<figcaption>
+							<a href="#">DELIVERING PROMISES</a>
+						</figcaption>
+						<img src="image/handbag.png" alt="taipei fireworks">
+					</figure>
+				</li>
+				<li class="slide" style="width: 808px">
+					<figure>
+						<figcaption>
+							<a href="#"> WORK WITH PASSION </a>
+						</figcaption>
+						<img src="image/home-decor.png"
+							alt="coffee cup iphone newspaper" width="" height="">
+					</figure>
+				</li>
+				<li class="slide" style="width: 808px">
+					<figure>
+						<figcaption>
+							<a href="#"> EMBRACE LATEST TECHNOLOGIES </a>
+						</figcaption>
+						<img src="image/htc123.png"
+							alt="flying super squirrel" width="" height="">
+					</figure>
+				</li>
+			</ul>
+		</div> -->
+		
+		<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+      <div class="slider-info">
+      <h1>Power Bank</h1>
+      <h3>Hurry up! Offer Limited </h3>
+      </div>
+        <img src="image/powerbank.png" alt="Chania" width="460" height="200px">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item">
+      <div class="slider-info">
+        <h1>It's Diwali</h1>
+        <h3>Cracking Offer For Everyone!</h3>
+      </div>
+        <img src="image/crackers.png" alt="Chania" width="460" height="200px">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+    
+      <div class="item">
+      <div class="slider-info">
+        <h1>Sports Bike</h1>
+      </div>
+        <img src="image/bike.png" alt="Flower" width="460" height="200px">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item">
+      <div class="slider-info">
+         <h1>New Svmsung on7 pro</h1>
+         <h3>10% Off It's Diwali</h3>
+         <h3>Hurry Up!! Offer Limited</h3>
+      </div>
+        <img src="image/oppo.png" alt="Flower" width="460" height="200px">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+		
 <div ng-view class="main-view"></div>
 
 <div ng-controller="loginCtrl">
@@ -126,8 +762,8 @@
 </div>
 
  
-</div><!--  
- --><form class="login-form" name="myForm"  novalidate>
+</div> 
+ <form class="login-form" name="myForm"  novalidate>
 <fieldset>
 <div align="center">
 <div class="loginForm">
@@ -176,25 +812,42 @@
 
 
 
-<!-- <div id="footer">
-<ul>
-    <li><a href="#">sign up</a></li>
-    <li><a href="#">log in</a></li>
-    <li><a href="#">Payment</a></li>
-    <li><a href="#">shipping</a></li>
-    <li><a href="#">save card</a></li>
-    <li><a href="#">Gift Card</a></li>
-    <li><a href="#">contact us</a></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">online shopping</a></li>
-    <li><a href="#">cash back</a></li>
-    <li><a href="#">Home delivery</a></li>
-    <li><a href="#">Discount</a></li>
-    <li><a href="#">offer</a></li>
-     <li><a href="#">contact</a></li>
-</ul>
+<!-- <div ng-controller="signCtrl">
+<div class="pop-window" ng-show="isLoginVisible">
+<div class="sign-container">
+<div class="sideDiv">
+
+<span class="loginName">Signup</span>
+<span class="info">We do not share your presonal details with anyone </span>
+    <div class="retailApp">
+    <img alt="" src="image/RetailApp.jpg" width="100%">
 </div>
- -->
+
+ 
+</div> 
+<form class="sign-form">
+<fieldset>
+<div align="center">
+  <div>
+    <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Enter Monile Number"  ng-model="mobileNumber"  class="text" required><br>
+  </div>
+  <button type="submit" ng-click="sign()"  class="btn btn-primary btn-lg btn-block">CONTINUE</button>
+  <button class="signBtn">
+<span>Existing User? Log in</span>
+</button>
+</div>
+</fieldset>
+</form>
+<button class="cancel" ng-click="cancelSign();resetSignData()">&#10006;</button>
+</div>
+</div>
+</div> -->
+
+
+
+
+
+
  <footer class="retail-footer">
     <div class="retailer-row">
        <div class="retailer-row-1">
