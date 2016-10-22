@@ -11,6 +11,9 @@ retailApp.config(function($routeProvider) {
 	}).when('/Men', {
 		templateUrl : "Men.html"
 
+	}).when('/productDetails', {
+		templateUrl : "productDetails.html"
+
 	}).otherwise({
 		redirectTo : '/'
 	});
@@ -150,7 +153,7 @@ retailApp.controller('searchCtrl', function($scope, $http) {
 
 });
 
-retailApp.controller('cartCtrl', function($scope, $http) {
+retailApp.controller('cartCtrl', function($scope, $http,$location) {
 	
 	$scope.cart = [];
 	$http.get('products.json').success(function(response) {
@@ -210,6 +213,10 @@ retailApp.controller('cartCtrl', function($scope, $http) {
 			}
 		});
 	};
+	$scope.productDetails = function()
+	{
+		$location.path('/productDetails')
+	}
 	
 });
 var timer1;
@@ -314,3 +321,8 @@ retailApp.controller('signController',function($scope,$location)
 		{
 	        
 	});
+
+retailApp.controller('productDetailsCtrl',function()
+{
+	}		
+);

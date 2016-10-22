@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/productDetails.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+
+<div ng-controller="productDetailsCtrl">
    <div class="display-product-details">
-   <div align="center">
+   <div class="product-images">
+      <div class="display-product-img">
+   
+       <img alt="" src="image/black-a-remson-india-39-original-imaeff5hch5hv4zz.jpeg" class="product-img" >
+       </div>
+       <div class="display-button">
+          <button type="button" class="add-cart">ADD TO CART</button>
+          <button type="button" class="buy-now">BUY NOW</button>
+       </div>
+       
+   </div>
+   
+      <div class="products-details-data">
+   <div align="justify">
         <div class="product-info">
            <div class= "product-name">
              <h1> Remson India Black gola Women Black Wedges</h1>
@@ -43,12 +49,62 @@
              <div class="delivery">Delivery</div>
              <div class="delivery-pincod">
                  <form action="">
-                     <input type="text" placeholder="Enter Delivery Pincode" class="deliveryText">
+                     <input type="text" placeholder="Enter Delivery Pincode" class="deliveryText" style="border: none;">
                      <span class="check">check</span>
                  </form>            
              </div>
+             <!-- <div class="enter-pincode">
+                 Enter Pincode for delivery details
+             </div> -->
+        </div>
+        <div class="product-size">
+        <div class="size-Euro">Size-Euro</div>
+       <!-- <div class="size-chart"> -->
+        <div class="Page navigation">
+  <ul class="pagination">
+    <li>
+      
+    </li>
+    <li><a href="#">35</a></li>
+    <li><a href="#">36</a></li>
+    <li><a href="#">37</a></li>
+    <li><a href="#">38</a></li>
+    <li><a href="#">39</a></li>
+  </ul>
+</div>
+
+<!-- </div> -->
+        </div>
+        <div class="products-list">
+        <div class="products-feature">
+            <div class="feature">
+                Feature            
+            </div>
+            <div class="feature-list">
+               <ul>
+                   <li>Color:Black</li>
+                   <li>Wear:Casual</li>
+                   <li>Material:Satin</li>
+                   <li>Heel Height:2.5 inch</li>
+                   <li>Leather/Non-Leather:Non-Leather</li>
+               </ul>
+            </div>
+            </div>
+            <div class="product-services">
+                  <div class="services">Services</div>
+                  <div class="services-list">
+                      <ul>
+                          <li>Cash on Delivery available</li>
+                          <li>30 days Exchange Policy</li>
+                      </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="seller-spring">
+           <div class="seller">Seller</div>
+           <div class="springgirl">Springgirls(4)</div>
         </div>
    </div>
    </div>
-</body>
-</html>
+   </div>
+   </div>
