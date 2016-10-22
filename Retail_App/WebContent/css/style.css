@@ -775,12 +775,14 @@ nav {
     display: block;
     margin: 0;
     overflow: hidden;
+    
 }
 nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
     color: white;
+    z-index: 700;
 }
 nav ul li {
     margin: 0;
@@ -798,11 +800,16 @@ nav > ul > li > a {
     font-weight: bold;
 
 }
+nav > ul > li > a :HOVER
+{
+	color: #2874f0;
+	text-decoration: none;
+}
 
 nav li > ul{
     display : none;
     margin-top:1px;
-    background-color: #ffffff;
+    background-color: #bbb;
    
 
 }
@@ -818,6 +825,11 @@ nav  li > ul li a {
     padding: 0.5em 2em;
     text-decoration: none;
     
+}
+nav  li > ul li a:HOVER
+{
+	text-decoration: none;
+	color: #2874f0;
 }
 
 nav li:hover {
