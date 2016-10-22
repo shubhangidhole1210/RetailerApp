@@ -738,8 +738,8 @@ margin-left: 10%;
 .container
 {
 	width: 100% !important;
-	height: 450px !important;
-	background-color: white important;
+	/* height: 450px !important; */
+	background-color: white !important;
 }
 .view-all
 {
@@ -843,7 +843,7 @@ nav li > ul > li:hover > ul  {
 
 .retailer-menu
 {
-	margin-left: 5%;
+	text-align: center;
 }
 .slider-info
 {
@@ -962,4 +962,13 @@ nav li > ul > li:hover > ul  {
 .youtube-icon
 {
 	display: inline-block;
+}
+
+.left carousel-control
+{
+	background-color: white !important;
+}
+nav > ul > li > a:HOVER {
+	color: #ffe11b;
+	text-decoration: none;
 }

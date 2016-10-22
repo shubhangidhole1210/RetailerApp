@@ -19,6 +19,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
 </head>
 <body ng-app="retailApp">
 
@@ -690,10 +691,10 @@
 
       <div class="item active">
       <div class="slider-info">
-      <h1>Power Bank</h1>
+      <h3>Power Bank</h3>
       <h3>Hurry up! Offer Limited </h3>
       </div>
-        <img src="image/powerbank.png" alt="Chania" width="460" height="200px">
+        <img src="image/powerbank-editing.jpg" alt="Chania" width="460" height="200px">
         <div class="carousel-caption">
           
         </div>
@@ -701,10 +702,10 @@
 
       <div class="item">
       <div class="slider-info">
-        <h1>It's Diwali</h1>
+        <h3>It's Diwali</h3>
         <h3>Cracking Offer For Everyone!</h3>
       </div>
-        <img src="image/crackers.png" alt="Chania" width="460" height="200px">
+        <img src="image/crackers-editing.png" alt="Chania" width="460" height="200px">
         <div class="carousel-caption">
           
         </div>
@@ -712,9 +713,10 @@
     
       <div class="item">
       <div class="slider-info">
-        <h1>Sports Bike</h1>
+        <h3>New Apple Laptop</h3>
+        <h3>3% Off..Hurry Up! </h3>
       </div>
-        <img src="image/bike.png" alt="Flower" width="460" height="200px">
+        <img src="image/laptop-editing3.jpg" alt="Flower" width="460" height="200px">
         <div class="carousel-caption">
           
         </div>
@@ -722,11 +724,10 @@
 
       <div class="item">
       <div class="slider-info">
-         <h1>New Svmsung on7 pro</h1>
          <h3>10% Off It's Diwali</h3>
          <h3>Hurry Up!! Offer Limited</h3>
       </div>
-        <img src="image/oppo.png" alt="Flower" width="460" height="200px">
+        <img src="image/free-phones-blade1-editing.jpg" alt="Flower" width="460" height="200px">
         <div class="carousel-caption">
           
         </div>
@@ -790,7 +791,7 @@
 <!-- <a href="signUp.html"><button type="button" class="button1"  ng-click="signUp()" ng-disabled="myForm.$invalid" class="btn btn-primary">Sign-Up</button></a> -->
 <!-- </div> -->
 <!-- <a href="signUp.html"  ng-click="signUp()">New User? Sign-Up</a> -->
-<button class="signBtn">
+<button class="signBtn" ng-click="signUp()">
 <span>New user? Sign in</span>
 </button>
 <div class="accountRecover">

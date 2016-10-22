@@ -88,4 +88,11 @@
     font-size: 14px;
     border: none;
     outline: none;
+    border-bottom: 2px solid #2874f0;
+}
+.check
+{
+	font-size: 14px;
+    color: #2874f0;
+    font-weight: bold;
 }

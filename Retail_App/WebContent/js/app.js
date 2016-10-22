@@ -4,7 +4,7 @@ retailApp.config(function($routeProvider) {
 		templateUrl : 'home.html'
 	}).when('/signUp', {
 		templateUrl : 'signUp.html',
-		controller : 'signCtrl'
+		controller : 'signController'
 	}).when('/Electronics', {
 		templateUrl : "Electronics.html"
 
@@ -79,7 +79,10 @@ retailApp.controller('loginCtrl', function($scope, $location, $http, $timeout,
 		
 
 	};
-	
+	 $scope.signUp = function()
+     {
+    	 $location.path('/signUp')
+     }
 
 	$scope.hideMe = function() {
 		$scope.show = true;
@@ -306,3 +309,8 @@ retailApp.controller('CheckoutCtrl', function($scope, $totalAmount) {
 retailApp.controller('signCtrl',function($scope)
 {
 	})*/
+
+retailApp.controller('signController',function($scope,$location)
+		{
+	        
+	});
