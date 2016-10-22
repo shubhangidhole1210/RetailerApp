@@ -802,7 +802,7 @@ nav > ul > li > a {
 nav li > ul{
     display : none;
     margin-top:1px;
-    background-color: #bbb;
+    background-color: #ffffff;
    
 
 }
@@ -853,4 +853,113 @@ nav li > ul > li:hover > ul  {
 {
 	color: red;
 	font-weight: bold;
+}
+
+.display-retailer-images
+{
+	margin-top:3%;
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+.Retailer-order
+{
+	border-top:2px solid #e4e4e4;
+	width:100%;
+	/* border: 1px solid #e4e4e4; */
+	border-bottom: 2px solid #e4e4e4;
+	text-align: center;
+	
+}
+.display-retailer-order
+{
+	vertical-align: top;
+	margin: 20px 0;
+	font-size: 15px;
+	text-transform: uppercase;
+	/* border: 1px solid #e4e4e4; */
+	text-align: center;
+	display: inline-block;
+	
+}
+
+.track-order
+{
+	
+	display: inline-block;
+	/* border: 1px solid #e4e4e4; */
+	padding-right: 5px;
+	
+}
+
+.map-img
+{
+	display: inline-block;
+	
+}
+.easy-return
+{
+	display: inline-block;
+	border-left: 1px solid #e4e4e4;
+	
+}
+.online-cancellation
+{
+	display: inline-block;
+	border-left: 1px solid #e4e4e4;
+}
+.policies
+{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.policiese
+{
+	display: inline-block;
+	margin-left: 3%;
+}
+.return-policies
+{
+	display: inline-block;
+}
+.Security
+{
+	display: inline-block;
+	border-left: 2px solid #e4e4e4;
+}
+.privacy
+{
+	display: inline-block;
+	border-left: 2px solid #e4e4e4;
+}
+.infringement
+{
+	display: inline-block;
+	border-left: 2px solid #e4e4e4;
+}
+.term-use
+{
+	display: inline-block;
+	border-left: 2px solid #e4e4e4;
+}
+.social-media-icon
+{
+	display: inline-block;
+}
+.facebook-icon
+{
+	display: inline-block;
+}
+.twitter-icon
+{
+	display: inline-block;
+}
+.google-icon
+{
+	display: inline-block;
+}
+.youtube-icon
+{
+	display: inline-block;
 }
