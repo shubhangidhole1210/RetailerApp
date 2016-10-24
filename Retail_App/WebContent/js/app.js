@@ -322,7 +322,24 @@ retailApp.controller('signController',function($scope,$location)
 	        
 	});
 
-retailApp.controller('productDetailsCtrl',function()
+retailApp.controller('productDetailsCtrl',function($scope,$http)
 {
-	}		
-);
+	$http.get('similarProducts.json').success(function(response) {
+		$scope.similarProducts = response.similarProducts
+	});
+       	
+});
+
+var timer1;
+function scrollSimilarProduct(divId, depl) 
+{
+	  var scroll_container = document.getElementById(divId);
+	  scroll_container.scrollLeft -= depl;
+	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 4);
+}
+
+retailApp.controller('sliderCtrl',function()
+{
+	
+	});
+

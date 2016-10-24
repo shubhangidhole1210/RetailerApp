@@ -1,6 +1,20 @@
 
 <div ng-controller="productDetailsCtrl">
    <div class="display-product-details">
+   <div class="side-images">
+   <div class="two-wedges-img">
+   <img alt="" src="image/black-a-remson-india-39-original-imaeff5hch5hv4zz.jpeg" width="70px" height="70px">
+   </div>
+      <div class="original-img">
+        <img alt="" src="image/original-wedges.jpeg" width="70px" height="70px">
+      </div>
+      <div class="side-img">
+         <img alt="" src="image/side-wedges.jpeg" width="70px" height="70px">
+      </div>
+      <div class="opp-img">
+         <img alt="" src="image/opp-wedges.jpeg" width="70px" height="70px">
+      </div>
+   </div>
    <div class="product-images">
       <div class="display-product-img">
    
@@ -104,7 +118,88 @@
            <div class="seller">Seller</div>
            <div class="springgirl">Springgirls(4)</div>
         </div>
+        
+        <div class="product-specification">
+           <div class="specification">Specification</div>
+           <div class="general-details">
+              <div class="general">General</div>
+              <div class="type-type-for-flats">
+                <div class="type">Type</div>
+                <div class="wedges">Wedges</div>
+                <div class="product-slip-type">
+                <div class="types-for-flats">Types for Flats</div>
+                <div class="slip-on">Slip-on</div>
+                </div>
+              </div>
+           </div>
+           <div class="product-details">
+              <div class="pro-details">Product Details</div>
+              <div class="insole-material">Insole Material</div>
+              <div class="rubber">Rubber</div>
+           </div>
+           <div class="read-more">Read More</div>
+        </div>
+        <div class="similar-products">
+         <h4>Similar products</h4>
+            <div class="display-similar-product-img1">
+               <img alt="" src="image/Do-bhai-women-black-wedges.jpeg" width="150px" height="120px;">
+               <h5>Black Wedges</h5>
+               <a href="" class="img-rating">3.5*</a>
+            </div>
+            <div class="display-similar-product-img2">
+              <img alt="" src="image/grey-chocolate-gola-1-do-bhai-38-original-imaejtc4pgfwgs6c.jpeg" width="150" height="120">
+              <h5>White josmo Girls</h5>
+              <a href="" class="img-rating">4.2*</a>
+            </div>
+            <div class="display-similar-product-img3">
+              <img alt="" src="image/remson-india-women-black-wedges.jpeg" width="150" height="120">
+              <h5>Black wedges Indian Women</h5>
+              <a href="" class="img-rating">3.1*</a>
+            </div>
+        </div>
+        <div class="star-rating">
+          <div>2.5*</div>
+        </div>
+       <div class="payment-Authantic">
+          <img alt="" src="image/ic_action_action_verified_user.png" class="payment-verified">
+          <div class="authantic">
+          Safe and Secure Payments. Easy returns. 100% Authentic products
+          </div>
+          <div class="view-all-reviews">
+          <a href="" class="view-review">View all reviews</a>
+          <div class="added-symobol">
+          
+          <img alt="" src="image/ic_action_content_add.png" width="20px" height="20px">
+          
+          </div>
+          </div>
+       </div>
    </div>
    </div>
    </div>
+   
+   <div class="product-container-main">
+<div class="product-header">
+<h3>Similar Products</h3>
+</div>
+<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollSimilarProduct('MySimilarProduct', 1)" onmouseup="clearTimeout(timer1)" /></div>
+<div class="display-scroll" id="MySimilarProduct">
+	<ul class="display-information">
+	
+		<li ng-repeat="product in similarProducts" class="product-item">
+			    <div class="display-product-info">
+				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}" >
+				<!-- <figcaption> -->
+					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
+					<h4 class="product-offer-price">{{product.price}}</h4>
+					<h4 class="rating-of-product" style="text-decoration: none;">Rating{{product.offer}}*</h4>
+					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
+				<!-- </figcaption> -->
+			    </div>
+		    </li>
+	</ul>
+	</div>
+	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollSimilarProduct('MySimilarProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
+	</div>
+   
    </div>

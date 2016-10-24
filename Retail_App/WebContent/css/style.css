@@ -984,4 +984,8 @@ nav > ul > li > a:HOVER {
 	color: #ffe11b;
 	text-decoration: none;
 }
-
+.rating-of-product
+{
+	color: white;
+	background-color: #16be48;
+}
