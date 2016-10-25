@@ -54,27 +54,58 @@
             <div class="details-offer-price">41% off</div>
         </div>
         
-   <div class="details-banks-offer">
+   <!-- <div class="details-banks-offer">
        <div class="bank-offer">Offer</div>
        <div class="extra-off">Extra 15% off* with digibank by DBS | Min trxn Rs. 650 | Max Disc. Rs. 100</div>
        <div class="terms-condition">T&C</div>
-   </div>        
+   </div>   -->    
+   
+   <div class="EMI-details">
+       <div class="emi-plans">
+          <img alt="" src="image/ic_action_action_perm_contact_cal.png" height="28px" width="28px">
+          <div class="emi-info">EMI from Rs 1,412/month</div>
+          <a href="" class="views-plans">View Plan</a>
+       </div>
+       <div class="buy-exchange">
+         <div class="emi-plans">
+          <img alt="" src="image/ic_action_action_swap_vert_circle.png" height="28px" width="28px">
+          <div class="emi-info">Get upto Rs. 20.000 off on exchange</div>
+          <a href="" class="views-plans">Buy witch Exchange </a>
+       </div>
+       </div>
+       <div class="special-price">
+          <div class="emi-plans">
+          <img alt="" src="image/ic_launcher.png" height="28px" width="28px">
+          <div class="emi-info">Special PriceFlat Rs.7,000 Off on Apple iPhone 6</div>
+          <a href="" class="views-plans"> T&C </a>
+       </div>
+       </div>
+       
+       <div class="bank-offer">
+          <div class="emi-plans">
+          <img alt="" src="image/ic_launcher.png" height="28px" width="28px">
+          <div class="emi-info">Bank OfferExtra 15% Cashback* with Citi Credit and Debit Cards</div>
+          <a href="" class="views-plans"> T&C </a>
+       </div>
+       </div>
+   </div>  
         <div class="delivery-report">
              <div class="delivery">Delivery</div>
              <div class="delivery-pincod">
                  <form action="">
                      <input type="text" placeholder="Enter Delivery Pincode" class="deliveryText" style="border: none;">
                      <span class="check">check</span>
-                 </form>            
+                     
+                 </form>    
+                     
              </div>
-             <!-- <div class="enter-pincode">
-                 Enter Pincode for delivery details
-             </div> -->
+             <a href="" class="pincode-delivery-details">
+                     Enter pincode for delivery details
+                 </a>    
         </div>
         <div class="product-size">
         <div class="size-Euro">Size-Euro</div>
-       <!-- <div class="size-chart"> -->
-        <div class="Page navigation">
+        <div class="Page navigation" style="margin-left: 5%">
   <ul class="pagination">
     <li>
       
@@ -86,8 +117,23 @@
     <li><a href="#">39</a></li>
   </ul>
 </div>
-
-<!-- </div> -->
+        </div>
+        <div class="product-color-storage-info">
+        <div class="product-color">
+              <div class="color">color</div>
+              <div class="display-colors-imgs">
+              <img alt="" src="image/Apple-space-grey-color.jpeg" width="80px" height="60px">
+              <img alt="" src="image/iphone-pink-color.jpg" width="80px" height="60px">
+              </div>
+        </div>
+           <!-- <div class="storage">
+           <div class="color">Storage</div>
+           <div class="display-storage-buttons">
+              <button type="button" class="16GB-storage">16 GB</button>
+              <button type="button" class="64GB-storage">64 GB</button>
+           </div>
+           </div> -->
+        
         </div>
         <div class="products-list">
         <div class="products-feature">
@@ -119,6 +165,13 @@
            <div class="springgirl">Springgirls(4)</div>
         </div>
         
+        <div class="product-description">
+           <div class="description">Description</div>
+           <div class="description-info">
+           
+Store more and enjoy more, without using as much storage space with the Apple iPhone 6.</div>
+        </div>
+        
         <div class="product-specification">
            <div class="specification">Specification</div>
            <div class="general-details">
@@ -137,10 +190,15 @@
               <div class="insole-material">Insole Material</div>
               <div class="rubber">Rubber</div>
            </div>
-           <div class="read-more">Read More</div>
+           
         </div>
+        
+        <div class="read-more">
+               <a href="" class="read-more-data">Read More</a>
+           </div>
+        
         <div class="similar-products">
-         <h4>Similar products</h4>
+         <h4 class="similarProduct">Similar products</h4>
             <div class="display-similar-product-img1">
                <img alt="" src="image/Do-bhai-women-black-wedges.jpeg" width="150px" height="120px;">
                <h5>Black Wedges</h5>
@@ -157,16 +215,16 @@
               <a href="" class="img-rating">3.1*</a>
             </div>
         </div>
-        <div class="star-rating">
+       <!--  <div class="star-rating">
           <div>2.5*</div>
-        </div>
+        </div> -->
        <div class="payment-Authantic">
           <img alt="" src="image/ic_action_action_verified_user.png" class="payment-verified">
           <div class="authantic">
           Safe and Secure Payments. Easy returns. 100% Authentic products
           </div>
           <div class="view-all-reviews">
-          <a href="" class="view-review">View all reviews</a>
+          <a href="" class="view-review" style="text-decoration: none;">View all reviews</a>
           <div class="added-symobol">
           
           <img alt="" src="image/ic_action_content_add.png" width="20px" height="20px">
@@ -192,7 +250,7 @@
 				<!-- <figcaption> -->
 					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
 					<h4 class="product-offer-price">{{product.price}}</h4>
-					<h4 class="rating-of-product" style="text-decoration: none;">Rating{{product.offer}}*</h4>
+					<a href="" class="rating-of-product" style="text-decoration: none;">Rating{{product.offer}}*</a>
 					<!-- <button ng-click="addToCart(product);">Add to cart</button> -->
 				<!-- </figcaption> -->
 			    </div>

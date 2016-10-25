@@ -38,19 +38,20 @@
 </ul>
 </div>
 <div id="header-wrapper">
+     <div ng-controller="headerCtrl">
 		<div class="app-header">
 			<div class="app-icon"></div>
 			<h1>Retailer</h1>
 			<input type="text" ng-model="searchBox" placeholder="Search for Products,Brands and More" class="textBox">
 			<button class="searchBox-button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-			<button>
+			<button ng-click="cartDetails()">
 
 			<span class="cart-show"> <img alt="" src="image/ic_action_add_shopping_cart.png"> </span>
 			CART
 			<span class="cart-show-icon">0</span>
 			</button>
 		</div>
-
+    </div>
 
 <!-- <div align="right">
 <div class="cart">

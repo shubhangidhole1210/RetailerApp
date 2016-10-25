@@ -14,6 +14,9 @@ retailApp.config(function($routeProvider) {
 	}).when('/productDetails', {
 		templateUrl : "productDetails.html"
 
+	}).when('/cartDetails', {
+		templateUrl : "cartDetails.html"
+
 	}).otherwise({
 		redirectTo : '/'
 	});
@@ -338,8 +341,22 @@ function scrollSimilarProduct(divId, depl)
 	  timer1 = setTimeout('scrollDiv("'+divId+'", '+depl+')', 4);
 }
 
+retailApp.controller('headerCtrl',function($scope,$location)
+{
+	$scope.cartDetails=function()
+	{
+		$location.path('/cartDetails')
+	}
+});
+
+
 retailApp.controller('sliderCtrl',function()
 {
 	
 	});
+
+retailApp.controller('cartDetailsCtrl',function()
+{
+	
+});
 
