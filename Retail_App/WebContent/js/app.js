@@ -329,6 +329,12 @@ retailApp.controller('productDetailsCtrl',function($scope,$http)
 {
 	$http.get('similarProducts.json').success(function(response) {
 		$scope.similarProducts = response.similarProducts
+		
+		$scope.showElement = false;
+		$scope.toggleElement = function() {
+		    console.log('toggle element');
+		    $scope.showElement = $scope.showElement ? false : true;
+		  };
 	});
        	
 });
