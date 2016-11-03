@@ -325,19 +325,54 @@ retailApp.controller('signController',function($scope,$location)
 	        
 	});
 
-retailApp.controller('productDetailsCtrl',function($scope,$http)
-{
-	$http.get('similarProducts.json').success(function(response) {
-		$scope.similarProducts = response.similarProducts
-		
-		$scope.showElement = false;
-		$scope.toggleElement = function() {
-		    console.log('toggle element');
-		    $scope.showElement = $scope.showElement ? false : true;
-		  };
+retailApp.controller('featureCtrl',function($scope)
+		{
+	
+	$scope.showFeatureElement = false;
+	$scope.toggleFeatureElement = function() {
+		$scope.showFeatureElement = $scope.showFeatureElement ? false : true;
+	};
+	        
 	});
-       	
+
+retailApp.controller('productDetailsCtrl', function($scope, $timeout) {
+
+	$scope.showElement = false;
+	$scope.toggleElement = function() {
+		$scope.showElement = $scope.showElement ? false : true;
+	};
+	
+	$scope.toggleFeatureElement = function() {
+		$scope.showFeatureElement = $scope.showFeatureElement ? false : true;
+	};
+	
+	$scope.data= {
+			
+			small_image: 'image/apple-iphone6-original-img.jpeg',
+		    large_image: 'image/apple-iphone6-large-img.jpg'
+	}
+	
+	 $scope.data_delayed = {}
+	$timeout(function(){
+	    $scope.data_delayed = {
+	      small_image: 'image/apple-iphone6-original-img.jpeg',
+	      large_image: 'image/apple-iphone6-large-img.jpg'
+	    }
+	  }, 1000);
+
 });
+
+retailApp.directive('ngElevateZoom', function() {
+	  return {
+	    restrict: 'A',
+	    link: function(scope, element, attrs) {
+	      console.log("Linking")
+	      element.attr('data-zoom-image',attrs.zoomImage);
+	      $(element).elevateZoom();
+	    }
+	  };
+	});
+
 
 var timer1;
 function scrollSimilarProduct(divId, depl) 

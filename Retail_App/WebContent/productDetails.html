@@ -1,580 +1,571 @@
 
 <div ng-controller="productDetailsCtrl">
-   <div class="display-product-details">
-   <div class="side-images">
-   <div class="two-wedges-img">
-   <img alt="" src="image/apple-iphone6-original-img.jpeg" width="35px" height="70px">
-   </div>
-      <div class="original-img">
-        <img alt="" src="image/iphone6-back-space-grey-color.jpg" width="60px" height="70px">
-      </div>
-      <div class="side-img">
-         <img alt="" src="image/side_angle_view_iphone_6_plus_catalyst.jpg" width="40px" height="70px">
-      </div>
-      <div class="opp-img">
-         <img alt="" src="image/iphone6-gold-select-2014_w_470.png" width="40px" height="70px">
-      </div>
-   </div>
-   <div class="product-images">
-      <div class="display-product-img">
-   
-       <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img"  >
-       </div>
-       <div class="display-button">
-          <button type="button" class="add-cart">ADD TO CART</button>
-          <button type="button" class="buy-now">BUY NOW</button>
-       </div>
-       
-   </div>
-   
-      <div class="products-details-data">
-   <div align="justify">
-        <div class="product-info">
-           <div class= "product-name">
-             <h1> Remson India Black gola Women Black Wedges</h1>
-           </div>
-           <div class="rating-views">
-           <div class="star-rating">
-               <a href="#">
-                  3.5 *
-               </a>
-           </div>
-           <div class="rating-and-views">
-              
-                 <a href="#">611 rating</a>
-                  <span>&</span>   
-                  <a href="#">68 reviews</a>          
-              
-           </div>
-           </div>
-        </div>
-        <div class="price-product">
-            <div class="details-original-price"><h3>Rs 279</h3> </div>
-            <div class="details-cut-price">Rs 499</div>
-            <div class="details-offer-price">41% off</div>
-        </div>
-        
-   <!-- <div class="details-banks-offer">
+	<div class="display-product-details">
+		<div class="side-images">
+			<div class="two-wedges-img">
+				<img alt="" src="image/apple-iphone6-original-img.jpeg" width="35px"
+					height="70px" style="margin-left: 17px">
+			</div>
+			<div class="original-img">
+				<img alt="" src="image/iphone6-back-space-grey-color.jpg"
+					width="40px" height="70px">
+			</div>
+			<div class="side-img">
+				<img alt="" src="image/side_angle_view_iphone_6_plus_catalyst.jpg"
+					width="40px" height="70px">
+			</div>
+			<div class="opp-img">
+				<img alt="" src="image/Apple-space-grey-color.jpeg" width="70px"
+					height="70px">
+			</div>
+		</div>
+		<div class="product-images">
+			<div class="display-product-img">
+
+				<!--  <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img"  > -->
+				<img ng-elevate-zoom ng-src="{{data['small_image']}}"
+					zoom-image="{{data['large_image']}}" class="product-img" />
+
+			</div>
+			<div class="display-button">
+				<button type="button" class="add-cart">ADD TO CART</button>
+				<button type="button" class="buy-now">BUY NOW</button>
+			</div>
+
+		</div>
+
+		<div class="products-details-data">
+			<div align="justify">
+				<div class="product-info">
+					<div class="product-name">
+						<h1>Remson India Black gola Women Black Wedges</h1>
+					</div>
+					<div class="rating-views">
+						<div class="star-rating">
+							<a href="#"> 3.5 * </a>
+						</div>
+						<div class="rating-and-views">
+
+							<a href="#">611 rating</a> <span>&</span> <a href="#">68
+								reviews</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="price-product">
+					<div class="details-original-price">
+						<h3>Rs 279</h3>
+					</div>
+					<div class="details-cut-price">Rs 499</div>
+					<div class="details-offer-price">41% off</div>
+				</div>
+
+				<!-- <div class="details-banks-offer">
        <div class="bank-offer">Offer</div>
        <div class="extra-off">Extra 15% off* with digibank by DBS | Min trxn Rs. 650 | Max Disc. Rs. 100</div>
        <div class="terms-condition">T&C</div>
-   </div>   -->    
-   
-   <div class="EMI-details">
-       <div class="emi-plans">
-          <img alt="" src="image/ic_action_action_perm_contact_cal.png" height="28px" width="28px">
-          <div class="emi-info">EMI from Rs 1,412/month</div>
-          <a href="" class="views-plans">View Plan</a>
-       </div>
-       <div class="buy-exchange">
-         <div class="emi-plans">
-          <img alt="" src="image/ic_action_action_swap_vert_circle.png" height="28px" width="28px">
-          <div class="emi-info">Get upto Rs. 20.000 off on exchange</div>
-          <a href="" class="views-plans">Buy witch Exchange </a>
-       </div>
-       </div>
-       <div class="special-price">
-          <div class="emi-plans">
-          <img alt="" src="image/ic_launcher.png" height="28px" width="28px">
-          <div class="emi-info">Special PriceFlat Rs.7,000 Off on Apple iPhone 6</div>
-          <a href="" class="views-plans"> T&C </a>
-       </div>
-       </div>
-       
-       <div class="bank-offer">
-          <div class="emi-plans">
-          <img alt="" src="image/ic_launcher.png" height="28px" width="28px">
-          <div class="emi-info">Bank OfferExtra 15% Cashback* with Citi Credit and Debit Cards</div>
-          <a href="" class="views-plans"> T&C </a>
-       </div>
-       </div>
-   </div>  
-        <div class="delivery-report">
-             <div class="delivery">Delivery</div>
-             <div class="delivery-pincod">
-                 <form action="">
-                     <input type="text" placeholder="Enter Delivery Pincode" class="deliveryText" style="border: none;">
-                     <span class="check">check</span>
-                     
-                 </form>    
-                     
-             </div>
-             <a href="" class="pincode-delivery-details">
-                     Enter pincode for delivery details
-                 </a>    
-        </div>
-        <div class="product-size">
-        <div class="size-Euro">Size-Euro</div>
-        <div class="Page navigation" style="margin-left: 5%">
-  <ul class="pagination">
-    <li>
-      
-    </li>
-    <li><a href="#">35</a></li>
-    <li><a href="#">36</a></li>
-    <li><a href="#">37</a></li>
-    <li><a href="#">38</a></li>
-    <li><a href="#">39</a></li>
-  </ul>
-</div>
-        </div>
-        <div class="product-color-storage-info">
-        <div class="product-color">
-              <div class="color">color</div>
-              <div class="display-colors-imgs">
-              <img alt="" src="image/Apple-space-grey-color.jpeg" width="80px" height="60px">
-              <img alt="" src="image/iphone-pink-color.jpg" width="80px" height="60px">
-              </div>
-        </div>
-           <!-- <div class="storage">
+   </div>   -->
+
+				<div class="EMI-details">
+					<div class="emi-plans">
+						<img alt="" src="image/ic_action_action_perm_contact_cal.png"
+							height="28px" width="28px">
+						<div class="emi-info">EMI from Rs 1,412/month</div>
+						<a href="" class="views-plans">View Plan</a>
+					</div>
+					<div class="buy-exchange">
+						<div class="emi-plans">
+							<img alt="" src="image/ic_action_action_swap_vert_circle.png"
+								height="28px" width="28px">
+							<div class="emi-info">Get upto Rs. 20.000 off on exchange</div>
+							<a href="" class="views-plans">Buy witch Exchange </a>
+						</div>
+					</div>
+					<div class="special-price">
+						<div class="emi-plans">
+							<img alt="" src="image/ic_launcher.png" height="28px"
+								width="28px">
+							<div class="emi-info">Special PriceFlat Rs.7,000 Off on
+								Apple iPhone 6</div>
+							<a href="" class="views-plans"> T&C </a>
+						</div>
+					</div>
+
+					<div class="bank-offer">
+						<div class="emi-plans">
+							<img alt="" src="image/ic_launcher.png" height="28px"
+								width="28px">
+							<div class="emi-info">Bank OfferExtra 15% Cashback* with
+								Citi Credit and Debit Cards</div>
+							<a href="" class="views-plans"> T&C </a>
+						</div>
+					</div>
+				</div>
+				<div class="delivery-report">
+					<div class="delivery">Delivery</div>
+					<div class="delivery-pincod">
+						<form action="">
+							<input type="text" placeholder="Enter Delivery Pincode"
+								class="deliveryText" style="border: none;"> <span
+								class="check">check</span>
+
+						</form>
+
+					</div>
+					<a href="" class="pincode-delivery-details"> Enter pincode for
+						delivery details </a>
+				</div>
+				<div class="product-size">
+					<div class="size-Euro">Size-Euro</div>
+					<div class="Page navigation" style="margin-left: 5%">
+						<ul class="pagination">
+							<li></li>
+							<li><a href="#">35</a></li>
+							<li><a href="#">36</a></li>
+							<li><a href="#">37</a></li>
+							<li><a href="#">38</a></li>
+							<li><a href="#">39</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="product-color-storage-info">
+					<div class="product-color">
+						<div class="color">color</div>
+						<div class="display-colors-imgs">
+							<img alt="" src="image/Apple-space-grey-color.jpeg" width="80px"
+								height="60px"> <img alt=""
+								src="image/iphone-pink-color.jpg" width="80px" height="60px">
+						</div>
+					</div>
+					<!-- <div class="storage">
            <div class="color">Storage</div>
            <div class="display-storage-buttons">
               <button type="button" class="16GB-storage">16 GB</button>
               <button type="button" class="64GB-storage">64 GB</button>
            </div>
            </div> -->
-        
-        </div>
-        <div class="products-list">
-        <div class="products-feature">
-            <div class="feature">
-                Feature            
-            </div>
-            <div class="feature-list">
-               <ul>
-                   <li>Color:Black</li>
-                   <li>Wear:Casual</li>
-                   <li>Material:Satin</li>
-                   <li>Heel Height:2.5 inch</li>
-                   <li>Leather/Non-Leather:Non-Leather</li>
-               </ul>
-            </div>
-            </div>
-            <div class="product-services">
-                  <div class="services">Services</div>
-                  <div class="services-list">
-                      <ul>
-                          <li>Cash on Delivery available</li>
-                          <li>30 days Exchange Policy</li>
-                      </ul>
-                  </div>
-            </div>
-        </div>
-        <div class="seller-spring">
-           <div class="seller">Seller</div>
-           <div class="springgirl">Springgirls(4)</div>
-        </div>
-        
-        <div class="product-description">
-           <div class="description">Description</div>
-           <div class="description-info">
-           
-Store more and enjoy more, without using as much storage space with the Apple iPhone 6.</div>
-        </div>
-        
-        <div class="product-specification">
-           <div class="specification">Specification</div>
-           <div class="general-details">
-              <div class="general">General</div>
-              <div class="type-type-for-flats">
-                <div class="type">Type</div>
-                <div class="wedges">Wedges</div>
-                <div class="product-slip-type">
-                <div class="types-for-flats">Types for Flats</div>
-                <div class="slip-on">Slip-on</div>
-                </div>
-              </div>
-           </div>
-           <div class="product-details">
-              <div class="pro-details">Product Details</div>
-              <div class="insole-material">Insole Material</div>
-              <div class="rubber">Rubber</div>
-              
-           </div>
-           
-        </div>
-         <a href="" class="read-more-data" style="padding-left: 20px" ng-click="toggleElement()">Read More</a>
-       <div ng-class="{'hidden' : showElement === false}"> 
-        <div class="read-more">
-              
-               <div class="product-features">Display Features</div>
-               <div class="">
-                  <div class="product-sub-features">
-               <div class="types-of-feature">Resolution</div>
-               <div class="feature-info" style="padding-left: 50px">2560 x 1440</div>
-               </div>
-               <div class="product-sub-features">
-               <div class="types-of-feature">Resolution Type</div>
-               <div class="feature-info" style="padding-left: 20px;">Full HD</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">GPU</div>
-               <div class="feature-info" style="padding-left: 91px">ARM Mali T830 MP1</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Display Type</div>
-               <div class="feature-info" style="padding-left: 45px">TFT</div>
-               </div>
-               
-               </div>
-               
-           </div>
-           <div class="read-more">
-              
-               <div class="general">Os & Processor Features</div>
-               <div class="type-type-for-flats">
-                <div class="product-sub-features">
-               <div class="types-of-feature">Operating System</div>
-               <div class="feature-info" style="padding-left: 20px">Android Nougat 7.1</div>
-               </div>
-               <div class="product-sub-features">
-               <div class="types-of-feature">Processor Type</div>
-               <div class="feature-info" style="padding-left: 35px">Exynos 7870</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Processor Core</div>
-               <div class="feature-info" style="padding-left: 35px">Octa Core</div>
-               </div>
-               
-              <!--  <div class="product-sub-features">
+
+				</div>
+				<div class="products-list">
+					<div class="products-feature">
+						<div class="feature">Feature</div>
+						<div class="feature-list">
+							<ul>
+								<li>Color:Black</li>
+								<li>Wear:Casual</li>
+								<li>Material:Satin</li>
+								<li>Heel Height:2.5 inch</li>
+								<li>Leather/Non-Leather:Non-Leather</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product-services">
+						<div class="services">Services</div>
+						<div class="services-list">
+							<ul>
+								<li>Cash on Delivery available</li>
+								<li>30 days Exchange Policy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="seller-spring">
+					<div class="seller">Seller</div>
+					<div class="springgirl">Springgirls(4)</div>
+				</div>
+
+				<div class="product-description">
+					<div class="description">Description</div>
+					<div class="description-info">Store more and enjoy more,
+						without using as much storage space with the Apple iPhone 6.</div>
+				</div>
+
+				<div class="product-specification">
+					<div class="specification">Specification</div>
+					<div class="general-details">
+						<div class="general">General</div>
+						<div class="type-type-for-flats">
+							<div class="type">Type</div>
+							<div class="wedges">Wedges</div>
+							<div class="product-slip-type">
+								<div class="types-for-flats">Types for Flats</div>
+								<div class="slip-on">Slip-on</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-details">
+						<div class="pro-details">Product Details</div>
+						<div class="insole-material">Insole Material</div>
+						<div class="rubber">Rubber</div>
+
+					</div>
+
+				</div>
+				<a href="" class="read-more-data" style="padding-left: 20px"
+					ng-click="toggleElement()">Read More</a>
+				<div ng-class="{'hidden' : showElement === false}">
+					<div class="read-more">
+
+						<div class="product-features">Display Features</div>
+						<div class="">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Resolution</div>
+								<div class="feature-info" style="padding-left: 50px">2560
+									x 1440</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">Resolution Type</div>
+								<div class="feature-info" style="padding-left: 20px;">Full
+									HD</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">GPU</div>
+								<div class="feature-info" style="padding-left: 91px">ARM
+									Mali T830 MP1</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Display Type</div>
+								<div class="feature-info" style="padding-left: 45px">TFT</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="read-more">
+
+						<div class="general">Os & Processor Features</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Operating System</div>
+								<div class="feature-info" style="padding-left: 20px">Android
+									Nougat 7.1</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">Processor Type</div>
+								<div class="feature-info" style="padding-left: 35px">Exynos
+									7870</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Processor Core</div>
+								<div class="feature-info" style="padding-left: 35px">Octa
+									Core</div>
+							</div>
+
+							<!--  <div class="product-sub-features">
                <div class="types-of-feature">Processor Clock Speed
 </div>
                <div class="feature-info">1.6 GHz</div>
                </div> -->
-               
-               </div>
-               
-           </div>
-           
-            <div class="read-more">
-              
-               <div class="general">Memory & Storage Features</div>
-               <div class="type-type-for-flats">
-                <div class="product-sub-features">
-               <div class="types-of-feature">Internal Storage
-</div>
-               <div class="feature-info" style="padding-left: 35px">128 GB</div>
-               </div>
-               <div class="product-sub-features">
-               <div class="types-of-feature">RAM</div>
-               <div class="feature-info" style="padding-left: 110px">3 GB</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Expandable Storage</div>
-               <div class="feature-info" style="padding-left: 13px">256 GB</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Memory Card Type
-</div>
-               <div class="feature-info" style="padding-left: 20px">microSD</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">Call Log Memory
-</div>
-               <div class="feature-info" style="padding-left: 40px">Yes</div>
-               </div>
-               </div>
-               
-           </div>
-           
-              <div class="read-more">
-              
-               <div class="general">Camera Features</div>
-               <div class="type-type-for-flats">
-                <div class="product-sub-features">
-               <div class="types-of-feature">Primary Camera
-</div>
-               <div class="feature-info" style="">13 megapixel</div>
-               </div>
-               <div class="product-sub-features">
-               <div class="types-of-feature">Primary Camera
-</div>
-               <div class="feature-info">13 megapixel</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Secondary Camera </div>
-               <div class="feature-info">Yes</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Secondary Camera 
-</div>
-               <div class="feature-info">
-8 megapixel</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">Flash
-</div>
-               <div class="feature-info">LED</div>
-               </div>
-                <div class="product-sub-features">
-               <div class="types-of-feature">HD Recording
-</div>
-               <div class="feature-info">yes</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">Full HD Recording
-</div>
-               <div class="feature-info">yes</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">Video Recording
-</div>
-               <div class="feature-info">yes</div>
-               </div>
-                 
-                  <div class="product-sub-features">
-               <div class="types-of-feature">Video Resolution
-</div>
-               <div class="feature-info">1920 x 1080</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Frame Rate
-</div>
-               <div class="feature-info">30 fps</div>
-               </div>
-               
-               </div>
-               
-           </div>
-           
-           <div class="read-more">
-              
-               <div class="general">Call Features</div>
-               <div class="type-type-for-flats">
-                <div class="types-of-feature">Phone Book</div>
-               <div class="feature-info">Yes</div>
-               </div>
-           </div>
-           
-           <div class="read-more">
-              
-               <div class="general">Connectivity Features</div>
-               <div class="type-type-for-flats">
-               <div class="product-sub-features">
-               <div class="types-of-feature">Network Type
-</div>
-               <div class="feature-info">4G, 3G, 2G</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Supported Networks</div>
-               <div class="feature-info">4G LTE, 4G LTE</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Internet Connectivity
-</div>
-               <div class="feature-info">
-4G, 3G, Wi-Fi</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">3G
-</div>
-               <div class="feature-info">Yes</div>
-               </div>
-                <div class="product-sub-features">
-               <div class="types-of-feature">3G Speed
-</div>
-               <div class="feature-info">HSPA+ 42.2 Mbps</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">Pre-installed Browser
-</div>
-               <div class="feature-info">
-Samsung, Android</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">Bluetooth Support
-</div>
-               <div class="feature-info">yes</div>
-               </div>
-                 
-                  <div class="product-sub-features">
-               <div class="types-of-feature">Bluetooth Version
 
-</div>
-               <div class="feature-info">4.1</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Wi-Fi
-</div>
-               <div class="feature-info">Yes</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">Wi-Fi Version
-</div>
-               <div class="feature-info">802.11 b/g/n</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">USB Connectivity
-</div>
-               <div class="feature-info">Yes</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">Audio Jack
-</div>
-               <div class="feature-info">3.5mm</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">Map Support
-</div>
-               <div class="feature-info">
-Google Maps</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">GPS Support
-</div>
-               <div class="feature-info">
-Yes</div>
-               </div>
-               
-               </div>
-               
-           </div>
-           
-           <div class="read-more">
-              
-               <div class="general">Other Details</div>
-               <div class="type-type-for-flats">
-               <div class="product-sub-features">
-               <div class="types-of-feature">Smartphone
-</div>
-               <div class="feature-info">Yes</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">Touchscreen Type</div>
-               <div class="feature-info">Capacitive</div>
-               </div>
-               
-               <div class="product-sub-features">
-               <div class="types-of-feature">SIM Size
-</div>
-               <div class="feature-info">
-Micro SIM</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">Removable Battery
-</div>
-               <div class="feature-info">No</div>
-               </div>
-                <div class="product-sub-features">
-               <div class="types-of-feature">SMS
-</div>
-               <div class="feature-info">Yes</div>
-               </div>
-               
-                 <div class="product-sub-features">
-               <div class="types-of-feature">SIM Access
-</div>
-               <div class="feature-info">
+						</div>
 
-Dual Standby</div>
-               </div>
-               
-                <div class="product-sub-features">
-               <div class="types-of-feature">Internal Memory
-</div>
-               <div class="feature-info">32</div>
-               </div>
-                 
-                  <div class="product-sub-features">
-               <div class="types-of-feature">Sensors
+					</div>
 
-</div>
-               <div class="feature-info">
-Accelerometer, Light Sensor, Proximity Sensor, Fingerprint Sensor</div>
-               </div>
-               
-               
-               </div>
-               
-           </div>
-             
-             <div class="read-more">
-              
-               <div class="general">Multimedia Features</div>
-               <div class="type-type-for-flats">
-               <div class="product-sub-features">
-               <div class="types-of-feature">Audio Formats
-</div>
-               <div class="feature-info">MP3</div>
-               </div>
-               </div>
-               
-           </div>
-           
-           <div class="read-more">
-              
-               <div class="general">Battery & Power Features</div>
-               <div class="type-type-for-flats">
-               <div class="product-sub-features">
-               <div class="types-of-feature">Battery Capacity
-</div>
-               <div class="feature-info">3450 mAh</div>
-               </div>
-               </div>
-               
-           </div>
-        
-        <div class="read-more">
-              
-               <div class="general">Dimensions</div>
-               <div class="type-type-for-flats">
-               <div class="product-sub-features">
-               <div class="types-of-feature">Width</div>
-               <div class="feature-info">75.74 mm</div>
-               </div>
-               <div class="product-sub-features">
-               <div class="types-of-feature">Height</div>
-               <div class="feature-info">154.72 mm</div>
-               </div>
-                
-               <div class="product-sub-features">
-               <div class="types-of-feature">Depth
-</div>
-               <div class="feature-info">8.58 mm</div>
-               </div>
-          
-           </div>
-           </div>
-           
-           <div class="read-more">
-              
-               <div class="general">Warranty</div>
-               <div class="type-type-for-flats">
-               <div class="product-slip-type">
-               <div class="types-of-feature">Warranty Summary
-</div>
-               <div class="feature-info">1 Year Manufacturer Warranty</div>
-               </div>
-               </div>
-               
-           </div>
-        </div>
-        <!-- <div class="similar-products">
+					<div class="read-more">
+
+						<div class="general">Memory & Storage Features</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Internal Storage</div>
+								<div class="feature-info" style="padding-left: 35px">128
+									GB</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">RAM</div>
+								<div class="feature-info" style="padding-left: 110px">3 GB</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Expandable Storage</div>
+								<div class="feature-info" style="padding-left: 13px">256
+									GB</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Memory Card Type</div>
+								<div class="feature-info" style="padding-left: 20px">microSD</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Call Log Memory</div>
+								<div class="feature-info" style="padding-left: 40px">Yes</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Camera Features</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Primary Camera</div>
+								<div class="feature-info" style="padding-left: 41px">13
+									megapixel</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">Primary Camera</div>
+								<div class="feature-info" style="padding-left: 41px">13
+									megapixel</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Secondary Camera</div>
+								<div class="feature-info" style="padding-left: 27px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Secondary Camera</div>
+								<div class="feature-info" style="padding-left: 25px">8
+									megapixel</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Flash</div>
+								<div class="feature-info" style="padding-left: 115px">LED</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">HD Recording</div>
+								<div class="feature-info" style="padding-left: 65px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Full HD Recording</div>
+								<div class="feature-info" style="padding-left: 40px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Video Recording</div>
+								<div class="feature-info" style="padding-left: 52px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Video Resolution</div>
+								<div class="feature-info" style="padding-left: 47px">1920
+									x 1080</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Frame Rate</div>
+								<div class="feature-info" style="padding-left: 80px">30
+									fps</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Call Features</div>
+						<div class="type-type-for-flats">
+							<div class="types-of-feature">Phone Book</div>
+							<div class="feature-info">Yes</div>
+						</div>
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Connectivity Features</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Network Type</div>
+								<div class="feature-info" style="padding-left: 75px">4G,
+									3G, 2G</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Supported Networks</div>
+								<div class="feature-info" style="padding-left: 35px">4G
+									LTE, 4G LTE</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Internet Connectivity</div>
+								<div class="feature-info" style="padding-left: 35px">4G,
+									3G, Wi-Fi</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">3G</div>
+								<div class="feature-info" style="padding-left: 150px">Yes</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">3G Speed</div>
+								<div class="feature-info" style="padding-left: 105px">HSPA+
+									42.2 Mbps</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Pre-installed Browser</div>
+								<div class="feature-info" style="padding-left: 35px">
+									Samsung, Android</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Bluetooth Support</div>
+								<div class="feature-info" style="padding-left: 60px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Bluetooth Version</div>
+								<div class="feature-info" style="padding-left: 65px">4.1</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Wi-Fi</div>
+								<div class="feature-info" style="padding-left: 142px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Wi-Fi Version</div>
+								<div class="feature-info" style="padding-left: 92px">802.11
+									b/g/n</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">USB Connectivity</div>
+								<div class="feature-info" style="padding-left: 70px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Audio Jack</div>
+								<div class="feature-info" style="padding-left: 110px">3.5mm</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Map Support</div>
+								<div class="feature-info" style="padding-left: 97px">
+									Google Maps</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">GPS Support</div>
+								<div class="feature-info" style="padding-left: 100px">Yes</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Other Details</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Smartphone</div>
+								<div class="feature-info" style="padding-left: 110px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Touchscreen Type</div>
+								<div class="feature-info" style="padding-left: 70px">Capacitive</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">SIM Size</div>
+								<div class="feature-info" style="padding-left: 135px">
+									Micro SIM</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Removable Battery</div>
+								<div class="feature-info" style="padding-left: 72px">No</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">SMS</div>
+								<div class="feature-info" style="padding-left: 162px">Yes</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">SIM Access</div>
+								<div class="feature-info" style="padding-left: 122px">
+
+									Dual Standby</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Internal Memory</div>
+								<div class="feature-info" style="padding-left: 93px">32</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Sensors</div>
+								<div class="feature-info" style="padding-left: 143px">
+									Accelerometer, Light Sensor</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Multimedia Features</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Audio Formats</div>
+								<div class="feature-info" style="padding-left: 105px">MP3</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Battery & Power Features</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Battery Capacity</div>
+								<div class="feature-info" style="padding-left: 96px">3450
+									mAh</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Dimensions</div>
+						<div class="type-type-for-flats">
+							<div class="product-sub-features">
+								<div class="types-of-feature">Width</div>
+								<div class="feature-info" style="padding-left: 165px">75.74
+									mm</div>
+							</div>
+							<div class="product-sub-features">
+								<div class="types-of-feature">Height</div>
+								<div class="feature-info" style="padding-left: 159px">154.72
+									mm</div>
+							</div>
+
+							<div class="product-sub-features">
+								<div class="types-of-feature">Depth</div>
+								<div class="feature-info" style="padding-left: 163px">8.58
+									mm</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="read-more">
+
+						<div class="general">Warranty</div>
+						<div class="type-type-for-flats">
+							<div class="product-slip-type">
+								<div class="types-of-feature">Warranty Summary</div>
+								<div class="feature-info" style="padding-left: 80px">1
+									Year Manufacturer Warranty</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- <div class="similar-products">
          <h4 class="similarProduct">Similar products</h4>
             <div class="display-similar-product-img1">
                <img alt="" src="image/Do-bhai-women-black-wedges.jpeg" width="150px" height="120px;">
@@ -592,169 +583,328 @@ Accelerometer, Light Sensor, Proximity Sensor, Fingerprint Sensor</div>
               <a href="" class="img-rating">3.1*</a>
             </div>
         </div> -->
-       <!--  <div class="star-rating">
+				<!--  <div class="star-rating">
           <div>2.5*</div>
         </div> -->
-        
-        <div class="buy-together">
-            <div class="buy-data">Buy together and save upto 33%</div>
-            <div class="display-img-together">
-            <div class="apple-original-phone">
-                <img alt="" src="image/apple-iphone-6-original-imaeymdqs5gm5xkz.jpeg" width="50px" height="90px" style="margin-left: 10%">
-                   <div class="img-description">
-                      Apple iPhone 6
-                   </div> 
-                   <div class="product-img-rating">
-                     <a href="">4.5*</a>
-                     <span>(13,0001)</span>
-                   </div>
-                   <div class="product-price">
-                     <span class="product-original-price">&#8377;29,990</span>
-                     <span class="product-offer-price">&#8377;36,990</span>
-                   </div>
-                   <div class="offer-product">18% off</div>
-                   
-            </div>
-            <div class="phone-guard" style="margin-left: 12%">
-                <img alt="" src="image/unistuff-16786-2-5d-curve-edge-9h-surface-hardness-original-imaemmyyqtnyhhjz.jpeg" width="90px" height="90px">
-                   <div class="img-description">
-                      Apple iPhone 6
-                   </div> 
-                   <div class="product-img-rating">
-                     <a href="">4.5*</a>
-                     <span>(13,0001)</span>
-                   </div>
-                   <div class="product-price">
-                     <span class="product-original-price">&#8377;29,990</span>
-                     <span class="product-offer-price">&#8377;36,990</span>
-                   </div>
-                 <div class="offer-product">18% off</div>
-            </div>
-            <div class="mobile-cover" style="margin-left: 12%">
-               <img alt="" src="image/karpine-bakcase10775scclr-original-imaec4kx6cywzshv.jpeg" width="50px" height="90px">
-                <div class="img-description">
-                      Apple iPhone 6
-                   </div> 
-                   <div class="product-img-rating">
-                     <a href="">4.5*</a>
-                     <span>(13,0001)</span>
-                   </div>
-                   <div class="product-price">
-                     <span class="product-original-price">&#8377;29,990</span>
-                     <span class="product-offer-price">&#8377;36,990</span>
-                   </div>
-                   <div class="offer-product">18% off </div>
-            </div>
-            
-            </div>
-            <hr>
-            <div class="display-product-total">
-               <div class="display-item">
-                  <div class="first-item">1 Item</div>
-                  <div class="product-original-price">&#8377;29,990</div>
-               </div>
-               <div class="equal-icon">&#43;</div>
-               <div class="display-item" style="margin-left: 3%">
-                  <div class="first-item">2 Addins</div>
-                  <div class="product-original-price">&#8377;448</div>
-               </div>
-               <div class="equal-icon">&#61;</div>
-               <div class="display-item" style="margin-left: 3%">
-                  <div class="first-item">Total</div>
-                  <div class="product-original-price">&#8377;30,438</div>
-               </div>
-               <button type="button" class="add-total-cart">ADD 3 ITEMS TO CART</button>
-            </div>
-        </div>
-        <div class="product-rating">
-            <div class="product-star-rating">
-                <span class="rating-number">4.5<img alt="" src="image/ic_toggle_star.png" width="30px" height="30px"></span>
-                <div class="buy-product-rating">13037 Ratings</div>
-                <div class="buy-product-reviews">1512 Reviews</div>
-            </div>
-           <div style="margin-left: 4%; padding-top: 10px;padding-bottom: 10px"> 
-            <div class="progress-rating">
-                <div class="first-5star-rating">
-                   <span class="5*">5*</span>
-                   <span class="progress-bar-green"></span>
-                   <span class="progress-rating-reviews">9234</span>
-                </div>
-            </div>
-            <div class="progress-rating">
-                <div class="first-5star-rating">
-                   <span class="5*">4*</span>
-                   <span class="progress-bar-green"></span>
-                   <span class="progress-rating-reviews">9234</span>
-                </div>
-            </div>
-            <div class="progress-rating">
-                <div class="first-5star-rating">
-                   <span class="5*">3*</span>
-                   <span class="progress-bar-green"></span>
-                   <span class="progress-rating-reviews">9234</span>
-                </div>
-            </div>
-            <div class="progress-rating">
-                <div class="first-5star-rating">
-                   <span class="5*">2*</span>
-                   <span class="progress-bar-green"></span>
-                   <span class="progress-rating-reviews">9234</span>
-                </div>
-            </div>
-            <div class="progress-rating">
-                <div class="first-5star-rating">
-                   <span class="5*">1*</span>
-                   <span class="progress-bar-green"></span>
-                   <span class="progress-rating-reviews">9234</span>
-                </div>
-            </div>
-            </div>
-            <div align="left">
-            <button type="button" class="review-button">Rate and Review product</button>
-            </div>
-        </div>
-        
-        
-       <div class="payment-Authantic">
-          <img alt="" src="image/ic_action_action_verified_user.png" class="payment-verified">
-          <div class="authantic">
-          Safe and Secure Payments. Easy returns. 100% Authentic products
-          </div>
-          <div class="view-all-reviews">
-          <a href="" class="view-review" style="text-decoration: none;">View all reviews</a>
-          <div class="added-symobol">
-          
-          <img alt="" src="image/ic_action_content_add.png" width="20px" height="20px">
-          
-          </div>
-          </div>
-       </div>
-   </div>
-   </div>
-   </div>
-   
-  <!--  <div class="product-container-main">
-<div class="product-header">
-<h3>Similar Products</h3>
-</div>
-<div class="arrow left"><input type="button" value="&#10094" onmousedown="scrollSimilarProduct('MySimilarProduct', 1)" onmouseup="clearTimeout(timer1)" /></div>
-<div class="display-scroll" id="MySimilarProduct">
-	<ul class="display-information">
-	
-		<li ng-repeat="product in similarProducts" class="product-item">
-			    <div class="display-product-info">
-				<img class="img-box" alt="{{product.title}}" ng-src="{{product.image}}" >
-				<figcaption>
-					<h4 class="product-title" style="font-weight: bold;">{{product.title}}</h4>
-					<h4 class="product-offer-price">{{product.price}}</h4>
-					<a href="" class="rating-of-product" style="text-decoration: none;">Rating{{product.offer}}*</a>
-					<button ng-click="addToCart(product);">Add to cart</button>
-				</figcaption>
-			    </div>
-		    </li>
-	</ul>
+
+				<div class="buy-together">
+					<div class="buy-data">Buy together and save upto 33%</div>
+					<div class="display-img-together">
+						<div class="apple-original-phone">
+							<img alt=""
+								src="image/apple-iphone-6-original-imaeymdqs5gm5xkz.jpeg"
+								width="50px" height="90px" style="margin-left: 10%">
+							<div class="img-description">Apple iPhone 6</div>
+							<div class="product-img-rating">
+								<a href="">4.5*</a> <span>(13,0001)</span>
+							</div>
+							<div class="product-price">
+								<span class="product-original-price">&#8377;29,990</span> <span
+									class="product-offer-price">&#8377;36,990</span>
+							</div>
+							<div class="offer-product">18% off</div>
+
+						</div>
+						<div class="phone-guard" style="margin-left: 12%">
+							<img alt=""
+								src="image/unistuff-16786-2-5d-curve-edge-9h-surface-hardness-original-imaemmyyqtnyhhjz.jpeg"
+								width="90px" height="90px">
+							<div class="img-description">Apple iPhone 6</div>
+							<div class="product-img-rating">
+								<a href="">4.5*</a> <span>(13,0001)</span>
+							</div>
+							<div class="product-price">
+								<span class="product-original-price">&#8377;29,990</span> <span
+									class="product-offer-price">&#8377;36,990</span>
+							</div>
+							<div class="offer-product">18% off</div>
+						</div>
+						<div class="mobile-cover" style="margin-left: 12%">
+							<img alt=""
+								src="image/karpine-bakcase10775scclr-original-imaec4kx6cywzshv.jpeg"
+								width="50px" height="90px">
+							<div class="img-description">Apple iPhone 6</div>
+							<div class="product-img-rating">
+								<a href="">4.5*</a> <span>(13,0001)</span>
+							</div>
+							<div class="product-price">
+								<span class="product-original-price">&#8377;29,990</span> <span
+									class="product-offer-price">&#8377;36,990</span>
+							</div>
+							<div class="offer-product">18% off</div>
+						</div>
+
+					</div>
+					<hr>
+					<div class="display-product-total">
+						<div class="display-item">
+							<div class="first-item">1 Item</div>
+							<div class="product-original-price">&#8377;29,990</div>
+						</div>
+						<div class="equal-icon">&#43;</div>
+						<div class="display-item" style="margin-left: 3%">
+							<div class="first-item">2 Addins</div>
+							<div class="product-original-price">&#8377;448</div>
+						</div>
+						<div class="equal-icon">&#61;</div>
+						<div class="display-item" style="margin-left: 3%">
+							<div class="first-item">Total</div>
+							<div class="product-original-price">&#8377;30,438</div>
+						</div>
+						<button type="button" class="add-total-cart">ADD 3 ITEMS
+							TO CART</button>
+					</div>
+				</div>
+				<div class="product-rating">
+					<div class="product-star-rating">
+						<span class="rating-number">4.5<img alt=""
+							src="image/ic_toggle_star.png" width="30px" height="30px"></span>
+						<div class="buy-product-rating">13037 Ratings</div>
+						<div class="buy-product-reviews">1512 Reviews</div>
+					</div>
+					<div
+						style="margin-left: 4%; padding-top: 10px; padding-bottom: 10px">
+						<div class="progress-rating">
+							<div class="first-5star-rating">
+								<span class="5*">5*</span>
+								<!-- <span class="progress-bar-green"></span> -->
+								<a class="progress-bar-green">.</a> <span
+									class="progress-rating-reviews">9234</span>
+							</div>
+						</div>
+						<div class="progress-rating">
+							<div class="first-5star-rating">
+								<span class="5*">4*</span> <span class="progress-bar-green-4"></span>
+								<span class="progress-rating-reviews">9234</span>
+							</div>
+						</div>
+						<div class="progress-rating">
+							<div class="first-5star-rating">
+								<span class="5*">3*</span> <span class="progress-bar-green"></span>
+								<span class="progress-rating-reviews">9234</span>
+							</div>
+						</div>
+						<div class="progress-rating">
+							<div class="first-5star-rating">
+								<span class="5*">2*</span> <span class="progress-bar-green"></span>
+								<span class="progress-rating-reviews">9234</span>
+							</div>
+						</div>
+						<div class="progress-rating">
+							<div class="first-5star-rating">
+								<span class="5*">1*</span> <span class="progress-bar-green"></span>
+								<span class="progress-rating-reviews">9234</span>
+							</div>
+						</div>
+					</div>
+					<div align="left">
+						<button type="button" class="review-button">Rate and
+							Review product</button>
+					</div>
+					<div class=""></div>
+
+				</div>
+
+				<div class="view-all-reviews">
+					<a href="" class="view-review" style="text-decoration: none;">View
+						all reviews</a>
+					<div class="added-symobol">
+
+						<img alt="" src="image/ic_action_content_add.png" width="20px"
+							height="20px" ng-click="toggleElement()">
+
+					</div>
+				</div>
+				<div ng-class="{'hidden' : showElement === false}">
+
+					<div class="product-review">
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff6161;">1*</a>
+								<div class="review-name">Too expensive</div>
+							</div>
+							<div class="review-description">Extremely expensive, with
+								this amount you can get a good motorcycle at your home and
+								believe me it will be more useful than this. Will ultimately
+								will become outdated in next 6 months.</div>
+							<div class="review-by">Pradeep Kandari 16 Dec, 2015</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">4*</a>
+								<div class="review-name">Best iPhone but Overpriced
+									!!!!!!!!</div>
+							</div>
+							<div class="review-description">Everything is good about
+								this iPhone except its Price :( People out there waiting for
+								this iPhone including me from a very long time but unable to buy
+								this due its over-price. I hope Apple India will realise this
+								and soon bring its price down and will see some happy customers
+								:) Cheers to those who are enjoying there brand new iPhone 6s
+								(y)</div>
+							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
+						</div>
+
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff9f00;">2*</a>
+								<div class="review-name">Awesome performance</div>
+							</div>
+							<div class="review-description">But buy With WS Retailer
+								only...price comfortable ...plz don't buy other retailer frm
+								flipkart...</div>
+							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
+								2016</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff6161">1*</a>
+								<div class="review-name">price difference</div>
+							</div>
+							<div class="review-description">in display the price are
+								49,999 and in the open tab the price 53000 how you are cheat
+								with the customer to attract. cheater people</div>
+							<div class="review-by">hitval 13 Mar, 2016</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">5*</a>
+								<div class="review-name">iphone 6s</div>
+							</div>
+							<div class="review-description">phone is pakka genuine i
+								checked in appstore..thanks for given me a cheap rate
+								50000..thanks to flipkart..and very fast delivery..within one
+								day i got mobile.......</div>
+							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
+						</div>
+
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">5*</a>
+								<div class="review-name">Must buy!</div>
+							</div>
+							<div class="review-description">Really I like Big Billion
+								sales:-) I purchased Apple I phone 6s 16GB only in 32 K....2nd
+								iphone in my hand...</div>
+							<div class="review-by">Yogesh Shirode Certified Buyer 7
+								Oct, 2016</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="product-details-description">
+					<div class="description product">
+						<div
+							style="font-size: 24px; font-weight: 500; line-height: 1; padding-bottom: 16px; color: #212121; padding-left: 15px; padding-top: 10px;">Product
+							Description</div>
+						<div class="product-information">Get a more personalised
+							experience than ever with the new iPhone 6S. Stunning visuals,
+							faster speeds, easier sharing, and envious glances from everyone
+							around - you're surely going to love everything that this piece
+							of technology has to offer.</div>
+					</div>
+				</div>
+				<div class="brilliant-display">
+
+					<div class="display">Brilliant Display</div>
+					<div class="product-information" style="padding-bottom: 10px">Browse
+						through a friend's Facebook album, watch a movie on Netflix, or
+						Snapchat with your bestie in the middle of the night. Everything
+						that you view and watch on this iPhone will look sharp, vibrant,
+						and true-to-life, courtesy the 13.97 cm (5.5) Retina HD Display.
+						This LED-backlit widescreen has a 1920x1080 pixel resolution and
+						1300:1 contrast ratio.</div>
+
+
+					<div class="brilliant-display-feature"
+						style="display: flex; padding-top: 10px; padding-bottom: 15px">
+						<div class="display-feature-box">13.97 cm (5.5)</div>
+						<div class="display-feature-box">Retina HD</div>
+						<div class="display-feature-box">LED Backlit</div>
+					</div>
+
+
+
+				</div>
+
+
+				<a href="" ng-click="toggleElement()" >view all feature</a>
+				<div ng-class="{'hidden' : showElement === false}">
+
+					<div class="brilliant-display">
+						<div class="display">Groundbreaking Technology</div>
+						<div class="product-information" style="padding-bottom: 10px">Thanks
+							to the advanced A9 chip with 64-bit architecture, this iPhone
+							boasts up to 70% faster CPU performance and up to 90% higher
+							graphics performance as compared to the previous generation
+							iPhones. Experience richer graphics and faster response times
+							while playing interactive games or running multiple apps.</div>
+						<div class="display-feature-box" style="width: 30%">Enhanced
+							Processing</div>
+
+					</div>
+
+					<div class="brilliant-display">
+						<div class="display">M9 Motion Coprocessor</div>
+						<div class="product-information" style="padding-bottom: 10px">The
+							integrated M9 continuously derives and analyzes data from sensors
+							such as the accelerometer, compass, gyroscope, and barometer to
+							help you measure the pace of your walk or jog. It ensures that
+							Siri is always on and ready to execute your commands without
+							hampering the battery's efficiency.</div>
+					</div>
+
+					<div class="brilliant-display">
+						<div class="display">3D Touch</div>
+						<div class="product-information" style="padding-bottom: 10px">The
+							innovative 3D Touch feature gives you an array of new ways to
+							interact with your iPhone. It gauges the pressure that you apply
+							on the screen and then responds to it with accurate results. It
+							also returns subtle taps instantly so you know that it is already
+							sensing what you're suggesting. This gesture lets you convert the
+							keyboard into a trackpad within apps such as Notes, e-mails, or
+							Messages so it is easy for you to make any changes.</div>
+					</div>
+
+
+					<div class="brilliant-display">
+						<div class="display">Live Photos</div>
+						<div class="product-information" style="padding-bottom: 10px">The
+							Live Photos feature is what gives you the ability to capture
+							motion and sound with still shots. It lets you convert those
+							special moments into living memories by adding to it moments just
+							before and after the shot. You can also set a Live Photo as your
+							iPhone's lock screen wallpaper.</div>
+					</div>
+
+					<div class="brilliant-display">
+						<div class="display">Security</div>
+						<div class="product-information" style="padding-bottom: 10px">The
+							six-digit length of the passcode makes it difficult for anyone
+							else to unlock your phone. If you have trouble remembering a
+							six-digit passcode, then you can also use the iPhone's
+							breakthrough Touch ID technology to unlock your phone. The phone
+							has a fingerprint sensor in the Home button that can analyse and
+							authenticate your fingerprint. You can also use the Touch ID
+							feature within iTunes and App Store to authenticate purchases.</div>
+					</div>
+				</div>
+
+				<div class="payment-Authantic">
+					<img alt="" src="image/ic_action_action_verified_user.png"
+						class="payment-verified">
+					<div class="authantic">Safe and Secure Payments. Easy
+						returns. 100% Authentic products</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="arrow right"><input type="button" value="&#10095" onmousedown="scrollSimilarProduct('MySimilarProduct', -3)" onmouseup="clearTimeout(timer1)"></div>
-	</div> -->
-   
-   </div>
+</div>

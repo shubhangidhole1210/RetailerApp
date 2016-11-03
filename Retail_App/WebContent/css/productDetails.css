@@ -476,6 +476,11 @@
 .view-review
 {
 	display: inline-block;
+	padding-left: 15px;
+	padding-top: 15px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #2874f0;
 }
 .view-review a
 {
@@ -817,7 +822,123 @@
     font-size: 14px;
     background-color: #f9f9f9;
     cursor: pointer;
-    margin-left: 97%;
+    margin-left: 60%;
     margin-top: 10px;
 }
+.product-details-description
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+    margin-top: 2%;
+}
+.product-information
+{
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    color: #212121;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
 
+.brilliant-display
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+}
+
+.display
+{
+	font-weight: 400;
+   /*  color: #212121; */
+    font-size: 18px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.display-feature-box
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+	margin-left: 2%;
+}
+.enhance processing
+{
+	
+}
+
+.customer-review
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+}
+.customer-star-review
+{
+	
+	/* background-color: #ff6161; */
+	color: white;
+	padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.customer-star-review:HOVER {
+	color: white;
+	text-decoration: none;
+}
+.review-name
+{
+	padding-left: 12px;
+    padding-top: 3px;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 500;
+}
+.review-description
+{
+	line-height: 1.4;
+    font-size: 14px;
+    color: #212121;
+    margin: 12px 0 9px;
+    overflow: hidden;
+    margin-left: 12px;
+	
+}
+.review-by
+{
+	font-size: 12px;
+    color: #878787;
+    padding: 0 6px 0 0;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-green
+{
+	background:green;
+	padding-right: 100px;
+	/* padding-top: 0in;
+	padding-bottom: 0in; */
+}
+.progress-bar-green-4
+{
+	background:#f0f0f0;
+	padding-right: 100px;
+	color: green;
+}
