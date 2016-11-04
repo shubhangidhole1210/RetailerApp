@@ -601,7 +601,8 @@
     width: 1200px;
 }
 .main-view{
-	background: #eeeeee;
+	background: rgba(238, 238, 238, 0.26);
+
 }
 .searchBox-button
 {

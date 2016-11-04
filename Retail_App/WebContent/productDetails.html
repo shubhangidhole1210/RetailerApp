@@ -1,14 +1,15 @@
 
 <div ng-controller="productDetailsCtrl">
 	<div class="display-product-details">
+	
 		<div class="side-images">
 			<div class="two-wedges-img">
 				<img alt="" src="image/apple-iphone6-original-img.jpeg" width="35px"
-					height="70px" style="margin-left: 17px">
+					height="70px" style="margin-left: 17px" >
 			</div>
 			<div class="original-img">
 				<img alt="" src="image/iphone6-back-space-grey-color.jpg"
-					width="40px" height="70px">
+					width="40px" height="70px" onclick="changeImage()"  id="IMG1" name="IMG1" >
 			</div>
 			<div class="side-img">
 				<img alt="" src="image/side_angle_view_iphone_6_plus_catalyst.jpg"
@@ -22,23 +23,23 @@
 		<div class="product-images">
 			<div class="display-product-img">
 
-				<!--  <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img"  > -->
-				<img ng-elevate-zoom ng-src="{{data['small_image']}}"
-					zoom-image="{{data['large_image']}}" class="product-img" />
+				 <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img" >
+				<!-- <img ng-elevate-zoom ng-src="{{data['small_image']}}"
+					zoom-image="{{data['large_image']}}" class="product-img" /> -->
 
 			</div>
 			<div class="display-button">
 				<button type="button" class="add-cart">ADD TO CART</button>
 				<button type="button" class="buy-now">BUY NOW</button>
 			</div>
-
 		</div>
 
-		<div class="products-details-data">
+		<div class="products-details-data" style="margin-right: 1%">
 			<div align="justify">
+			<div style="display: flex">
 				<div class="product-info">
 					<div class="product-name">
-						<h1>Remson India Black gola Women Black Wedges</h1>
+						<h1>Apple iPhone 6 (Space Grey, 16 GB)</h1>
 					</div>
 					<div class="rating-views">
 						<div class="star-rating">
@@ -52,11 +53,24 @@
 						</div>
 					</div>
 				</div>
+				
+			<div class="compare-share">
+			    <div class="compare" style="display: inline-block;">Compare</div>
+			    <div class="share" style="display: inline-block;margin-left: 15px">
+			    <img alt="" src="image/ic_launcher_arrow.png" width="20px" height="20px">
+			    Share</div>
+			</div>
+			
+			<div id="popWin">
+			  
+			  
+			</div>
+			</div>
 				<div class="price-product">
 					<div class="details-original-price">
-						<h3>Rs 279</h3>
+						<h3 style="font-weight: bold;">&#8377; 33,990</h3>
 					</div>
-					<div class="details-cut-price">Rs 499</div>
+					<div class="details-cut-price">&#8377; 499</div>
 					<div class="details-offer-price">41% off</div>
 				</div>
 
@@ -115,7 +129,7 @@
 					<a href="" class="pincode-delivery-details"> Enter pincode for
 						delivery details </a>
 				</div>
-				<div class="product-size">
+				<!-- <div class="product-size">
 					<div class="size-Euro">Size-Euro</div>
 					<div class="Page navigation" style="margin-left: 5%">
 						<ul class="pagination">
@@ -127,14 +141,17 @@
 							<li><a href="#">39</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				<div class="product-color-storage-info">
 					<div class="product-color">
 						<div class="color">color</div>
 						<div class="display-colors-imgs">
-							<img alt="" src="image/Apple-space-grey-color.jpeg" width="80px"
-								height="60px"> <img alt=""
-								src="image/iphone-pink-color.jpg" width="80px" height="60px">
+						
+							<img alt="" src="image/Apple-space-grey-color.jpeg" width="60px"
+								height="55px">
+					
+								 <img alt=""
+								src="image/iphone-pink-color.jpg" width="60px" height="55px">
 						</div>
 					</div>
 					<!-- <div class="storage">
@@ -182,14 +199,31 @@
 
 				<div class="product-specification">
 					<div class="specification">Specification</div>
-					<div class="general-details">
+					<div class="general-details" style="padding-bottom: 20px">
 						<div class="general">General</div>
 						<div class="type-type-for-flats">
-							<div class="type">Type</div>
-							<div class="wedges">Wedges</div>
 							<div class="product-slip-type">
-								<div class="types-for-flats">Types for Flats</div>
-								<div class="slip-on">Slip-on</div>
+								<div class="types-for-flats">Sales Package</div>
+								<div class="slip-on">Handset, Lightening Charger, Headphone</div>
+							</div>
+							<div class="product-slip-type">
+								<div class="types-for-flats">Model Number</div>
+								<div class="slip-on">A1586</div>
+							</div>
+							<div class="product-slip-type">
+								<div class="types-for-flats">Model Name</div>
+								<div class="slip-on" style="padding-left: 35px">
+iPhone 6</div>
+							</div>
+							<div class="product-slip-type">
+								<div class="types-for-flats">Color</div>
+								<div class="slip-on" style="margin-left: 60px">
+Space Grey</div>
+							</div>
+							<div class="product-slip-type">
+								<div class="types-for-flats">SIM Type</div>
+								<div class="slip-on" style="padding-left: 55px">
+Single Sim</div>
 							</div>
 						</div>
 					</div>
@@ -605,7 +639,7 @@
 							<div class="offer-product">18% off</div>
 
 						</div>
-						<div class="phone-guard" style="margin-left: 12%">
+						<div class="phone-guard" style="margin-left: 18%">
 							<img alt=""
 								src="image/unistuff-16786-2-5d-curve-edge-9h-surface-hardness-original-imaemmyyqtnyhhjz.jpeg"
 								width="90px" height="90px">
@@ -619,7 +653,7 @@
 							</div>
 							<div class="offer-product">18% off</div>
 						</div>
-						<div class="mobile-cover" style="margin-left: 12%">
+						<div class="mobile-cover" style="margin-left: 18%">
 							<img alt=""
 								src="image/karpine-bakcase10775scclr-original-imaec4kx6cywzshv.jpeg"
 								width="50px" height="90px">
@@ -729,6 +763,11 @@
 								believe me it will be more useful than this. Will ultimately
 								will become outdated in next 6 months.</div>
 							<div class="review-by">Pradeep Kandari 16 Dec, 2015</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+								
 						</div>
 						<div class="customer-review">
 							<div style="display: flex;">
@@ -745,6 +784,10 @@
 								:) Cheers to those who are enjoying there brand new iPhone 6s
 								(y)</div>
 							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
 						</div>
 
 						<div class="customer-review">
@@ -758,6 +801,10 @@
 								flipkart...</div>
 							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
 								2016</div>
+								<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
 						</div>
 						<div class="customer-review">
 							<div style="display: flex;">
@@ -769,6 +816,10 @@
 								49,999 and in the open tab the price 53000 how you are cheat
 								with the customer to attract. cheater people</div>
 							<div class="review-by">hitval 13 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
 						</div>
 						<div class="customer-review">
 							<div style="display: flex;">
@@ -781,6 +832,10 @@
 								50000..thanks to flipkart..and very fast delivery..within one
 								day i got mobile.......</div>
 							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
 						</div>
 
 						<div class="customer-review">
@@ -794,6 +849,10 @@
 								iphone in my hand...</div>
 							<div class="review-by">Yogesh Shirode Certified Buyer 7
 								Oct, 2016</div>
+								<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
 						</div>
 
 					</div>
@@ -899,7 +958,7 @@
 
 				<div class="payment-Authantic">
 					<img alt="" src="image/ic_action_action_verified_user.png"
-						class="payment-verified">
+						class="payment-verified" width="35px" height="35px">
 					<div class="authantic">Safe and Secure Payments. Easy
 						returns. 100% Authentic products</div>
 

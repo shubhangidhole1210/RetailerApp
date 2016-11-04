@@ -213,6 +213,7 @@
 {
 	display: inline-block;
 	margin-left: 1%;
+	overflow-x: scroll;
 }
 .display-product-details
 {
@@ -328,8 +329,8 @@
 .product-slip-type
 {
 	display: flex;
-	padding-bottom: 15px;
-}
+/* 	padding-bottom: 15px;
+ */}
 .pro-details
 {
 	padding-left: 20px;
@@ -404,7 +405,9 @@
 }
 .payment-Authantic
 {
-	margin-left: 4%;
+	/* margin-left: 4%; */
+	
+	padding:  10px 10px 10px 10px;
 }
 .two-wedges-img
 {
@@ -506,6 +509,12 @@
     color: white;
     padding: 8px 8px 8px 8px;
 }
+
+.pincode-delivery-details a:HOVER
+{
+	color: white;
+	text-decoration: none;
+}
 .similarProduct h4
 {
 	padding-top: 5px;
@@ -538,8 +547,8 @@
 	background-color: #f2f2f2;
 	margin-top: 1%;
 	display: flex;
-	border-top: 1px solid rgba(153, 153, 153, 0.95);
-	border-bottom: 1px solid rgba(153, 153, 153, 0.95);
+	border-top: 1px solid rgba(153, 153, 153, 0.19) ;;
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ; ;
 	padding: 5px 5px 5px 5px;
 }
 .qty
@@ -574,6 +583,10 @@
 	display: inline-block;
 	margin-left: 5px;
 }
+.views-plans a
+{
+	text-decoration: none;
+}
 .color
 {
 	
@@ -590,7 +603,8 @@
 
 .product-color-storage-info
 {
-	margin-bottom: 2%;
+	margin-bottom: 3%;
+	margin-top: 3%;
 }
 .display-storage-buttons
 {
@@ -885,6 +899,8 @@
     border-left:1px solid rgba(153, 153, 153, 0.19) ;
     border-top: 1px solid rgba(153, 153, 153, 0.19);
     border-right: 1px solid rgba(153, 153, 153, 0.19);
+    padding-bottom: 20px;
+    padding-top: 15px;
 }
 .customer-star-review
 {
@@ -950,4 +966,54 @@
     border-right: 1px solid rgba(153, 153, 153, 0.19);
     padding:10px;
     padding-left: 20px;
+}
+.compare-share
+{
+	margin-top: 4%;
+	margin-left: 15%;
+}
+.compare:HOVER
+{
+	color: #2874f0;
+	cursor: pointer;
+}
+.share:HOVER
+{
+	color: #2874f0;
+	cursor: pointer;
+}
+
+.popWin
+{
+	 width: 100%;
+   height: 100%;
+   position: fixed;
+   z-index: 700;
+   bottom: 0;
+   padding: 10px;
+}
+
+.like:HOVER
+{
+	color: #2874f0;
+}
+.unlike
+{
+	margin-left: 10%;
+}
+	
+.cart-item-summery
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+    background: #f2f2f2;
+    padding: 15px 15px 15px 15px ;
+}
+
+.retailer-cart-details
+{
+	margin-left: 15%;
+	margin-right: 15%;
 }

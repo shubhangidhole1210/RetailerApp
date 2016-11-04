@@ -401,3 +401,35 @@ retailApp.controller('cartDetailsCtrl',function()
 	
 });
 
+/*function changeImg()
+{
+    if(document.getElementById("imgClickAndChange").src=="image/iphone6-back-space-grey-color.jpg")
+    	{
+    	document.getElementById("imgClickAndChange").src = "image/apple-iphone6-original-img.jpeg";
+    	}
+ 
+}*/
+
+
+
+/*function changeImage()
+{
+	   document.getElementById("image").src= "image/apple-iphone6-original-img.jpeg"
+       	
+	}*/
+
+var intImage = 2;
+function changeImage()
+{
+	switch (intImage)
+	{
+	case 1:
+		   IMG1.src = "image/iphone6-back-space-grey-color.jpg"
+		   intImage = 2
+		   return(false);
+		case 2:
+		   IMG1.src = "image/apple-iphone6-original-img.jpeg"
+		   intImage = 1
+		   return(false);
+	}
+}
