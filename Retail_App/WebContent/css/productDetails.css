@@ -1017,3 +1017,8 @@
 	margin-left: 15%;
 	margin-right: 15%;
 }
+.retailer-images
+{
+	display: flex;
+	position: fixed;
+}

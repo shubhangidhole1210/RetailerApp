@@ -2,30 +2,31 @@
 <div ng-controller="productDetailsCtrl">
 	<div class="display-product-details">
 	
+         <!--  <div class="retailer-images"> -->
 		<div class="side-images">
 			<div class="two-wedges-img">
 				<img alt="" src="image/apple-iphone6-original-img.jpeg" width="35px"
-					height="70px" style="margin-left: 17px" >
+					height="70px" style="margin-left: 17px" onclick="changeImage('image1')" id="image1">
 			</div>
 			<div class="original-img">
 				<img alt="" src="image/iphone6-back-space-grey-color.jpg"
-					width="40px" height="70px" onclick="changeImage()"  id="IMG1" name="IMG1" >
+					width="40px" height="70px" onclick="changeImage('image2')" id="image2">
 			</div>
 			<div class="side-img">
 				<img alt="" src="image/side_angle_view_iphone_6_plus_catalyst.jpg"
-					width="40px" height="70px">
+					width="40px" height="70px" onclick="changeImage('image3')" id="image3">
 			</div>
 			<div class="opp-img">
 				<img alt="" src="image/Apple-space-grey-color.jpeg" width="70px"
-					height="70px">
+					height="70px" onclick="changeImage('image4')" id="image4">
 			</div>
 		</div>
 		<div class="product-images">
 			<div class="display-product-img">
 
-				 <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img" >
-				<!-- <img ng-elevate-zoom ng-src="{{data['small_image']}}"
-					zoom-image="{{data['large_image']}}" class="product-img" /> -->
+				 <!-- <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img" id="phneImg" name="phneImg" > -->
+				<img ng-elevate-zoom ng-src="{{data['small_image']}}"
+					zoom-image="{{data['large_image']}}" class="product-img" id="phneImg" name="phneImg" / height="350px" width="275px">
 
 			</div>
 			<div class="display-button">
@@ -33,8 +34,8 @@
 				<button type="button" class="buy-now">BUY NOW</button>
 			</div>
 		</div>
-
-		<div class="products-details-data" style="margin-right: 1%">
+		<!-- </div> -->
+		<div class="products-details-data" style="margin-right: 1%;">
 			<div align="justify">
 			<div style="display: flex">
 				<div class="product-info">

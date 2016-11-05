@@ -418,18 +418,49 @@ retailApp.controller('cartDetailsCtrl',function()
        	
 	}*/
 
-var intImage = 2;
-function changeImage()
+/*var intImage = 2;
+
+
+function changeImage(img1)
 {
 	switch (intImage)
 	{
-	case 1:
-		   IMG1.src = "image/iphone6-back-space-grey-color.jpg"
+		case 1:
+		phneImg.src = "image/iphone6-back-space-grey-color.jpg"
 		   intImage = 2
 		   return(false);
+		
+		
 		case 2:
-		   IMG1.src = "image/apple-iphone6-original-img.jpeg"
+			phneImg.src = "image/apple-iphone6-original-img.jpeg"
 		   intImage = 1
 		   return(false);
 	}
+}*/
+
+
+
+
+
+
+
+
+
+/*function changeImage() {
+
+    if (document.getElementById("phneImg").src == "image/apple-iphone6-original-img.jpeg") 
+    {
+        document.getElementById("phneImg").src = "image/iphone6-back-space-grey-color.jpg";
+    }
+    else 
+    {
+        document.getElementById("phneImg").src = "image/apple-iphone6-original-img.jpeg";
+    }
+}*/
+
+function changeImage(imageId)
+{
+     var image= document.getElementById('phneImg')
+     image.src=  document.getElementById(imageId).src;
+     	 
 }
