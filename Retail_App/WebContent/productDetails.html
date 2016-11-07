@@ -42,13 +42,13 @@
 					<div class="product-name">
 						<h1>Apple iPhone 6 (Space Grey, 16 GB)</h1>
 					</div>
-					<div class="rating-views">
-						<div class="star-rating">
-							<a href="#"> 3.5 * </a>
+					<div class="rating-views" ng-controller="abcCtrl">
+						<div class="star-rating" >
+							<a ng-click="scrollTo('rating')"> 3.5 * </a>
 						</div>
 						<div class="rating-and-views">
 
-							<a href="#">611 rating</a> <span>&</span> <a href="#">68
+							<a ng-click="scrollTo('rating')" style="text-decoration: none; cursor: pointer;">611 rating</a> <span>&</span> <a ng-click="scrollTo('rating')" style="text-decoration: none; cursor: pointer;">68
 								reviews</a>
 
 						</div>
@@ -57,15 +57,24 @@
 				
 			<div class="compare-share">
 			    <div class="compare" style="display: inline-block;">Compare</div>
-			    <div class="share" style="display: inline-block;margin-left: 15px">
+			    <div   class="share" style="display: inline-block;margin-left: 15px">
 			    <img alt="" src="image/ic_launcher_arrow.png" width="20px" height="20px">
 			    Share</div>
 			</div>
 			
-			<div id="popWin">
+			<!-- <div id="popWin" ng-show="isLoginVisible">
+			      <div class="social-media-images" style="display: flex">
+			        <div class="facebook-img">
+			           <img alt="" src="image/facebook-icon-preview-1.png" width="60px" height="60px">
+			           <div class="site-name">Facebook</div>
+			        </div>
+			        <div class="facebook-img" style="margin-left: 10%">
+			           <img alt="" src="image/tweet-logo.jpg" width="60px" height="60px">
+			           <div class="site-name">Twitter</div>
+			        </div>
+			      </div>
 			  
-			  
-			</div>
+			</div> -->
 			</div>
 				<div class="price-product">
 					<div class="details-original-price">
@@ -85,14 +94,18 @@
 					<div class="emi-plans">
 						<img alt="" src="image/ic_action_action_perm_contact_cal.png"
 							height="28px" width="28px">
-						<div class="emi-info">EMI from Rs 1,412/month</div>
+						<div class="emi-info"><span style="font-weight: bold;color: black;">EMI from</span> Rs 1,412/month</div>
 						<a href="" class="views-plans">View Plan</a>
 					</div>
 					<div class="buy-exchange">
 						<div class="emi-plans">
 							<img alt="" src="image/ic_action_action_swap_vert_circle.png"
 								height="28px" width="28px">
-							<div class="emi-info">Get upto Rs. 20.000 off on exchange</div>
+							<div class="emi-info">
+							<span>Get upto Rs.</span>
+							 <span style="font-weight: bold; color: black;">20.000</span> 
+							<span>off on exchange</span>
+							</div>
 							<a href="" class="views-plans">Buy witch Exchange </a>
 						</div>
 					</div>
@@ -100,8 +113,11 @@
 						<div class="emi-plans">
 							<img alt="" src="image/ic_launcher.png" height="28px"
 								width="28px">
-							<div class="emi-info">Special PriceFlat Rs.7,000 Off on
-								Apple iPhone 6</div>
+							<div class="emi-info">
+							<span style="font-weight: bold; color: black;">Special Price </span>
+							<span>Flat Rs.7,000 Off on
+								Apple iPhone 6</span>
+								</div>
 							<a href="" class="views-plans"> T&C </a>
 						</div>
 					</div>
@@ -110,7 +126,8 @@
 						<div class="emi-plans">
 							<img alt="" src="image/ic_launcher.png" height="28px"
 								width="28px">
-							<div class="emi-info">Bank OfferExtra 15% Cashback* with
+							<div class="emi-info">
+							<span style="font-weight: bold;color: black;">Bank Offer</span> Extra 15% Cashback* with
 								Citi Credit and Debit Cards</div>
 							<a href="" class="views-plans"> T&C </a>
 						</div>
@@ -236,8 +253,9 @@ Single Sim</div>
 					</div>
 
 				</div>
-			<div class="read-more-data">	<a href="" 
-					ng-click="toggleElement()">Read More</a></div>
+				<div ng-controller="readMoreCtrl">
+			<div class="read-more-data">	<a  
+					ng-click="toggleElement()" >Read More</a></div>
 				<div ng-class="{'hidden' : showElement === false}">
 					<div class="read-more">
 
@@ -600,6 +618,7 @@ Single Sim</div>
 
 					</div>
 				</div>
+				</div>
 				<!-- <div class="similar-products">
          <h4 class="similarProduct">Similar products</h4>
             <div class="display-similar-product-img1">
@@ -631,7 +650,7 @@ Single Sim</div>
 								width="50px" height="90px" style="margin-left: 10%">
 							<div class="img-description">Apple iPhone 6</div>
 							<div class="product-img-rating">
-								<a href="">4.5*</a> <span>(13,0001)</span>
+								<a href="" >4.5*</a> <span>(13,0001)</span>
 							</div>
 							<div class="product-price">
 								<span class="product-original-price">&#8377;29,990</span> <span
@@ -690,8 +709,9 @@ Single Sim</div>
 							TO CART</button>
 					</div>
 				</div>
+				<div ng-controller="ratingCtrl">
 				<div class="product-rating">
-					<div class="product-star-rating">
+					<div class="product-star-rating" id="rating">
 						<span class="rating-number">4.5<img alt=""
 							src="image/ic_toggle_star.png" width="30px" height="30px"></span>
 						<div class="buy-product-rating">13037 Ratings</div>
@@ -703,7 +723,7 @@ Single Sim</div>
 							<div class="first-5star-rating">
 								<span class="5*">5*</span>
 								<!-- <span class="progress-bar-green"></span> -->
-								<a class="progress-bar-green">.</a> <span
+								<a class="progress-bar-green" ng-click="toggleFiveStarElement()">.</a> <span
 									class="progress-rating-reviews">9234</span>
 							</div>
 						</div>
@@ -739,14 +759,282 @@ Single Sim</div>
 					<div class=""></div>
 
 				</div>
+				<div ng-class="{'hidden' : showElement === false}">
+				 <div class="Review-of-five-star">
+                     <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">5*</a>
+								<div class="review-name">iphone 6s</div>
+							</div>
+							<div class="review-description">phone is pakka genuine i
+								checked in appstore..thanks for given me a cheap rate
+								50000..thanks to flipkart..and very fast delivery..within one
+								day i got mobile.......</div>
+							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">5*</a>
+								<div class="review-name">iphone 6s</div>
+							</div>
+							<div class="review-description">phone is pakka genuine i
+								checked in appstore..thanks for given me a cheap rate
+								50000..thanks to flipkart..and very fast delivery..within one
+								day i got mobile.......</div>
+							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">5*</a>
+								<div class="review-name">iphone 6s</div>
+							</div>
+							<div class="review-description">phone is pakka genuine i
+								checked in appstore..thanks for given me a cheap rate
+								50000..thanks to flipkart..and very fast delivery..within one
+								day i got mobile.......</div>
+							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+             </div>
+             </div>
+             <div class="Review-of-four-star">
+                   <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">4*</a>
+								<div class="review-name">Best iPhone but Overpriced
+									!!!!!!!!</div>
+							</div>
+							<div class="review-description">Everything is good about
+								this iPhone except its Price :( People out there waiting for
+								this iPhone including me from a very long time but unable to buy
+								this due its over-price. I hope Apple India will realise this
+								and soon bring its price down and will see some happy customers
+								:) Cheers to those who are enjoying there brand new iPhone 6s
+								(y)</div>
+							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						 <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">4*</a>
+								<div class="review-name">Best iPhone but Overpriced
+									!!!!!!!!</div>
+							</div>
+							<div class="review-description">Everything is good about
+								this iPhone except its Price :( People out there waiting for
+								this iPhone including me from a very long time but unable to buy
+								this due its over-price. I hope Apple India will realise this
+								and soon bring its price down and will see some happy customers
+								:) Cheers to those who are enjoying there brand new iPhone 6s
+								(y)</div>
+							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						 <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">4*</a>
+								<div class="review-name">Best iPhone but Overpriced
+									!!!!!!!!</div>
+							</div>
+							<div class="review-description">Everything is good about
+								this iPhone except its Price :( People out there waiting for
+								this iPhone including me from a very long time but unable to buy
+								this due its over-price. I hope Apple India will realise this
+								and soon bring its price down and will see some happy customers
+								:) Cheers to those who are enjoying there brand new iPhone 6s
+								(y)</div>
+							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+             </div>
+             
+             <div class="review-of-3-Star">
+                 <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">3*</a>
+								<div class="review-name">Faced minor issues</div>
+							</div>
+							<div class="review-description">Poor battery life...regular charge required if net in used frequently.
+								</div>
+							<div class="review-by">Neeraj chand
 
+Certified Buyer
+6 Nov, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">3*</a>
+								<div class="review-name">Just okay</div>
+							</div>
+							<div class="review-description">Good
+								</div>
+							<div class="review-by">Prithivi Raj
+
+Certified Buyer
+8 Sep, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						 <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #16be48">3*</a>
+								<div class="review-name">Faced minor issues</div>
+							</div>
+							<div class="review-description">Poor battery life...regular charge required if net in used frequently.
+								</div>
+							<div class="review-by">Neeraj chand
+
+Certified Buyer
+6 Nov, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+             </div>
+             <div class="two-star-review">
+                 <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff9f00;">2*</a>
+								<div class="review-name">Awesome performance</div>
+							</div>
+							<div class="review-description">But buy With WS Retailer
+								only...price comfortable ...plz don't buy other retailer frm
+								flipkart...</div>
+							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
+								2016</div>
+								<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff9f00;">2*</a>
+								<div class="review-name">Awesome performance</div>
+							</div>
+							<div class="review-description">But buy With WS Retailer
+								only...price comfortable ...plz don't buy other retailer frm
+								flipkart...</div>
+							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
+								2016</div>
+								<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff9f00;">2*</a>
+								<div class="review-name">Awesome performance</div>
+							</div>
+							<div class="review-description">But buy With WS Retailer
+								only...price comfortable ...plz don't buy other retailer frm
+								flipkart...</div>
+							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
+								2016</div>
+								<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+             </div>
+             <div class="one-star-review">
+                <div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff6161">1*</a>
+								<div class="review-name">price difference</div>
+							</div>
+							<div class="review-description">in display the price are
+								49,999 and in the open tab the price 53000 how you are cheat
+								with the customer to attract. cheater people</div>
+							<div class="review-by">hitval 13 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff6161">1*</a>
+								<div class="review-name">price difference</div>
+							</div>
+							<div class="review-description">in display the price are
+								49,999 and in the open tab the price 53000 how you are cheat
+								with the customer to attract. cheater people</div>
+							<div class="review-by">hitval 13 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+						<div class="customer-review">
+							<div style="display: flex;">
+								<a href="" class="customer-star-review"
+									style="background-color: #ff6161">1*</a>
+								<div class="review-name">price difference</div>
+							</div>
+							<div class="review-description">in display the price are
+								49,999 and in the open tab the price 53000 how you are cheat
+								with the customer to attract. cheater people</div>
+							<div class="review-by">hitval 13 Mar, 2016</div>
+							<div class="like-unlike" style="margin-left: 80%">
+								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
+								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
+								</div>
+						</div>
+             </div>
+		</div>		
+             <div ng-controller="reviewCtrl">
 				<div class="view-all-reviews">
 					<a href="" class="view-review" style="text-decoration: none;">View
 						all reviews</a>
 					<div class="added-symobol">
 
 						<img alt="" src="image/ic_action_content_add.png" width="20px"
-							height="20px" ng-click="toggleElement()">
+							height="20px" ng-click="togglereviewElement()">
 
 					</div>
 				</div>
@@ -858,7 +1146,8 @@ Single Sim</div>
 
 					</div>
 				</div>
-
+             </div>
+            
 				<div class="product-details-description">
 					<div class="description product">
 						<div
@@ -894,8 +1183,8 @@ Single Sim</div>
 
 				</div>
 
-
-				<div class="read-more-data"><a href="" ng-click="toggleElement()" >view all feature</a></div>
+<div ng-controller="featureCtrl">
+				<div class="read-more-data"><a  ng-click="togglefeatureElement()" >view all feature</a></div>
 				<div ng-class="{'hidden' : showElement === false}">
 
 					<div class="brilliant-display">
@@ -956,7 +1245,7 @@ Single Sim</div>
 							feature within iTunes and App Store to authenticate purchases.</div>
 					</div>
 				</div>
-
+              </div>
 				<div class="payment-Authantic">
 					<img alt="" src="image/ic_action_action_verified_user.png"
 						class="payment-verified" width="35px" height="35px">

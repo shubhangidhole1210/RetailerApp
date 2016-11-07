@@ -337,14 +337,14 @@ retailApp.controller('featureCtrl',function($scope)
 
 retailApp.controller('productDetailsCtrl', function($scope, $timeout) {
 
-	$scope.showElement = false;
+	/*$scope.showElement = false;
 	$scope.toggleElement = function() {
 		$scope.showElement = $scope.showElement ? false : true;
 	};
 	
 	$scope.toggleFeatureElement = function() {
 		$scope.showFeatureElement = $scope.showFeatureElement ? false : true;
-	};
+	};*/
 	
 	$scope.data= {
 			
@@ -361,6 +361,31 @@ retailApp.controller('productDetailsCtrl', function($scope, $timeout) {
 	  }, 1000);
 
 });
+
+retailApp.controller('readMoreCtrl',function($scope)
+{
+	$scope.showElement = false;
+	$scope.toggleElement = function() {
+		$scope.showElement = $scope.showElement ? false : true;
+	};
+});
+
+retailApp.controller('reviewCtrl', function($scope)
+{
+	$scope.showElement = false;
+	$scope.togglereviewElement = function() {
+		$scope.showElement = $scope.showElement ? false : true;
+	};
+});
+
+retailApp.controller('featureCtrl', function($scope)
+		{
+	      $scope.showElement = false;
+	     $scope.togglefeatureElement = function() {
+		$scope.showElement = $scope.showElement ? false : true;
+	
+	     };
+	});
 
 retailApp.directive('ngElevateZoom', function() {
 	  return {
@@ -401,62 +426,15 @@ retailApp.controller('cartDetailsCtrl',function()
 	
 });
 
-/*function changeImg()
+retailApp.controller('abcCtrl',function($scope, $location, $anchorScroll)
 {
-    if(document.getElementById("imgClickAndChange").src=="image/iphone6-back-space-grey-color.jpg")
-    	{
-    	document.getElementById("imgClickAndChange").src = "image/apple-iphone6-original-img.jpeg";
-    	}
- 
-}*/
+	$scope.scrollTo = function(id) {
+	    $location.hash(id);
+	    console.log($location.hash());
+	    $anchorScroll();
+	  };
+});
 
-
-
-/*function changeImage()
-{
-	   document.getElementById("image").src= "image/apple-iphone6-original-img.jpeg"
-       	
-	}*/
-
-/*var intImage = 2;
-
-
-function changeImage(img1)
-{
-	switch (intImage)
-	{
-		case 1:
-		phneImg.src = "image/iphone6-back-space-grey-color.jpg"
-		   intImage = 2
-		   return(false);
-		
-		
-		case 2:
-			phneImg.src = "image/apple-iphone6-original-img.jpeg"
-		   intImage = 1
-		   return(false);
-	}
-}*/
-
-
-
-
-
-
-
-
-
-/*function changeImage() {
-
-    if (document.getElementById("phneImg").src == "image/apple-iphone6-original-img.jpeg") 
-    {
-        document.getElementById("phneImg").src = "image/iphone6-back-space-grey-color.jpg";
-    }
-    else 
-    {
-        document.getElementById("phneImg").src = "image/apple-iphone6-original-img.jpeg";
-    }
-}*/
 
 function changeImage(imageId)
 {
@@ -464,3 +442,20 @@ function changeImage(imageId)
      image.src=  document.getElementById(imageId).src;
      	 
 }
+
+/*retailApp.controller('shareCtrl', function($scope)
+{
+	$scope.displaySocialIcon= function()
+	{
+		
+	}
+	
+});*/
+
+retailApp.controller('ratingCtrl',function($scope)
+{
+	$scope.showElement = false;
+	$scope.togglereviewElement = function() {
+		$scope.showElement = $scope.showElement ? false : true;
+	};
+});
