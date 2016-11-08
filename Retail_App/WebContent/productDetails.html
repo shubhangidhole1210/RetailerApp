@@ -2,33 +2,44 @@
 <div ng-controller="productDetailsCtrl">
 	<div class="display-product-details">
 	
-         <!--  <div class="retailer-images"> -->
 		<div class="side-images">
 			<div class="two-wedges-img">
-				<img alt="" src="image/apple-iphone6-original-img.jpeg" width="35px"
-					height="70px" style="margin-left: 17px" onclick="changeImage('image1')" id="image1">
+				<img alt="" src="image/apple-iphone-6-original-small-images.jpeg"
+					onclick="changeImage('image1')" id="image1">
+
 			</div>
 			<div class="original-img">
-				<img alt="" src="image/iphone6-back-space-grey-color.jpg"
-					width="40px" height="70px" onclick="changeImage('image2')" id="image2">
+				<img alt="" src="image/apple-iphone-6-original-opp-small-images.jpeg"
+					 onclick="changeImage('image2')" id="image2">
+					 
+					 
+					 
 			</div>
 			<div class="side-img">
-				<img alt="" src="image/side_angle_view_iphone_6_plus_catalyst.jpg"
-					width="40px" height="70px" onclick="changeImage('image3')" id="image3">
+				<img alt="" src="image/apple-iphone-6-original-space-gray-small.jpeg"
+					onclick="changeImage('image3')" id="image3">
 			</div>
 			<div class="opp-img">
-				<img alt="" src="image/Apple-space-grey-color.jpeg" width="70px"
-					height="70px" onclick="changeImage('image4')" id="image4">
+				<img alt="" src="image/apple-iphone-6-two-small-images.jpeg"  onclick="changeImage('image4')" id="image4">
 			</div>
 		</div>
+		 <!--  <div class="side-images">
+		   <ul>
+		       <li ng-repeat="product in displayImages" class="two-wedges-img" style="list-style: none;">
+		          <img  ng-src="{{product.imageUrl}}" onclick="changeImage('image1')" id="image1"> 
+		       </li>
+		   </ul>
+		   </div> -->
 		<div class="product-images">
 			<div class="display-product-img">
 
 				 <!-- <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img" id="phneImg" name="phneImg" > -->
 				<img ng-elevate-zoom ng-src="{{data['small_image']}}"
-					zoom-image="{{data['large_image']}}" class="product-img" id="phneImg" name="phneImg" / height="350px" width="275px">
-
+					zoom-image="{{data['large_image']}}" class="product-img" id="phneImg" name="phneImg"  width="250px" height="300px">
+ 
 			</div>
+			
+			
 			<div class="display-button">
 				<button type="button" class="add-cart">ADD TO CART</button>
 				<button type="button" class="buy-now">BUY NOW</button>
@@ -721,7 +732,9 @@ Single Sim</div>
 						style="margin-left: 4%; padding-top: 10px; padding-bottom: 10px">
 						<div class="progress-rating">
 							<div class="first-5star-rating">
-								<span class="5*">5*</span>
+								<span class="5*">5
+								<span class="unicode-star">&#9733;</span>
+								</span>
 								<!-- <span class="progress-bar-green"></span> -->
 								<a class="progress-bar-green" ng-click="toggleFiveStarElement()">.</a> <span
 									class="progress-rating-reviews">9234</span>
@@ -729,25 +742,33 @@ Single Sim</div>
 						</div>
 						<div class="progress-rating">
 							<div class="first-5star-rating">
-								<span class="5*">4*</span> <span class="progress-bar-green-4"></span>
+								<span class="5*">4
+								<span class="unicode-star">&#9733;</span>
+								</span> <span class="progress-bar-green-4"></span>
 								<span class="progress-rating-reviews">9234</span>
 							</div>
 						</div>
 						<div class="progress-rating">
 							<div class="first-5star-rating">
-								<span class="5*">3*</span> <span class="progress-bar-green"></span>
+								<span class="5*">3
+								<span class="unicode-star">&#9733;</span>
+                                </span> <span class="progress-bar-green"></span>
 								<span class="progress-rating-reviews">9234</span>
 							</div>
 						</div>
 						<div class="progress-rating">
 							<div class="first-5star-rating">
-								<span class="5*">2*</span> <span class="progress-bar-green"></span>
+								<span class="5*">2 
+									<span class="unicode-star">&#9733;</span>
+									</span> <span class="progress-bar-green"></span>
 								<span class="progress-rating-reviews">9234</span>
 							</div>
 						</div>
 						<div class="progress-rating">
 							<div class="first-5star-rating">
-								<span class="5*">1*</span> <span class="progress-bar-green"></span>
+								<span class="5*">1
+								<span class="unicode-star">&#9733;</span>
+								</span> <span class="progress-bar-green"></span>
 								<span class="progress-rating-reviews">9234</span>
 							</div>
 						</div>
@@ -816,7 +837,9 @@ Single Sim</div>
                    <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">4*</a>
+									style="background-color: #16be48;display: flex">4
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									</a>
 								<div class="review-name">Best iPhone but Overpriced
 									!!!!!!!!</div>
 							</div>
@@ -836,7 +859,9 @@ Single Sim</div>
 						 <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">4*</a>
+									style="background-color: #16be48;display: flex">4
+									<span class="star-white" ">&#9734;</span>
+									</a>
 								<div class="review-name">Best iPhone but Overpriced
 									!!!!!!!!</div>
 							</div>
@@ -856,7 +881,10 @@ Single Sim</div>
 						 <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">4*</a>
+									style="background-color: #16be48;display: flex">4
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Best iPhone but Overpriced
 									!!!!!!!!</div>
 							</div>
@@ -879,7 +907,10 @@ Single Sim</div>
                  <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">3*</a>
+									style="background-color: #16be48;display: flex">3
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Faced minor issues</div>
 							</div>
 							<div class="review-description">Poor battery life...regular charge required if net in used frequently.
@@ -897,7 +928,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">3*</a>
+									style="background-color: #16be48;display: flex">3
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Just okay</div>
 							</div>
 							<div class="review-description">Good
@@ -914,7 +948,10 @@ Certified Buyer
 						 <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">3*</a>
+									style="background-color: #16be48;display: flex">3
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Faced minor issues</div>
 							</div>
 							<div class="review-description">Poor battery life...regular charge required if net in used frequently.
@@ -933,7 +970,10 @@ Certified Buyer
                  <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;">2*</a>
+									style="background-color: #ff9f00;display: flex">2
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Awesome performance</div>
 							</div>
 							<div class="review-description">But buy With WS Retailer
@@ -949,7 +989,9 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;">2*</a>
+									style="background-color: #ff9f00;display: flex">2		
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									</a>
 								<div class="review-name">Awesome performance</div>
 							</div>
 							<div class="review-description">But buy With WS Retailer
@@ -965,7 +1007,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;">2*</a>
+									style="background-color: #ff9f00;display: flex">2
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Awesome performance</div>
 							</div>
 							<div class="review-description">But buy With WS Retailer
@@ -983,7 +1028,10 @@ Certified Buyer
                 <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff6161">1*</a>
+									style="background-color: #ff6161;display: flex">1
+									<span class="star-white" >&#9734;</span>
+									
+									</a>
 								<div class="review-name">price difference</div>
 							</div>
 							<div class="review-description">in display the price are
@@ -998,7 +1046,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff6161">1*</a>
+									style="background-color: #ff6161;display: flex">1
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">price difference</div>
 							</div>
 							<div class="review-description">in display the price are
@@ -1013,7 +1064,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff6161">1*</a>
+									style="background-color: #ff6161;display: flex">1
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">price difference</div>
 							</div>
 							<div class="review-description">in display the price are
@@ -1044,7 +1098,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff6161;">1*</a>
+									style="background-color: #ff6161;display: flex">1
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+
+									</a>
 								<div class="review-name">Too expensive</div>
 							</div>
 							<div class="review-description">Extremely expensive, with
@@ -1061,7 +1118,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">4*</a>
+									style="background-color: #16be48;display: flex">4
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Best iPhone but Overpriced
 									!!!!!!!!</div>
 							</div>
@@ -1082,7 +1142,9 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;">2*</a>
+									style="background-color: #ff9f00;display: flex">2
+									<span class="star-white">&#9734;</span>
+									</a>
 								<div class="review-name">Awesome performance</div>
 							</div>
 							<div class="review-description">But buy With WS Retailer
@@ -1098,7 +1160,9 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #ff6161">1*</a>
+									style="background-color: #ff6161;display: flex">1
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									</a>
 								<div class="review-name">price difference</div>
 							</div>
 							<div class="review-description">in display the price are
@@ -1113,7 +1177,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">5*</a>
+									style="background-color: #16be48;display: flex">5
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">iphone 6s</div>
 							</div>
 							<div class="review-description">phone is pakka genuine i
@@ -1130,7 +1197,10 @@ Certified Buyer
 						<div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">5*</a>
+									style="background-color: #16be48;display: flex">5
+									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+									
+									</a>
 								<div class="review-name">Must buy!</div>
 							</div>
 							<div class="review-description">Really I like Big Billion

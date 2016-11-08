@@ -928,6 +928,10 @@
 	color: white;
 	text-decoration: none;
 }
+.customer-star-review a
+{
+	display: flex;
+}
 .review-name
 {
 	padding-left: 12px;
@@ -1059,3 +1063,14 @@
     border-top: 1px solid rgba(153, 153, 153, 0.19);
     border-right: 1px solid rgba(153, 153, 153, 0.19);
 }
+
+.unicode-star
+{
+	font-size: 10px;
+}
+
+.star-white
+{
+	font-size: 8px;
+}
+

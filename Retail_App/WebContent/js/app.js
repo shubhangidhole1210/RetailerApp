@@ -335,30 +335,26 @@ retailApp.controller('featureCtrl',function($scope)
 	        
 	});
 
-retailApp.controller('productDetailsCtrl', function($scope, $timeout) {
+retailApp.controller('productDetailsCtrl', function($scope, $timeout,$http) {
 
-	/*$scope.showElement = false;
-	$scope.toggleElement = function() {
-		$scope.showElement = $scope.showElement ? false : true;
-	};
-	
-	$scope.toggleFeatureElement = function() {
-		$scope.showFeatureElement = $scope.showFeatureElement ? false : true;
-	};*/
+	$http.get('displayImages.json').success(function(response) {
+		$scope.displayImages = response.displayImages.small_img
+	});
 	
 	$scope.data= {
 			
-			small_image: 'image/apple-iphone6-original-img.jpeg',
+			small_image: 'image/apple-iphone-6-original-large-img.jpeg',
 		    large_image: 'image/apple-iphone6-large-img.jpg'
 	}
 	
 	 $scope.data_delayed = {}
 	$timeout(function(){
 	    $scope.data_delayed = {
-	      small_image: 'image/apple-iphone6-original-img.jpeg',
+	      small_image: 'image/apple-iphone-6-original-large-img.jpeg',
 	      large_image: 'image/apple-iphone6-large-img.jpg'
 	    }
 	  }, 1000);
+	
 
 });
 
