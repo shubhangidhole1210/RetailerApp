@@ -355,7 +355,11 @@ retailApp.controller('productDetailsCtrl', function($scope, $timeout,$http) {
 	    }
 	  }, 1000);
 	
-
+	$scope.showElement = false;
+	$scope.toggleFiveStarElement = function() {
+		$scope.showElement = $scope.showElement ? false : true;
+	};
+	
 });
 
 retailApp.controller('readMoreCtrl',function($scope)
