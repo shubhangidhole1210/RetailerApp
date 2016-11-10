@@ -5,22 +5,22 @@
 		<div class="side-images">
 			<div class="two-wedges-img">
 				<img alt="" src="image/apple-iphone-6-original-small-images.jpeg"
-					onclick="changeImage('image1')" id="image1">
+					ng-click="changeImage('image1')" id="image1">
 
 			</div>
 			<div class="original-img">
 				<img alt="" src="image/apple-iphone-6-original-opp-small-images.jpeg"
-					 onclick="changeImage('image2')" id="image2">
+					 ng-click="changeImage('image2')" id="image2">
 					 
 					 
 					 
 			</div>
 			<div class="side-img">
 				<img alt="" src="image/apple-iphone-6-original-space-gray-small.jpeg"
-					onclick="changeImage('image3')" id="image3">
+					ng-click="changeImage('image3')" id="image3">
 			</div>
 			<div class="opp-img">
-				<img alt="" src="image/apple-iphone-6-two-small-images.jpeg"  onclick="changeImage('image4')" id="image4">
+				<img alt="" src="image/apple-iphone-6-two-small-images.jpeg"  ng-click="changeImage('image4')" id="image4">
 			</div>
 		</div>
 		 <!--  <div class="side-images">
@@ -33,7 +33,6 @@
 		<div class="product-images">
 			<div class="display-product-img">
 
-				 <!-- <img alt="" src="image/apple-iphone6-original-img.jpeg" class="product-img" id="phneImg" name="phneImg" > -->
 				<img ng-elevate-zoom ng-src="{{data['small_image']}}"
 					zoom-image="{{data['large_image']}}" class="product-img" id="phneImg" name="phneImg"  width="250px" height="300px">
  
@@ -53,7 +52,7 @@
 					<div class="product-name">
 						<h1>Apple iPhone 6 (Space Grey, 16 GB)</h1>
 					</div>
-					<div class="rating-views" ng-controller="abcCtrl">
+					
 						<div class="star-rating" >
 							<a ng-click="scrollTo('rating')"> 3.5 * </a>
 						</div>
@@ -63,7 +62,7 @@
 								reviews</a>
 
 						</div>
-					</div>
+					
 				</div>
 				
 			<div class="compare-share">
@@ -264,7 +263,6 @@ Single Sim</div>
 					</div>
 
 				</div>
-				<div ng-controller="readMoreCtrl">
 			<div class="read-more-data">	<a  
 					ng-click="toggleElement()" >Read More</a></div>
 				<div ng-class="{'hidden' : showElement === false}">
@@ -720,7 +718,7 @@ Single Sim</div>
 							TO CART</button>
 					</div>
 				</div>
-				<div ng-controller="ratingCtrl">
+				<!-- <div ng-controller="ratingCtrl"> -->
 				<div class="product-rating">
 					<div class="product-star-rating" id="rating">
 						<span class="rating-number">4.5<img alt=""
@@ -731,45 +729,62 @@ Single Sim</div>
 					<div
 						style="margin-left: 4%; padding-top: 10px; padding-bottom: 10px">
 						<div class="progress-rating">
-							<div class="first-5star-rating">
-								<span class="5*">5
+							<div class="first-5star-rating" style="vertical-align: sub;">
+								<div class="5*" >5
 								<span class="unicode-star">&#9733;</span>
-								</span>
-								<!-- <span class="progress-bar-green"></span> -->
-								<a class="progress-bar-green" ng-click="toggleFiveStarElement()">.</a> <span
-									class="progress-rating-reviews">9234</span>
-							</div>
+								</div>
+									<div id="myProgress" style="display: inline-block;">
+                                      <div id="myBar" class="myBar" style="width: {{ fiveStar }}"></div>
+                                     </div>
+                                     <!-- <div class="progress-rating-reviews" style="display: inline-block;">16000</div> -->
+                             </div>
+                                     
 						</div>
 						<div class="progress-rating">
 							<div class="first-5star-rating">
 								<span class="5*">4
 								<span class="unicode-star">&#9733;</span>
-								</span> <span class="progress-bar-green-4"></span>
-								<span class="progress-rating-reviews">9234</span>
+								</span> <!-- <span class="progress-bar-green-4"></span> -->
+								<div id="myProgress">
+                                      <div id="myBar1" class="myBar" style="width: {{ fourStar }}"></div>
+                                  </div>
+                                  <!-- <span class="progress-rating-reviews">12000</span> -->
 							</div>
 						</div>
+						
 						<div class="progress-rating">
 							<div class="first-5star-rating">
 								<span class="5*">3
 								<span class="unicode-star">&#9733;</span>
-                                </span> <span class="progress-bar-green"></span>
-								<span class="progress-rating-reviews">9234</span>
+                                </span> <!-- <span class="progress-bar-green"></span> -->
+								<div id="myProgress">
+                                      <div id="myBar2" class="myBar" style="width: {{threeStar}}"></div>
+                                  </div>
+                                  <!-- <span class="progress-rating-reviews">9234</span> -->
 							</div>
 						</div>
+						
 						<div class="progress-rating">
 							<div class="first-5star-rating">
-								<span class="5*">2 
-									<span class="unicode-star">&#9733;</span>
-									</span> <span class="progress-bar-green"></span>
-								<span class="progress-rating-reviews">9234</span>
+								<span class="5*">2
+								<span class="unicode-star">&#9733;</span>
+								</span>
+                                <!-- </span> <span class="progress-bar-green"></span> -->
+								<div id="myProgress">
+                                      <div id="myBar3" class="myBar"  style="background-color: #ff9f00; width: {{twoStar}}"></div>
+                                  </div>
+                                  <!-- <span class="progress-rating-reviews">7000</span> -->
 							</div>
 						</div>
 						<div class="progress-rating">
 							<div class="first-5star-rating">
 								<span class="5*">1
 								<span class="unicode-star">&#9733;</span>
-								</span> <span class="progress-bar-green"></span>
-								<span class="progress-rating-reviews">9234</span>
+								</span> <!-- <span class="progress-bar-green"></span> -->
+								<div id="myProgress">
+                                      <div id="myBar3" class="myBar"  style="background-color: #ff6161; width: {{oneStar}}"></div>
+                                  </div>
+								<!-- <span class="progress-rating-reviews">4000</span> -->
 							</div>
 						</div>
 					</div>
@@ -777,10 +792,10 @@ Single Sim</div>
 						<button type="button" class="review-button">Rate and
 							Review product</button>
 					</div>
-					<div class=""></div>
+					
 
 				</div>
-				<div ng-class="{'hidden' : showElement === false}">
+				<!-- <div ng-class="{'hidden' : showElement === false}">
 				 <div class="Review-of-five-star">
                      <div class="customer-review">
 							<div style="display: flex;">
@@ -832,8 +847,8 @@ Single Sim</div>
 								</div>
 						</div>
              </div>
-             </div>
-             <div class="Review-of-four-star">
+             </div> -->
+            <!--  <div class="Review-of-four-star">
                    <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
@@ -901,9 +916,9 @@ Single Sim</div>
 								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
 								</div>
 						</div>
-             </div>
+             </div> -->
              
-             <div class="review-of-3-Star">
+             <!-- <div class="review-of-3-Star">
                  <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
@@ -965,8 +980,8 @@ Certified Buyer
 								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
 								</div>
 						</div>
-             </div>
-             <div class="two-star-review">
+             </div> -->
+             <!-- <div class="two-star-review">
                  <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
@@ -1023,8 +1038,8 @@ Certified Buyer
 								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
 								</div>
 						</div>
-             </div>
-             <div class="one-star-review">
+             </div> -->
+            <!--  <div class="one-star-review">
                 <div class="customer-review">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
@@ -1079,8 +1094,8 @@ Certified Buyer
 								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
 								</div>
 						</div>
-             </div>
-		</div>		
+             </div> -->
+				
              <div ng-controller="reviewCtrl">
 				<div class="view-all-reviews">
 					<a href="" class="view-review" style="text-decoration: none;">View
@@ -1326,4 +1341,3 @@ Certified Buyer
 			</div>
 		</div>
 	</div>
-</div>

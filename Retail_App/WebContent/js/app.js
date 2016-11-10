@@ -156,7 +156,7 @@ retailApp.controller('searchCtrl', function($scope, $http) {
 
 });
 
-retailApp.controller('cartCtrl', function($scope, $http,$location) {
+retailApp.controller('homeCtrl', function($scope, $http,$location) {
 	
 	$scope.cart = [];
 	$http.get('products.json').success(function(response) {
@@ -183,6 +183,9 @@ retailApp.controller('cartCtrl', function($scope, $http,$location) {
 		$scope.offerProduct = response.offerProduct
 	});
 	
+	$http.get('slider.json').success(function(response) {
+		$scope.slider = response.slider
+	});
 	
 	
 	$scope.addCart = function(product) {
@@ -335,7 +338,7 @@ retailApp.controller('featureCtrl',function($scope)
 	        
 	});
 
-retailApp.controller('productDetailsCtrl', function($scope, $timeout,$http) {
+retailApp.controller('productDetailsCtrl', function($scope, $timeout,$http,$location, $anchorScroll) {
 
 	$http.get('displayImages.json').success(function(response) {
 		$scope.displayImages = response.displayImages.small_img
@@ -360,6 +363,23 @@ retailApp.controller('productDetailsCtrl', function($scope, $timeout,$http) {
 		$scope.showElement = $scope.showElement ? false : true;
 	};
 	
+	$scope.changeImage = function name(imageId) {
+		
+		 var image= document.getElementById('phneImg')
+	     image.src=  document.getElementById(imageId).src;
+	}
+	
+	$scope.fiveStar = 16000/16000 * 100;
+	$scope.fourStar = 12000/16000 * 100;
+	$scope.threeStar = 7000/16000 * 100;
+	$scope.twoStar = 4000/16000   * 100;
+	$scope.oneStar = 8000/16000    * 100;
+	
+	$scope.scrollTo = function(id) {
+	    $location.hash(id);
+	    console.log($location.hash());
+	    $anchorScroll();
+	  };
 });
 
 retailApp.controller('readMoreCtrl',function($scope)
@@ -416,24 +436,14 @@ retailApp.controller('headerCtrl',function($scope,$location)
 });
 
 
-retailApp.controller('sliderCtrl',function()
-{
-	
-	});
+
 
 retailApp.controller('cartDetailsCtrl',function()
 {
 	
 });
 
-retailApp.controller('abcCtrl',function($scope, $location, $anchorScroll)
-{
-	$scope.scrollTo = function(id) {
-	    $location.hash(id);
-	    console.log($location.hash());
-	    $anchorScroll();
-	  };
-});
+
 
 
 function changeImage(imageId)
@@ -443,19 +453,3 @@ function changeImage(imageId)
      	 
 }
 
-/*retailApp.controller('shareCtrl', function($scope)
-{
-	$scope.displaySocialIcon= function()
-	{
-		
-	}
-	
-});*/
-
-retailApp.controller('ratingCtrl',function($scope)
-{
-	$scope.showElement = false;
-	$scope.togglereviewElement = function() {
-		$scope.showElement = $scope.showElement ? false : true;
-	};
-});

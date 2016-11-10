@@ -1,19 +1,8 @@
 
 
 
-<!-- <div ng-controller="carouselCtrl" id="slides_control">
-    <div>
-      <carousel interval="myInterval">
-          <slide ng-repeat="slide in slides" slide="slide.active">
-            <img ng-src="{{slide.image}}">
-            <div class="carousel-caption">
-                <h4>Slide {{$index+1}}</h4>
-            </div>
-          </slide>
-      </carousel>
-    </div>
-</div> -->
-<div ng-controller="sliderCtrl">
+<div ng-controller="homeCtrl">
+
 
 <div class="container">
   <br>
@@ -50,6 +39,19 @@
           
         </div>
       </div>
+      
+      <!-- <div class="item">
+      <ul class="slider-info">
+        <li ng-repeat=" images in slides">
+           <h3>{{images.product}}</h3>
+           <h3>{{images.description}}</h3>
+           <img alt="" src="{{images.image}}">
+        </li>
+        </ul>
+        <div class="carousel-caption">
+          
+        </div>
+      </div> -->
     
       <div class="item">
       <div class="slider-info">
@@ -57,9 +59,7 @@
         <h3>3% Off..Hurry Up! </h3>
       </div>
         <img src="image/laptop-editing3.jpg" alt="Flower" width="460" height="200px">
-        <div class="carousel-caption">
-          
-        </div>
+        
       </div>
 
       <div class="item">
@@ -87,20 +87,20 @@
   </div>
 </div>
 
-</div>
-<div>
+
+<!-- <div>
 
 	<div ng-controller="searchCtrl">
 
-		<!-- <ul>
+		<ul>
 			<li ng-repeat="data in searchInfo.products | filter:searchBox">
 				<h3>{{data.title}}</h3> {{data.image}} <h3>{{data.value}}</h3>
 			</li>
-		</ul> -->
+		</ul>
 		<p ng-hide="searchInfo"></p>
 	</div>
-</div>
-<div ng-controller="cartCtrl">
+</div> -->
+
 <div class="product-container-main">
 <div class="product-header">
 <h3>Fashion & Lifestyle</h3>
@@ -268,6 +268,6 @@
 		</span>
 		<button ng-click="checkout();">checkout</button>
 	</div>
-</div>
 
+</div>
       
