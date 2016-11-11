@@ -369,17 +369,63 @@ retailApp.controller('productDetailsCtrl', function($scope, $timeout,$http,$loca
 	     image.src=  document.getElementById(imageId).src;
 	}
 	
-	$scope.fiveStar = 16000/16000 * 100;
-	$scope.fourStar = 12000/16000 * 100;
-	$scope.threeStar = 7000/16000 * 100;
-	$scope.twoStar = 4000/16000   * 100;
-	$scope.oneStar = 8000/16000    * 100;
+	console.log("before product details ajax call");
+	$http.get('productDetails.json').success(function(response) {
+		console.log("inside product details sucess");
+		$scope.productRating = response.productDetail.productRating;
+		
+		console.log("product rating values for five star count in sucess ::"+$scope.productRating.fiveStarCount);
+		console.log("after product details ajax call");
+		$scope.fiveStarCount =$scope.productRating.fiveStarCount ;
+		$scope.fourStarCount= $scope.productRating.fourStarCount
+		$scope.threeStarCount=$scope.productRating.threeStarCount;
+		$scope.twoStarCount=$scope.productRating.twoStarCount;
+		$scope.oneStarCount=$scope.productRating.oneStarCount;
+		console.log("product rating values for five star count"+$scope.productRating.fiveStarCount)
+var ratingArr= [$scope.fiveStarCount,$scope.fourStarCount,$scope.threeStarCount,$scope.twoStarCount,$scope.oneStarCount];
+	
+		
+	 	function calculateMaximumRating(ratingArr)
+	 {
+		var i;
+			var max;
+			 
+			 max=ratingArr[0];
+			 for(i=1;i<5;i++)
+				 {
+				      if(ratingArr[i] > max)
+				    	  {
+				    	     max = ratingArr[i];
+				    	  }
+				 
+				 }
+			 return max;
+	 };
+	 $scope.maximumCount=calculateMaximumRating(ratingArr);
+	
+	$scope.fiveStar = $scope.fiveStarCount/$scope.maximumCount * 100;
+	$scope.fourStar = $scope.fourStarCount/$scope.maximumCount * 100;
+	$scope.threeStar =$scope.threeStarCount/$scope.maximumCount * 100;  
+	$scope.twoStar = $scope.twoStarCount/$scope.maximumCount * 100;
+	$scope.oneStar = $scope.oneStarCount/$scope.maximumCount * 100;
+	
+	$scope.productReviews = response.productDetail.productReviews;
+	
+	$scope.productSpecifications = response.productDetail.productSpecifications;
+	
+	$scope.productDescription = response.productDetail.productDescription;
+	
+	});
+	  
+	
+	
 	
 	$scope.scrollTo = function(id) {
 	    $location.hash(id);
 	    console.log($location.hash());
 	    $anchorScroll();
 	  };
+	  
 });
 
 retailApp.controller('readMoreCtrl',function($scope)

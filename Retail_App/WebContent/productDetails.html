@@ -88,7 +88,8 @@
 			</div>
 				<div class="price-product">
 					<div class="details-original-price">
-						<h3 style="font-weight: bold;">&#8377; 33,990</h3>
+						<h3 style="font-weight: bold;">	&#x20b9;
+						 33,990</h3>
 					</div>
 					<div class="details-cut-price">&#8377; 499</div>
 					<div class="details-offer-price">41% off</div>
@@ -225,48 +226,29 @@
 						without using as much storage space with the Apple iPhone 6.</div>
 				</div>
 
-				<div class="product-specification">
+				<div class="product-specification" >
 					<div class="specification">Specification</div>
-					<div class="general-details" style="padding-bottom: 20px">
-						<div class="general">General</div>
+					<div class="general-details" style="padding-bottom: 20px" ng-repeat= "specification in productSpecifications">
+						<div class="general">{{specification.title}}</div>
 						<div class="type-type-for-flats">
-							<div class="product-slip-type">
-								<div class="types-for-flats">Sales Package</div>
-								<div class="slip-on">Handset, Lightening Charger, Headphone</div>
+							<div class="product-slip-type" ng-repeat="specificationDetail in specification.specificationDetails">
+								<div class="types-for-flats">{{specificationDetail.specificationLabel}}</div>
+								<div class="slip-on">{{specificationDetail.specificationInformation}}</div>
 							</div>
-							<div class="product-slip-type">
-								<div class="types-for-flats">Model Number</div>
-								<div class="slip-on">A1586</div>
-							</div>
-							<div class="product-slip-type">
-								<div class="types-for-flats">Model Name</div>
-								<div class="slip-on" style="padding-left: 35px">
-iPhone 6</div>
-							</div>
-							<div class="product-slip-type">
-								<div class="types-for-flats">Color</div>
-								<div class="slip-on" style="margin-left: 60px">
-Space Grey</div>
-							</div>
-							<div class="product-slip-type">
-								<div class="types-for-flats">SIM Type</div>
-								<div class="slip-on" style="padding-left: 55px">
-Single Sim</div>
-							</div>
+							
+							
+							
 						</div>
 					</div>
-					<div class="product-details">
-						<div class="pro-details">Product Details</div>
-						<div class="insole-material">Insole Material</div>
-						<div class="rubber">Rubber</div>
-
-					</div>
+					
 
 				</div>
-			<div class="read-more-data">	<a  
-					ng-click="toggleElement()" >Read More</a></div>
-				<div ng-class="{'hidden' : showElement === false}">
-					<div class="read-more">
+				<div class="read-more-data">
+					<a>Read More</a>
+				</div>
+				
+				
+			<!-- 		<div class="read-more">
 
 						<div class="product-features">Display Features</div>
 						<div class="">
@@ -295,7 +277,9 @@ Single Sim</div>
 						</div>
 
 					</div>
-					<div class="read-more">
+				 -->
+				
+					<!-- <div class="read-more">
 
 						<div class="general">Os & Processor Features</div>
 						<div class="type-type-for-flats">
@@ -316,17 +300,17 @@ Single Sim</div>
 									Core</div>
 							</div>
 
-							<!--  <div class="product-sub-features">
+							 <div class="product-sub-features">
                <div class="types-of-feature">Processor Clock Speed
 </div>
                <div class="feature-info">1.6 GHz</div>
-               </div> -->
+               </div>
 
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+				<!-- 	<div class="read-more" >
 
 						<div class="general">Memory & Storage Features</div>
 						<div class="type-type-for-flats">
@@ -358,8 +342,8 @@ Single Sim</div>
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+	<!-- 				<div class="read-more">
 
 						<div class="general">Camera Features</div>
 						<div class="type-type-for-flats">
@@ -419,8 +403,8 @@ Single Sim</div>
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+	<!-- 				<div class="read-more">
 
 						<div class="general">Call Features</div>
 						<div class="type-type-for-flats">
@@ -428,8 +412,8 @@ Single Sim</div>
 							<div class="feature-info">Yes</div>
 						</div>
 					</div>
-
-					<div class="read-more">
+ -->
+	<!-- 				<div class="read-more">
 
 						<div class="general">Connectivity Features</div>
 						<div class="type-type-for-flats">
@@ -512,8 +496,8 @@ Single Sim</div>
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+		<!-- 			<div class="read-more">
 
 						<div class="general">Other Details</div>
 						<div class="type-type-for-flats">
@@ -564,8 +548,8 @@ Single Sim</div>
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+			<!-- 		<div class="read-more">
 
 						<div class="general">Multimedia Features</div>
 						<div class="type-type-for-flats">
@@ -576,8 +560,8 @@ Single Sim</div>
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+		<!-- 			<div class="read-more">
 
 						<div class="general">Battery & Power Features</div>
 						<div class="type-type-for-flats">
@@ -589,8 +573,8 @@ Single Sim</div>
 						</div>
 
 					</div>
-
-					<div class="read-more">
+ -->
+		<!-- 			<div class="read-more">
 
 						<div class="general">Dimensions</div>
 						<div class="type-type-for-flats">
@@ -613,8 +597,8 @@ Single Sim</div>
 
 						</div>
 					</div>
-
-					<div class="read-more">
+ -->
+			<!-- 		<div class="read-more">
 
 						<div class="general">Warranty</div>
 						<div class="type-type-for-flats">
@@ -626,29 +610,9 @@ Single Sim</div>
 						</div>
 
 					</div>
+				 -->
 				</div>
-				</div>
-				<!-- <div class="similar-products">
-         <h4 class="similarProduct">Similar products</h4>
-            <div class="display-similar-product-img1">
-               <img alt="" src="image/Do-bhai-women-black-wedges.jpeg" width="150px" height="120px;">
-               <h5>Black Wedges</h5>
-               <a href="" class="img-rating">3.5*</a>
-            </div>
-            <div class="display-similar-product-img2">
-              <img alt="" src="image/grey-chocolate-gola-1-do-bhai-38-original-imaejtc4pgfwgs6c.jpeg" width="150" height="120">
-              <h5>White josmo Girls</h5>
-              <a href="" class="img-rating">4.2*</a>
-            </div>
-            <div class="display-similar-product-img3">
-              <img alt="" src="image/remson-india-women-black-wedges.jpeg" width="150" height="120">
-              <h5>Black wedges Indian Women</h5>
-              <a href="" class="img-rating">3.1*</a>
-            </div>
-        </div> -->
-				<!--  <div class="star-rating">
-          <div>2.5*</div>
-        </div> -->
+				
 
 				<div class="buy-together">
 					<div class="buy-data">Buy together and save upto 33%</div>
@@ -795,542 +759,38 @@ Single Sim</div>
 					
 
 				</div>
-				<!-- <div ng-class="{'hidden' : showElement === false}">
-				 <div class="Review-of-five-star">
-                     <div class="customer-review">
+				 <div class="customer-review" ng-repeat="review in productReviews">
 							<div style="display: flex;">
 								<a href="" class="customer-star-review"
-									style="background-color: #16be48">5*</a>
-								<div class="review-name">iphone 6s</div>
-							</div>
-							<div class="review-description">phone is pakka genuine i
-								checked in appstore..thanks for given me a cheap rate
-								50000..thanks to flipkart..and very fast delivery..within one
-								day i got mobile.......</div>
-							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48">5*</a>
-								<div class="review-name">iphone 6s</div>
-							</div>
-							<div class="review-description">phone is pakka genuine i
-								checked in appstore..thanks for given me a cheap rate
-								50000..thanks to flipkart..and very fast delivery..within one
-								day i got mobile.......</div>
-							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48">5*</a>
-								<div class="review-name">iphone 6s</div>
-							</div>
-							<div class="review-description">phone is pakka genuine i
-								checked in appstore..thanks for given me a cheap rate
-								50000..thanks to flipkart..and very fast delivery..within one
-								day i got mobile.......</div>
-							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-             </div>
-             </div> -->
-            <!--  <div class="Review-of-four-star">
-                   <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">4
+									style="background-color: #16be48;display: flex">{{review.starRating}}
 									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
 									</a>
-								<div class="review-name">Best iPhone but Overpriced
+								<div class="review-name">{{review.reviewTitle}}
 									!!!!!!!!</div>
 							</div>
-							<div class="review-description">Everything is good about
-								this iPhone except its Price :( People out there waiting for
-								this iPhone including me from a very long time but unable to buy
-								this due its over-price. I hope Apple India will realise this
-								and soon bring its price down and will see some happy customers
-								:) Cheers to those who are enjoying there brand new iPhone 6s
-								(y)</div>
-							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
+							<div class="review-description">{{review.reviewDescription}}</div>
+							<div class="review-by">{{review.reviewBy}}</div>
 							<div class="like-unlike" style="margin-left: 80%">
 								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
 								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
 								</div>
 						</div>
-						 <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">4
-									<span class="star-white" ">&#9734;</span>
-									</a>
-								<div class="review-name">Best iPhone but Overpriced
-									!!!!!!!!</div>
-							</div>
-							<div class="review-description">Everything is good about
-								this iPhone except its Price :( People out there waiting for
-								this iPhone including me from a very long time but unable to buy
-								this due its over-price. I hope Apple India will realise this
-								and soon bring its price down and will see some happy customers
-								:) Cheers to those who are enjoying there brand new iPhone 6s
-								(y)</div>
-							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						 <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">4
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Best iPhone but Overpriced
-									!!!!!!!!</div>
-							</div>
-							<div class="review-description">Everything is good about
-								this iPhone except its Price :( People out there waiting for
-								this iPhone including me from a very long time but unable to buy
-								this due its over-price. I hope Apple India will realise this
-								and soon bring its price down and will see some happy customers
-								:) Cheers to those who are enjoying there brand new iPhone 6s
-								(y)</div>
-							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-             </div> -->
-             
-             <!-- <div class="review-of-3-Star">
-                 <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">3
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Faced minor issues</div>
-							</div>
-							<div class="review-description">Poor battery life...regular charge required if net in used frequently.
-								</div>
-							<div class="review-by">Neeraj chand
-
-Certified Buyer
-6 Nov, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">3
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Just okay</div>
-							</div>
-							<div class="review-description">Good
-								</div>
-							<div class="review-by">Prithivi Raj
-
-Certified Buyer
-8 Sep, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						 <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">3
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Faced minor issues</div>
-							</div>
-							<div class="review-description">Poor battery life...regular charge required if net in used frequently.
-								</div>
-							<div class="review-by">Neeraj chand
-
-Certified Buyer
-6 Nov, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-             </div> -->
-             <!-- <div class="two-star-review">
-                 <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;display: flex">2
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Awesome performance</div>
-							</div>
-							<div class="review-description">But buy With WS Retailer
-								only...price comfortable ...plz don't buy other retailer frm
-								flipkart...</div>
-							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
-								2016</div>
-								<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;display: flex">2		
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									</a>
-								<div class="review-name">Awesome performance</div>
-							</div>
-							<div class="review-description">But buy With WS Retailer
-								only...price comfortable ...plz don't buy other retailer frm
-								flipkart...</div>
-							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
-								2016</div>
-								<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;display: flex">2
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Awesome performance</div>
-							</div>
-							<div class="review-description">But buy With WS Retailer
-								only...price comfortable ...plz don't buy other retailer frm
-								flipkart...</div>
-							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
-								2016</div>
-								<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-             </div> -->
-            <!--  <div class="one-star-review">
-                <div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff6161;display: flex">1
-									<span class="star-white" >&#9734;</span>
-									
-									</a>
-								<div class="review-name">price difference</div>
-							</div>
-							<div class="review-description">in display the price are
-								49,999 and in the open tab the price 53000 how you are cheat
-								with the customer to attract. cheater people</div>
-							<div class="review-by">hitval 13 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff6161;display: flex">1
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">price difference</div>
-							</div>
-							<div class="review-description">in display the price are
-								49,999 and in the open tab the price 53000 how you are cheat
-								with the customer to attract. cheater people</div>
-							<div class="review-by">hitval 13 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff6161;display: flex">1
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">price difference</div>
-							</div>
-							<div class="review-description">in display the price are
-								49,999 and in the open tab the price 53000 how you are cheat
-								with the customer to attract. cheater people</div>
-							<div class="review-by">hitval 13 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-             </div> -->
 				
-             <div ng-controller="reviewCtrl">
-				<div class="view-all-reviews">
-					<a href="" class="view-review" style="text-decoration: none;">View
-						all reviews</a>
-					<div class="added-symobol">
-
-						<img alt="" src="image/ic_action_content_add.png" width="20px"
-							height="20px" ng-click="togglereviewElement()">
-
-					</div>
-				</div>
-				<div ng-class="{'hidden' : showElement === false}">
-
-					<div class="product-review">
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff6161;display: flex">1
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-
-									</a>
-								<div class="review-name">Too expensive</div>
-							</div>
-							<div class="review-description">Extremely expensive, with
-								this amount you can get a good motorcycle at your home and
-								believe me it will be more useful than this. Will ultimately
-								will become outdated in next 6 months.</div>
-							<div class="review-by">Pradeep Kandari 16 Dec, 2015</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-								
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">4
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Best iPhone but Overpriced
-									!!!!!!!!</div>
-							</div>
-							<div class="review-description">Everything is good about
-								this iPhone except its Price :( People out there waiting for
-								this iPhone including me from a very long time but unable to buy
-								this due its over-price. I hope Apple India will realise this
-								and soon bring its price down and will see some happy customers
-								:) Cheers to those who are enjoying there brand new iPhone 6s
-								(y)</div>
-							<div class="review-by">Nitish kumar 17 Oct, 2015</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff9f00;display: flex">2
-									<span class="star-white">&#9734;</span>
-									</a>
-								<div class="review-name">Awesome performance</div>
-							</div>
-							<div class="review-description">But buy With WS Retailer
-								only...price comfortable ...plz don't buy other retailer frm
-								flipkart...</div>
-							<div class="review-by">Rajesh Reddy Certified Buyer 23 Apr,
-								2016</div>
-								<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #ff6161;display: flex">1
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									</a>
-								<div class="review-name">price difference</div>
-							</div>
-							<div class="review-description">in display the price are
-								49,999 and in the open tab the price 53000 how you are cheat
-								with the customer to attract. cheater people</div>
-							<div class="review-by">hitval 13 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">5
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">iphone 6s</div>
-							</div>
-							<div class="review-description">phone is pakka genuine i
-								checked in appstore..thanks for given me a cheap rate
-								50000..thanks to flipkart..and very fast delivery..within one
-								day i got mobile.......</div>
-							<div class="review-by">vignesh vicky 8 Mar, 2016</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-
-						<div class="customer-review">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">5
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									
-									</a>
-								<div class="review-name">Must buy!</div>
-							</div>
-							<div class="review-description">Really I like Big Billion
-								sales:-) I purchased Apple I phone 6s 16GB only in 32 K....2nd
-								iphone in my hand...</div>
-							<div class="review-by">Yogesh Shirode Certified Buyer 7
-								Oct, 2016</div>
-								<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-
-					</div>
-				</div>
-             </div>
-            
+               
+				
+           
 				<div class="product-details-description">
-					<div class="description product">
+					<div class="description product" ng-repeat= "description in productDescription">
 						<div
-							style="font-size: 24px; font-weight: 500; line-height: 1; padding-bottom: 16px; color: #212121; padding-left: 15px; padding-top: 10px;">Product
-							Description</div>
-						<div class="product-information">Get a more personalised
-							experience than ever with the new iPhone 6S. Stunning visuals,
-							faster speeds, easier sharing, and envious glances from everyone
-							around - you're surely going to love everything that this piece
-							of technology has to offer.</div>
+							style="font-size: 24px; font-weight: 500; line-height: 1; padding-bottom: 16px; color: #212121; padding-left: 15px; padding-top: 10px;">
+							  {{description.productDescriptionTitle}}
+							</div>
+						<div class="product-information">{{description.productDescriptionInfo}}</div>
 					</div>
 				</div>
-				<div class="brilliant-display">
+				
 
-					<div class="display">Brilliant Display</div>
-					<div class="product-information" style="padding-bottom: 10px">Browse
-						through a friend's Facebook album, watch a movie on Netflix, or
-						Snapchat with your bestie in the middle of the night. Everything
-						that you view and watch on this iPhone will look sharp, vibrant,
-						and true-to-life, courtesy the 13.97 cm (5.5) Retina HD Display.
-						This LED-backlit widescreen has a 1920x1080 pixel resolution and
-						1300:1 contrast ratio.</div>
-
-
-					<div class="brilliant-display-feature"
-						style="display: flex; padding-top: 10px; padding-bottom: 15px">
-						<div class="display-feature-box">13.97 cm (5.5)</div>
-						<div class="display-feature-box">Retina HD</div>
-						<div class="display-feature-box">LED Backlit</div>
-					</div>
-
-
-
-				</div>
-
-<div ng-controller="featureCtrl">
-				<div class="read-more-data"><a  ng-click="togglefeatureElement()" >view all feature</a></div>
-				<div ng-class="{'hidden' : showElement === false}">
-
-					<div class="brilliant-display">
-						<div class="display">Groundbreaking Technology</div>
-						<div class="product-information" style="padding-bottom: 10px">Thanks
-							to the advanced A9 chip with 64-bit architecture, this iPhone
-							boasts up to 70% faster CPU performance and up to 90% higher
-							graphics performance as compared to the previous generation
-							iPhones. Experience richer graphics and faster response times
-							while playing interactive games or running multiple apps.</div>
-						<div class="display-feature-box" style="width: 30%">Enhanced
-							Processing</div>
-
-					</div>
-
-					<div class="brilliant-display">
-						<div class="display">M9 Motion Coprocessor</div>
-						<div class="product-information" style="padding-bottom: 10px">The
-							integrated M9 continuously derives and analyzes data from sensors
-							such as the accelerometer, compass, gyroscope, and barometer to
-							help you measure the pace of your walk or jog. It ensures that
-							Siri is always on and ready to execute your commands without
-							hampering the battery's efficiency.</div>
-					</div>
-
-					<div class="brilliant-display">
-						<div class="display">3D Touch</div>
-						<div class="product-information" style="padding-bottom: 10px">The
-							innovative 3D Touch feature gives you an array of new ways to
-							interact with your iPhone. It gauges the pressure that you apply
-							on the screen and then responds to it with accurate results. It
-							also returns subtle taps instantly so you know that it is already
-							sensing what you're suggesting. This gesture lets you convert the
-							keyboard into a trackpad within apps such as Notes, e-mails, or
-							Messages so it is easy for you to make any changes.</div>
-					</div>
-
-
-					<div class="brilliant-display">
-						<div class="display">Live Photos</div>
-						<div class="product-information" style="padding-bottom: 10px">The
-							Live Photos feature is what gives you the ability to capture
-							motion and sound with still shots. It lets you convert those
-							special moments into living memories by adding to it moments just
-							before and after the shot. You can also set a Live Photo as your
-							iPhone's lock screen wallpaper.</div>
-					</div>
-
-					<div class="brilliant-display">
-						<div class="display">Security</div>
-						<div class="product-information" style="padding-bottom: 10px">The
-							six-digit length of the passcode makes it difficult for anyone
-							else to unlock your phone. If you have trouble remembering a
-							six-digit passcode, then you can also use the iPhone's
-							breakthrough Touch ID technology to unlock your phone. The phone
-							has a fingerprint sensor in the Home button that can analyse and
-							authenticate your fingerprint. You can also use the Touch ID
-							feature within iTunes and App Store to authenticate purchases.</div>
-					</div>
-				</div>
-              </div>
+              
 				<div class="payment-Authantic">
 					<img alt="" src="image/ic_action_action_verified_user.png"
 						class="payment-verified" width="35px" height="35px">
