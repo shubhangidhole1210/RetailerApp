@@ -2,6 +2,7 @@
 <div ng-controller="productDetailsCtrl">
 	<div class="display-product-details">
 	
+ <div class="retailer-img"  id="absoluteScroll" onscroll="">
 		<div class="side-images">
 			<div class="two-wedges-img">
 				<img alt="" src="image/apple-iphone-6-original-small-images.jpeg"
@@ -9,103 +10,95 @@
 
 			</div>
 			<div class="original-img">
-				<img alt="" src="image/apple-iphone-6-original-opp-small-images.jpeg"
-					 ng-click="changeImage('image2')" id="image2">
-					 
-					 
-					 
+				<img alt=""
+					src="image/apple-iphone-6-original-opp-small-images.jpeg"
+					ng-click="changeImage('image2')" id="image2">
+
+
+
 			</div>
 			<div class="side-img">
-				<img alt="" src="image/apple-iphone-6-original-space-gray-small.jpeg"
+				<img alt=""
+					src="image/apple-iphone-6-original-space-gray-small.jpeg"
 					ng-click="changeImage('image3')" id="image3">
 			</div>
 			<div class="opp-img">
-				<img alt="" src="image/apple-iphone-6-two-small-images.jpeg"  ng-click="changeImage('image4')" id="image4">
+				<img alt="" src="image/apple-iphone-6-two-small-images.jpeg"
+					ng-click="changeImage('image4')" id="image4">
 			</div>
 		</div>
-		 <!--  <div class="side-images">
-		   <ul>
-		       <li ng-repeat="product in displayImages" class="two-wedges-img" style="list-style: none;">
-		          <img  ng-src="{{product.imageUrl}}" onclick="changeImage('image1')" id="image1"> 
-		       </li>
-		   </ul>
-		   </div> -->
+
 		<div class="product-images">
 			<div class="display-product-img">
 
 				<img ng-elevate-zoom ng-src="{{data['small_image']}}"
-					zoom-image="{{data['large_image']}}" class="product-img" id="phneImg" name="phneImg"  width="250px" height="300px">
- 
+					zoom-image="{{data['large_image']}}" class="product-img"
+					id="phneImg" name="phneImg" width="250px" height="300px">
+
 			</div>
-			
-			
+
 			<div class="display-button">
 				<button type="button" class="add-cart">ADD TO CART</button>
 				<button type="button" class="buy-now">BUY NOW</button>
 			</div>
 		</div>
+		</div>
+		
+	            
+	     	
+		
 		<!-- </div> -->
 		<div class="products-details-data" style="margin-right: 1%;">
 			<div align="justify">
-			<div style="display: flex">
-				<div class="product-info">
-					<div class="product-name">
-						<h1>Apple iPhone 6 (Space Grey, 16 GB)</h1>
-					</div>
-					
-						<div class="star-rating" >
-							<a ng-click="scrollTo('rating')"> 3.5 * </a>
+				<div style="display: flex">
+					<div class="product-info">
+						<div class="product-name">
+							<h1>Apple iPhone 6 (Space Grey, 16 GB)</h1>
+						</div>
+
+						<div class="star-rating">
+							<a ng-click="scrollTo('rating')"> 3.5 &#9734; </a>
 						</div>
 						<div class="rating-and-views">
 
-							<a ng-click="scrollTo('rating')" style="text-decoration: none; cursor: pointer;">611 rating</a> <span>&</span> <a ng-click="scrollTo('rating')" style="text-decoration: none; cursor: pointer;">68
-								reviews</a>
+							<a ng-click="scrollTo('rating')"
+								style="text-decoration: none; cursor: pointer;">611 rating</a> <span>&</span>
+							<a ng-click="scrollTo('rating')"
+								style="text-decoration: none; cursor: pointer;">68 reviews</a>
 
 						</div>
-					
+
+					</div>
+
+					<div class="compare-share">
+						<div class="compare" style="display: inline-block;">Compare</div>
+						<div class="share"
+							style="display: inline-block; margin-left: 15px">
+							<img alt="" src="image/ic_launcher_arrow.png" width="20px"
+								height="20px"> Share
+						</div>
+					</div>
+
+
 				</div>
-				
-			<div class="compare-share">
-			    <div class="compare" style="display: inline-block;">Compare</div>
-			    <div   class="share" style="display: inline-block;margin-left: 15px">
-			    <img alt="" src="image/ic_launcher_arrow.png" width="20px" height="20px">
-			    Share</div>
-			</div>
-			
-			<!-- <div id="popWin" ng-show="isLoginVisible">
-			      <div class="social-media-images" style="display: flex">
-			        <div class="facebook-img">
-			           <img alt="" src="image/facebook-icon-preview-1.png" width="60px" height="60px">
-			           <div class="site-name">Facebook</div>
-			        </div>
-			        <div class="facebook-img" style="margin-left: 10%">
-			           <img alt="" src="image/tweet-logo.jpg" width="60px" height="60px">
-			           <div class="site-name">Twitter</div>
-			        </div>
-			      </div>
-			  
-			</div> -->
-			</div>
 				<div class="price-product">
 					<div class="details-original-price">
-						<h3 style="font-weight: bold;">	&#x20b9;
-						 33,990</h3>
+						<h3 style="font-weight: bold;">&#x20b9; 33,990</h3>
 					</div>
 					<div class="details-cut-price">&#8377; 499</div>
 					<div class="details-offer-price">41% off</div>
 				</div>
 
-				<!-- <div class="details-banks-offer">
-       <div class="bank-offer">Offer</div>
-       <div class="extra-off">Extra 15% off* with digibank by DBS | Min trxn Rs. 650 | Max Disc. Rs. 100</div>
-       <div class="terms-condition">T&C</div>
-   </div>   -->
+
 
 				<div class="EMI-details">
 					<div class="emi-plans">
 						<img alt="" src="image/ic_action_action_perm_contact_cal.png"
 							height="28px" width="28px">
-						<div class="emi-info"><span style="font-weight: bold;color: black;">EMI from</span> Rs 1,412/month</div>
+						<div class="emi-info">
+							<span style="font-weight: bold; color: black;">EMI from</span> Rs
+							1,412/month
+						</div>
 						<a href="" class="views-plans">View Plan</a>
 					</div>
 					<div class="buy-exchange">
@@ -113,9 +106,9 @@
 							<img alt="" src="image/ic_action_action_swap_vert_circle.png"
 								height="28px" width="28px">
 							<div class="emi-info">
-							<span>Get upto Rs.</span>
-							 <span style="font-weight: bold; color: black;">20.000</span> 
-							<span>off on exchange</span>
+								<span>Get upto Rs.</span> <span
+									style="font-weight: bold; color: black;">20.000</span> <span>off
+									on exchange</span>
 							</div>
 							<a href="" class="views-plans">Buy witch Exchange </a>
 						</div>
@@ -125,10 +118,9 @@
 							<img alt="" src="image/ic_launcher.png" height="28px"
 								width="28px">
 							<div class="emi-info">
-							<span style="font-weight: bold; color: black;">Special Price </span>
-							<span>Flat Rs.7,000 Off on
-								Apple iPhone 6</span>
-								</div>
+								<span style="font-weight: bold; color: black;">Special
+									Price </span> <span>Flat Rs.7,000 Off on Apple iPhone 6</span>
+							</div>
 							<a href="" class="views-plans"> T&C </a>
 						</div>
 					</div>
@@ -138,8 +130,9 @@
 							<img alt="" src="image/ic_launcher.png" height="28px"
 								width="28px">
 							<div class="emi-info">
-							<span style="font-weight: bold;color: black;">Bank Offer</span> Extra 15% Cashback* with
-								Citi Credit and Debit Cards</div>
+								<span style="font-weight: bold; color: black;">Bank Offer</span>
+								Extra 15% Cashback* with Citi Credit and Debit Cards
+							</div>
 							<a href="" class="views-plans"> T&C </a>
 						</div>
 					</div>
@@ -158,38 +151,18 @@
 					<a href="" class="pincode-delivery-details"> Enter pincode for
 						delivery details </a>
 				</div>
-				<!-- <div class="product-size">
-					<div class="size-Euro">Size-Euro</div>
-					<div class="Page navigation" style="margin-left: 5%">
-						<ul class="pagination">
-							<li></li>
-							<li><a href="#">35</a></li>
-							<li><a href="#">36</a></li>
-							<li><a href="#">37</a></li>
-							<li><a href="#">38</a></li>
-							<li><a href="#">39</a></li>
-						</ul>
-					</div>
-				</div> -->
+
 				<div class="product-color-storage-info">
 					<div class="product-color">
 						<div class="color">color</div>
 						<div class="display-colors-imgs">
-						
+
 							<img alt="" src="image/Apple-space-grey-color.jpeg" width="60px"
-								height="55px">
-					
-								 <img alt=""
+								height="55px"> <img alt=""
 								src="image/iphone-pink-color.jpg" width="60px" height="55px">
 						</div>
 					</div>
-					<!-- <div class="storage">
-           <div class="color">Storage</div>
-           <div class="display-storage-buttons">
-              <button type="button" class="16GB-storage">16 GB</button>
-              <button type="button" class="64GB-storage">64 GB</button>
-           </div>
-           </div> -->
+
 
 				</div>
 				<div class="products-list">
@@ -226,578 +199,201 @@
 						without using as much storage space with the Apple iPhone 6.</div>
 				</div>
 
-				<div class="product-specification" >
+				<div class="product-specification">
 					<div class="specification">Specification</div>
-					<div class="general-details" style="padding-bottom: 20px" ng-repeat= "specification in productSpecifications">
+					<div class="general-details" style="padding-bottom: 20px"
+						ng-repeat="specification in productSpecifications">
 						<div class="general">{{specification.title}}</div>
 						<div class="type-type-for-flats">
-							<div class="product-slip-type" ng-repeat="specificationDetail in specification.specificationDetails">
+							<div class="product-slip-type"
+								ng-repeat="specificationDetail in specification.specificationDetails">
 								<div class="types-for-flats">{{specificationDetail.specificationLabel}}</div>
 								<div class="slip-on">{{specificationDetail.specificationInformation}}</div>
 							</div>
-							
-							
-							
 						</div>
-					</div>
-					
-
-				</div>
-				<div class="read-more-data">
-					<a>Read More</a>
-				</div>
-				
-				
-			<!-- 		<div class="read-more">
-
-						<div class="product-features">Display Features</div>
-						<div class="">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Resolution</div>
-								<div class="feature-info" style="padding-left: 50px">2560
-									x 1440</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">Resolution Type</div>
-								<div class="feature-info" style="padding-left: 20px;">Full
-									HD</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">GPU</div>
-								<div class="feature-info" style="padding-left: 91px">ARM
-									Mali T830 MP1</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Display Type</div>
-								<div class="feature-info" style="padding-left: 45px">TFT</div>
-							</div>
-
-						</div>
-
-					</div>
-				 -->
-				
-					<!-- <div class="read-more">
-
-						<div class="general">Os & Processor Features</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Operating System</div>
-								<div class="feature-info" style="padding-left: 20px">Android
-									Nougat 7.1</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">Processor Type</div>
-								<div class="feature-info" style="padding-left: 35px">Exynos
-									7870</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Processor Core</div>
-								<div class="feature-info" style="padding-left: 35px">Octa
-									Core</div>
-							</div>
-
-							 <div class="product-sub-features">
-               <div class="types-of-feature">Processor Clock Speed
-</div>
-               <div class="feature-info">1.6 GHz</div>
-               </div>
-
-						</div>
-
-					</div>
- -->
-				<!-- 	<div class="read-more" >
-
-						<div class="general">Memory & Storage Features</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Internal Storage</div>
-								<div class="feature-info" style="padding-left: 35px">128
-									GB</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">RAM</div>
-								<div class="feature-info" style="padding-left: 110px">3 GB</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Expandable Storage</div>
-								<div class="feature-info" style="padding-left: 13px">256
-									GB</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Memory Card Type</div>
-								<div class="feature-info" style="padding-left: 20px">microSD</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Call Log Memory</div>
-								<div class="feature-info" style="padding-left: 40px">Yes</div>
-							</div>
-						</div>
-
-					</div>
- -->
-	<!-- 				<div class="read-more">
-
-						<div class="general">Camera Features</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Primary Camera</div>
-								<div class="feature-info" style="padding-left: 41px">13
-									megapixel</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">Primary Camera</div>
-								<div class="feature-info" style="padding-left: 41px">13
-									megapixel</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Secondary Camera</div>
-								<div class="feature-info" style="padding-left: 27px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Secondary Camera</div>
-								<div class="feature-info" style="padding-left: 25px">8
-									megapixel</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Flash</div>
-								<div class="feature-info" style="padding-left: 115px">LED</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">HD Recording</div>
-								<div class="feature-info" style="padding-left: 65px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Full HD Recording</div>
-								<div class="feature-info" style="padding-left: 40px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Video Recording</div>
-								<div class="feature-info" style="padding-left: 52px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Video Resolution</div>
-								<div class="feature-info" style="padding-left: 47px">1920
-									x 1080</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Frame Rate</div>
-								<div class="feature-info" style="padding-left: 80px">30
-									fps</div>
-							</div>
-
-						</div>
-
-					</div>
- -->
-	<!-- 				<div class="read-more">
-
-						<div class="general">Call Features</div>
-						<div class="type-type-for-flats">
-							<div class="types-of-feature">Phone Book</div>
-							<div class="feature-info">Yes</div>
-						</div>
-					</div>
- -->
-	<!-- 				<div class="read-more">
-
-						<div class="general">Connectivity Features</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Network Type</div>
-								<div class="feature-info" style="padding-left: 75px">4G,
-									3G, 2G</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Supported Networks</div>
-								<div class="feature-info" style="padding-left: 35px">4G
-									LTE, 4G LTE</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Internet Connectivity</div>
-								<div class="feature-info" style="padding-left: 35px">4G,
-									3G, Wi-Fi</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">3G</div>
-								<div class="feature-info" style="padding-left: 150px">Yes</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">3G Speed</div>
-								<div class="feature-info" style="padding-left: 105px">HSPA+
-									42.2 Mbps</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Pre-installed Browser</div>
-								<div class="feature-info" style="padding-left: 35px">
-									Samsung, Android</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Bluetooth Support</div>
-								<div class="feature-info" style="padding-left: 60px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Bluetooth Version</div>
-								<div class="feature-info" style="padding-left: 65px">4.1</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Wi-Fi</div>
-								<div class="feature-info" style="padding-left: 142px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Wi-Fi Version</div>
-								<div class="feature-info" style="padding-left: 92px">802.11
-									b/g/n</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">USB Connectivity</div>
-								<div class="feature-info" style="padding-left: 70px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Audio Jack</div>
-								<div class="feature-info" style="padding-left: 110px">3.5mm</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Map Support</div>
-								<div class="feature-info" style="padding-left: 97px">
-									Google Maps</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">GPS Support</div>
-								<div class="feature-info" style="padding-left: 100px">Yes</div>
-							</div>
-
-						</div>
-
-					</div>
- -->
-		<!-- 			<div class="read-more">
-
-						<div class="general">Other Details</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Smartphone</div>
-								<div class="feature-info" style="padding-left: 110px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Touchscreen Type</div>
-								<div class="feature-info" style="padding-left: 70px">Capacitive</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">SIM Size</div>
-								<div class="feature-info" style="padding-left: 135px">
-									Micro SIM</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Removable Battery</div>
-								<div class="feature-info" style="padding-left: 72px">No</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">SMS</div>
-								<div class="feature-info" style="padding-left: 162px">Yes</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">SIM Access</div>
-								<div class="feature-info" style="padding-left: 122px">
-
-									Dual Standby</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Internal Memory</div>
-								<div class="feature-info" style="padding-left: 93px">32</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Sensors</div>
-								<div class="feature-info" style="padding-left: 143px">
-									Accelerometer, Light Sensor</div>
-							</div>
-
-
-						</div>
-
-					</div>
- -->
-			<!-- 		<div class="read-more">
-
-						<div class="general">Multimedia Features</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Audio Formats</div>
-								<div class="feature-info" style="padding-left: 105px">MP3</div>
-							</div>
-						</div>
-
-					</div>
- -->
-		<!-- 			<div class="read-more">
-
-						<div class="general">Battery & Power Features</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Battery Capacity</div>
-								<div class="feature-info" style="padding-left: 96px">3450
-									mAh</div>
-							</div>
-						</div>
-
-					</div>
- -->
-		<!-- 			<div class="read-more">
-
-						<div class="general">Dimensions</div>
-						<div class="type-type-for-flats">
-							<div class="product-sub-features">
-								<div class="types-of-feature">Width</div>
-								<div class="feature-info" style="padding-left: 165px">75.74
-									mm</div>
-							</div>
-							<div class="product-sub-features">
-								<div class="types-of-feature">Height</div>
-								<div class="feature-info" style="padding-left: 159px">154.72
-									mm</div>
-							</div>
-
-							<div class="product-sub-features">
-								<div class="types-of-feature">Depth</div>
-								<div class="feature-info" style="padding-left: 163px">8.58
-									mm</div>
-							</div>
-
-						</div>
-					</div>
- -->
-			<!-- 		<div class="read-more">
-
-						<div class="general">Warranty</div>
-						<div class="type-type-for-flats">
-							<div class="product-slip-type">
-								<div class="types-of-feature">Warranty Summary</div>
-								<div class="feature-info" style="padding-left: 80px">1
-									Year Manufacturer Warranty</div>
-							</div>
-						</div>
-
-					</div>
-				 -->
-				</div>
-				
-
-				<div class="buy-together">
-					<div class="buy-data">Buy together and save upto 33%</div>
-					<div class="display-img-together">
-						<div class="apple-original-phone">
-							<img alt=""
-								src="image/apple-iphone-6-original-imaeymdqs5gm5xkz.jpeg"
-								width="50px" height="90px" style="margin-left: 10%">
-							<div class="img-description">Apple iPhone 6</div>
-							<div class="product-img-rating">
-								<a href="" >4.5*</a> <span>(13,0001)</span>
-							</div>
-							<div class="product-price">
-								<span class="product-original-price">&#8377;29,990</span> <span
-									class="product-offer-price">&#8377;36,990</span>
-							</div>
-							<div class="offer-product">18% off</div>
-
-						</div>
-						<div class="phone-guard" style="margin-left: 18%">
-							<img alt=""
-								src="image/unistuff-16786-2-5d-curve-edge-9h-surface-hardness-original-imaemmyyqtnyhhjz.jpeg"
-								width="90px" height="90px">
-							<div class="img-description">Apple iPhone 6</div>
-							<div class="product-img-rating">
-								<a href="">4.5*</a> <span>(13,0001)</span>
-							</div>
-							<div class="product-price">
-								<span class="product-original-price">&#8377;29,990</span> <span
-									class="product-offer-price">&#8377;36,990</span>
-							</div>
-							<div class="offer-product">18% off</div>
-						</div>
-						<div class="mobile-cover" style="margin-left: 18%">
-							<img alt=""
-								src="image/karpine-bakcase10775scclr-original-imaec4kx6cywzshv.jpeg"
-								width="50px" height="90px">
-							<div class="img-description">Apple iPhone 6</div>
-							<div class="product-img-rating">
-								<a href="">4.5*</a> <span>(13,0001)</span>
-							</div>
-							<div class="product-price">
-								<span class="product-original-price">&#8377;29,990</span> <span
-									class="product-offer-price">&#8377;36,990</span>
-							</div>
-							<div class="offer-product">18% off</div>
-						</div>
-
-					</div>
-					<hr>
-					<div class="display-product-total">
-						<div class="display-item">
-							<div class="first-item">1 Item</div>
-							<div class="product-original-price">&#8377;29,990</div>
-						</div>
-						<div class="equal-icon">&#43;</div>
-						<div class="display-item" style="margin-left: 3%">
-							<div class="first-item">2 Addins</div>
-							<div class="product-original-price">&#8377;448</div>
-						</div>
-						<div class="equal-icon">&#61;</div>
-						<div class="display-item" style="margin-left: 3%">
-							<div class="first-item">Total</div>
-							<div class="product-original-price">&#8377;30,438</div>
-						</div>
-						<button type="button" class="add-total-cart">ADD 3 ITEMS
-							TO CART</button>
 					</div>
 				</div>
-				<!-- <div ng-controller="ratingCtrl"> -->
-				<div class="product-rating">
-					<div class="product-star-rating" id="rating">
-						<span class="rating-number">4.5<img alt=""
-							src="image/ic_toggle_star.png" width="30px" height="30px"></span>
-						<div class="buy-product-rating">13037 Ratings</div>
-						<div class="buy-product-reviews">1512 Reviews</div>
+			</div>
+			<div class="buy-together">
+				<div class="buy-data">Buy together and save upto 33%</div>
+				<div class="display-img-together">
+					<div class="apple-original-phone">
+						<img alt=""
+							src="image/apple-iphone-6-original-imaeymdqs5gm5xkz.jpeg"
+							width="50px" height="90px" style="margin-left: 10%">
+						<div class="img-description">Apple iPhone 6</div>
+						<div class="product-img-rating">
+							<a>4.5&#9734;</a> <span>(13,0001)</span>
+						</div>
+						<div class="product-price">
+							<span class="product-original-price">&#8377;29,990</span> <span
+								class="product-offer-price">&#8377;36,990</span>
+						</div>
+						<div class="offer-product">18% off</div>
+
 					</div>
+					<div class="phone-guard" style="margin-left: 18%">
+						<img alt=""
+							src="image/unistuff-16786-2-5d-curve-edge-9h-surface-hardness-original-imaemmyyqtnyhhjz.jpeg"
+							width="90px" height="90px">
+						<div class="img-description">Apple iPhone 6</div>
+						<div class="product-img-rating">
+							<a>4.5&#9734;</a> <span>(13,0001)</span>
+						</div>
+						<div class="product-price">
+							<span class="product-original-price">&#8377;29,990</span> <span
+								class="product-offer-price">&#8377;36,990</span>
+						</div>
+						<div class="offer-product">18% off</div>
+					</div>
+					<div class="mobile-cover" style="margin-left: 18%">
+						<img alt=""
+							src="image/karpine-bakcase10775scclr-original-imaec4kx6cywzshv.jpeg"
+							width="50px" height="90px">
+						<div class="img-description">Apple iPhone 6</div>
+						<div class="product-img-rating">
+							<a>4.5&#9734;</a> <span>(13,0001)</span>
+						</div>
+						<div class="product-price">
+							<span class="product-original-price">&#8377;29,990</span> <span
+								class="product-offer-price">&#8377;36,990</span>
+						</div>
+						<div class="offer-product">18% off</div>
+					</div>
+
+				</div>
+				<hr>
+				<div class="display-product-total">
+					<div class="display-item">
+						<div class="first-item">1 Item</div>
+						<div class="product-original-price">&#8377;29,990</div>
+					</div>
+					<div class="equal-icon">&#43;</div>
+					<div class="display-item" style="margin-left: 3%">
+						<div class="first-item">2 Addins</div>
+						<div class="product-original-price">&#8377;448</div>
+					</div>
+					<div class="equal-icon">&#61;</div>
+					<div class="display-item" style="margin-left: 3%">
+						<div class="first-item">Total</div>
+						<div class="product-original-price">&#8377;30,438</div>
+					</div>
+					<button type="button" class="add-total-cart">ADD 3 ITEMS
+						TO CART</button>
+				</div>
+			</div>
+			<!-- <div ng-controller="ratingCtrl"> -->
+			<div class="product-rating">
+				<div class="product-star-rating" id="rating">
+					<span class="rating-number">4.5<img alt=""
+						src="image/ic_toggle_star.png" width="30px" height="30px"></span>
+					<div class="buy-product-rating">13037 Ratings</div>
+					<div class="buy-product-reviews">1512 Reviews</div>
+				</div>
+				<div
+					style="margin-left: 4%; padding-top: 10px; padding-bottom: 10px">
+					<div class="progress-rating">
+						<div class="first-5star-rating" style="vertical-align: sub;">
+							<div class="5*">
+								5 <span class="unicode-star">&#9733;</span>
+							</div>
+							<div id="myProgress" style="display: inline-block;">
+								<div id="myBar" class="myBar" style="width: {{fiveStar}}"></div>
+							</div>
+							<!-- <div class="progress-rating-reviews" style="display: inline-block;">16000</div> -->
+						</div>
+
+					</div>
+					<div class="progress-rating">
+						<div class="first-5star-rating">
+							<span class="5*">4 <span class="unicode-star">&#9733;</span>
+							</span>
+							<!-- <span class="progress-bar-green-4"></span> -->
+							<div id="myProgress">
+								<div id="myBar1" class="myBar" style="width: {{fourStar}}"></div>
+							</div>
+							<!-- <span class="progress-rating-reviews">12000</span> -->
+						</div>
+					</div>
+
+					<div class="progress-rating">
+						<div class="first-5star-rating">
+							<span class="5*">3 <span class="unicode-star">&#9733;</span>
+							</span>
+							<!-- <span class="progress-bar-green"></span> -->
+							<div id="myProgress">
+								<div id="myBar2" class="myBar" style="width: {{threeStar}}"></div>
+							</div>
+							<!-- <span class="progress-rating-reviews">9234</span> -->
+						</div>
+					</div>
+
+					<div class="progress-rating">
+						<div class="first-5star-rating">
+							<span class="5*">2 <span class="unicode-star">&#9733;</span>
+							</span>
+							<!-- </span> <span class="progress-bar-green"></span> -->
+							<div id="myProgress">
+								<div id="myBar3" class="myBar"
+									style="background-color: #ff9f00; width: {{twoStar}}"></div>
+							</div>
+							<!-- <span class="progress-rating-reviews">7000</span> -->
+						</div>
+					</div>
+					<div class="progress-rating">
+						<div class="first-5star-rating">
+							<span class="5*">1 <span class="unicode-star">&#9733;</span>
+							</span>
+							<!-- <span class="progress-bar-green"></span> -->
+							<div id="myProgress">
+								<div id="myBar3" class="myBar"
+									style="background-color: #ff6161; width: {{oneStar}}"></div>
+							</div>
+							<!-- <span class="progress-rating-reviews">4000</span> -->
+						</div>
+					</div>
+				</div>
+				<div align="left">
+					<button type="button" class="review-button">
+						Rate and Review product</button>
+				</div>
+
+			</div>
+			<div class="customer-review" ng-repeat="review in productReviews">
+				<div style="display: flex;">
+					<a  class="customer-star-review"
+						style="background-color: #16be48; display: flex">{{review.starRating}}
+						<span class="star-white" style="vertical-align: sub;">&#9734;</span>
+					</a>
+					<div class="review-name">{{review.reviewTitle}} !!!!!!!!</div>
+				</div>
+				<div class="review-description">{{review.reviewDescription}}</div>
+				<div class="review-by">{{review.reviewBy}}</div>
+				<div class="like-unlike" style="margin-left: 80%">
+					<img alt="" src="image/ic_launcher_like.png" height="20px"
+						width="20px" class="like"> <img alt=""
+						src="image/ic_launcher_unlike.png" height="20px" width="20px"
+						class="unlike">
+				</div>
+			</div>
+
+			<div class="product-details-description">
+				<div class="description-product"
+					ng-repeat="description in productDescription">
 					<div
-						style="margin-left: 4%; padding-top: 10px; padding-bottom: 10px">
-						<div class="progress-rating">
-							<div class="first-5star-rating" style="vertical-align: sub;">
-								<div class="5*" >5
-								<span class="unicode-star">&#9733;</span>
-								</div>
-									<div id="myProgress" style="display: inline-block;">
-                                      <div id="myBar" class="myBar" style="width: {{ fiveStar }}"></div>
-                                     </div>
-                                     <!-- <div class="progress-rating-reviews" style="display: inline-block;">16000</div> -->
-                             </div>
-                                     
-						</div>
-						<div class="progress-rating">
-							<div class="first-5star-rating">
-								<span class="5*">4
-								<span class="unicode-star">&#9733;</span>
-								</span> <!-- <span class="progress-bar-green-4"></span> -->
-								<div id="myProgress">
-                                      <div id="myBar1" class="myBar" style="width: {{ fourStar }}"></div>
-                                  </div>
-                                  <!-- <span class="progress-rating-reviews">12000</span> -->
-							</div>
-						</div>
-						
-						<div class="progress-rating">
-							<div class="first-5star-rating">
-								<span class="5*">3
-								<span class="unicode-star">&#9733;</span>
-                                </span> <!-- <span class="progress-bar-green"></span> -->
-								<div id="myProgress">
-                                      <div id="myBar2" class="myBar" style="width: {{threeStar}}"></div>
-                                  </div>
-                                  <!-- <span class="progress-rating-reviews">9234</span> -->
-							</div>
-						</div>
-						
-						<div class="progress-rating">
-							<div class="first-5star-rating">
-								<span class="5*">2
-								<span class="unicode-star">&#9733;</span>
-								</span>
-                                <!-- </span> <span class="progress-bar-green"></span> -->
-								<div id="myProgress">
-                                      <div id="myBar3" class="myBar"  style="background-color: #ff9f00; width: {{twoStar}}"></div>
-                                  </div>
-                                  <!-- <span class="progress-rating-reviews">7000</span> -->
-							</div>
-						</div>
-						<div class="progress-rating">
-							<div class="first-5star-rating">
-								<span class="5*">1
-								<span class="unicode-star">&#9733;</span>
-								</span> <!-- <span class="progress-bar-green"></span> -->
-								<div id="myProgress">
-                                      <div id="myBar3" class="myBar"  style="background-color: #ff6161; width: {{oneStar}}"></div>
-                                  </div>
-								<!-- <span class="progress-rating-reviews">4000</span> -->
-							</div>
-						</div>
-					</div>
-					<div align="left">
-						<button type="button" class="review-button">Rate and
-							Review product</button>
-					</div>
-					
-
+						style="font-size: 24px; font-weight: 500; line-height: 1; padding-bottom: 16px; color: #212121; padding-left: 15px; padding-top: 10px;">
+						{{description.productDescriptionTitle}}</div>
+					<div class="product-information">{{description.productDescriptionInfo}}</div>
 				</div>
-				 <div class="customer-review" ng-repeat="review in productReviews">
-							<div style="display: flex;">
-								<a href="" class="customer-star-review"
-									style="background-color: #16be48;display: flex">{{review.starRating}}
-									<span class="star-white" style="vertical-align: sub;">&#9734;</span>
-									</a>
-								<div class="review-name">{{review.reviewTitle}}
-									!!!!!!!!</div>
-							</div>
-							<div class="review-description">{{review.reviewDescription}}</div>
-							<div class="review-by">{{review.reviewBy}}</div>
-							<div class="like-unlike" style="margin-left: 80%">
-								  <img alt="" src="image/ic_launcher_like.png" height="20px" width="20px" class="like">
-								  <img alt="" src="image/ic_launcher_unlike.png" height="20px" width="20px" class="unlike">
-								</div>
-						</div>
-				
-               
-				
-           
-				<div class="product-details-description">
-					<div class="description product" ng-repeat= "description in productDescription">
-						<div
-							style="font-size: 24px; font-weight: 500; line-height: 1; padding-bottom: 16px; color: #212121; padding-left: 15px; padding-top: 10px;">
-							  {{description.productDescriptionTitle}}
-							</div>
-						<div class="product-information">{{description.productDescriptionInfo}}</div>
-					</div>
-				</div>
-				
+			</div>
 
-              
-				<div class="payment-Authantic">
-					<img alt="" src="image/ic_action_action_verified_user.png"
-						class="payment-verified" width="35px" height="35px">
-					<div class="authantic">Safe and Secure Payments. Easy
-						returns. 100% Authentic products</div>
+			<div class="payment-Authantic">
+				<img alt="" src="image/ic_action_action_verified_user.png"
+					class="payment-verified" width="35px" height="35px">
+				<div class="authantic">Safe and Secure Payments. Easy returns.
+					100% Authentic products</div>
 
-				</div>
 			</div>
 		</div>
 	</div>
+</div>

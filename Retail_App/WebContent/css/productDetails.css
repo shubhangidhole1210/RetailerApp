@@ -221,9 +221,10 @@
 } 
 .products-details-data
 {
-	display: inline-block;
 	margin-left: 1%;
-	overflow-x: scroll;
+	position: relative;
+	width: 48%;
+	left: 50%;
 }
 .display-product-details
 {
@@ -842,12 +843,12 @@
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,.26);
     border: none;
     color: #212121;
-    width:200px;
+    width:100%;
     font-size: 14px;
     background-color: #f9f9f9;
     cursor: pointer;
-    margin-left: 60%;
-    margin-top: 10px;
+    margin-left: 118%;
+    margin-top: 30px;
 }
 .product-details-description
 {
@@ -1077,7 +1078,7 @@
 #myProgress
 {
 	 position: relative;
-  width: 100%;
+  /* width: 100%; */
   height: 6px;
   /* background-color: #ddd; */
    margin-left: 100%;
@@ -1090,4 +1091,50 @@
   height: 100%;
   background-color: #4CAF50;
  
+}
+
+.general-details
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+}
+
+.description-product
+{
+	border-bottom:1px solid rgba(153, 153, 153, 0.19) ;
+    border-left:1px solid rgba(153, 153, 153, 0.19) ;
+    border-top: 1px solid rgba(153, 153, 153, 0.19);
+    border-right: 1px solid rgba(153, 153, 153, 0.19);
+}
+
+.product-img-rating a:HOVER {
+	text-decoration: none;
+	color: white;
+}
+
+/* .home-page
+{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+} */
+
+/* .retailerApp-menu
+{
+	position: fixed;
+	top: 0;
+} */
+
+.retailer-img
+{
+	position: fixed;
+	display: flex;
+	top: 170px;
+}
+.retailer-image-absolute
+{
+	position: absolute;
+	bottom: 0;
 }

@@ -237,12 +237,12 @@
 		
 		"productFeatures":{},
 		"productRating" :{
-		               "rating" : "47000",
-		               "fiveStarCount" : "16000",
-		               "fourStarCount" : "12000",
-		               "threeStarCount":  "7000",
-		               "twoStarCount"  :  "4000",
-		               "oneStarCount"  :  "8000"
+		               "rating" : 47000,
+		               "fiveStarCount" : 1600,
+		               "fourStarCount" : 1200,
+		               "threeStarCount": 700,
+		               "twoStarCount"  : 400,
+		               "oneStarCount"  : 800
 		           },
 		           
 		 "productReviews" :[

@@ -1,12 +1,13 @@
 @CHARSET "ISO-8859-1";
-/* body
-{
-	background-color: #c0c0c0;
-	padding-top:30px; 
-} */
+
+
 .header
 {
 	background: #2874f0;
+	position: fixed;
+	z-index: 700;
+	left: 0;
+	right: 0;
 }
 .menu
 {
@@ -652,7 +653,7 @@
 {
 	background-color: var(--color-white-bg);
 	margin-top: 25px;
-	border-top: 10px solid #ddd;
+	border-top: 18px solid #ddd;
 	
 }
 .retailer-row
@@ -989,4 +990,9 @@ nav > ul > li > a:HOVER {
 {
 	color: white;
 	background-color: #16be48;
+}
+
+.retailerApp-menu
+{
+	position: fixed;
 }

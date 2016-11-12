@@ -41,14 +41,16 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+
 
 
 </head>
 <body ng-app="retailApp">
 
 		<div class="header">
-		<div>
+	
 <div id="menu" class="menu">
 <ul>
 <li ><a href="#">F-Assured</a></li>
@@ -78,7 +80,7 @@
     </div>
 </div>
 
- 
+
 	<nav class="retailer-menu">
     <ul>
         <li class="sub">
@@ -591,11 +593,11 @@
     </ul>
 </nav>
  
-</div>
+
 	</div>
 	
 		
-<div ng-view class="main-view"></div>
+<div ng-view class="main-view" style="position: relative;top: 170px"></div>
 
 <div ng-controller="loginCtrl">
 

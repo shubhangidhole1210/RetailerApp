@@ -426,7 +426,14 @@ var ratingArr= [$scope.fiveStarCount,$scope.fourStarCount,$scope.threeStarCount,
 	    $anchorScroll();
 	  };
 	  
+	/*   var scrollTop;
+	  if(scrollTop> 147)
+		    {
+		        document.getElementById("absoluteScroll").className += "retailer-image-absolute";
+		  
+		    }*/
 });
+
 
 retailApp.controller('readMoreCtrl',function($scope)
 {
